@@ -1043,31 +1043,51 @@
   <script>
     // ---------- DATA ----------
     const CATEGORIES = [
-      { id: 'phones', name: 'Smartphones', icon: 'fa-mobile-alt', count: 24 },
-      { id: 'laptops', name: 'Laptops', icon: 'fa-laptop', count: 18 },
-      { id: 'clothing', name: 'Clothing', icon: 'fa-tshirt', count: 42 },
-      { id: 'gadgets', name: 'Gadgets', icon: 'fa-headphones', count: 31 },
-      { id: 'footwear', name: 'Footwear', icon: 'fa-shoe-prints', count: 27 },
-      { id: 'accessories', name: 'Accessories', icon: 'fa-watch', count: 39 }
+      { id: 'phones', name: 'Smartphones', icon: 'fa-mobile-alt', count: 32 },
+      { id: 'laptops', name: 'Laptops', icon: 'fa-laptop', count: 24 },
+      { id: 'clothing', name: 'Clothing', icon: 'fa-tshirt', count: 56 },
+      { id: 'gadgets', name: 'Gadgets', icon: 'fa-headphones', count: 41 },
+      { id: 'footwear', name: 'Footwear', icon: 'fa-shoe-prints', count: 35 },
+      { id: 'accessories', name: 'Accessories', icon: 'fa-watch', count: 48 },
+      { id: 'home', name: 'Home & Living', icon: 'fa-couch', count: 29 },
+      { id: 'beauty', name: 'Beauty', icon: 'fa-spa', count: 22 }
     ];
 
-    // --- FRESH, PREMIUM IMAGES (all new - Apple Watch Ultra 3 image updated) ---
+    // --- PREMIUM PRODUCTS WITH HIGH-END IMAGES & PRICES ---
     const PRODUCTS = [
-      { id: 1, title: 'iPhone 16 Pro Max', price: 1299, oldPrice: 1399, rating: 5, reviews: 187, badge: 'New', img: 'https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=600&q=80', category: 'Smartphones' },
-      { id: 2, title: 'MacBook Pro 14" M3', price: 2199, rating: 5, reviews: 112, badge: '', img: 'https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?auto=format&fit=crop&w=600&q=80', category: 'Laptops' },
-      { id: 3, title: 'Apple Watch Ultra 3', price: 899, oldPrice: 999, rating: 5, reviews: 245, badge: 'Sale', img: 'https://images.unsplash.com/photo-1546868871-7041f2a55e12?auto=format&fit=crop&w=600&q=80', category: 'Accessories' },
-      { id: 4, title: 'Nike Air Max 2025', price: 190, rating: 4, reviews: 82, badge: '', img: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=600&q=80', category: 'Footwear' },
-      { id: 5, title: 'Sony A7R VI', price: 4199, rating: 5, reviews: 44, badge: 'New', img: 'https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=600&q=80', category: 'Gadgets' },
-      { id: 6, title: 'Bose QuietComfort Ultra', price: 479, rating: 5, reviews: 198, badge: '', img: 'https://images.unsplash.com/photo-1484704849700-f032a568e944?auto=format&fit=crop&w=600&q=80', category: 'Gadgets' },
-      { id: 7, title: 'Peak Design Travel Backpack', price: 329, oldPrice: 389, rating: 5, reviews: 91, badge: 'Sale', img: 'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=600&q=80', category: 'Accessories' },
-      { id: 8, title: 'Dior Sauvage EDP', price: 165, rating: 5, reviews: 231, badge: '', img: 'https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&w=600&q=80', category: 'Accessories' }
+      { id: 1, title: 'iPhone 16 Pro Max 1TB', price: 1599, oldPrice: 1699, rating: 5, reviews: 187, badge: 'New', img: 'https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=600&q=80', category: 'Smartphones' },
+      { id: 2, title: 'MacBook Pro 16" M3 Max', price: 3499, oldPrice: 3799, rating: 5, reviews: 112, badge: 'New', img: 'https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?auto=format&fit=crop&w=600&q=80', category: 'Laptops' },
+      { id: 3, title: 'Apple Watch Ultra 3 Titanium', price: 1099, oldPrice: 1199, rating: 5, reviews: 245, badge: 'Sale', img: 'https://images.unsplash.com/photo-1546868871-7041f2a55e12?auto=format&fit=crop&w=600&q=80', category: 'Accessories' },
+      { id: 4, title: 'Nike Air Max 2026 Premium', price: 250, rating: 4, reviews: 82, badge: '', img: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=600&q=80', category: 'Footwear' },
+      { id: 5, title: 'Sony A7R VI Full-Frame', price: 4599, rating: 5, reviews: 44, badge: 'New', img: 'https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=600&q=80', category: 'Gadgets' },
+      { id: 6, title: 'Bose QuietComfort Ultra Pro', price: 549, rating: 5, reviews: 198, badge: '', img: 'https://images.unsplash.com/photo-1484704849700-f032a568e944?auto=format&fit=crop&w=600&q=80', category: 'Gadgets' },
+      { id: 7, title: 'Peak Design Travel Backpack 45L', price: 399, oldPrice: 459, rating: 5, reviews: 91, badge: 'Sale', img: 'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=600&q=80', category: 'Accessories' },
+      { id: 8, title: 'Dior Sauvage Elixir EDP', price: 185, rating: 5, reviews: 231, badge: '', img: 'https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&w=600&q=80', category: 'Beauty' },
+      { id: 9, title: 'Samsung Galaxy Z Fold 6', price: 1899, oldPrice: 1999, rating: 5, reviews: 156, badge: 'New', img: 'https://images.unsplash.com/photo-1610945415295-d9bbf067e59c?auto=format&fit=crop&w=600&q=80', category: 'Smartphones' },
+      { id: 10, title: 'Dyson V15 Detect Absolute', price: 799, rating: 5, reviews: 203, badge: '', img: 'https://images.unsplash.com/photo-1558317374-067fb5f30001?auto=format&fit=crop&w=600&q=80', category: 'Home & Living' },
+      { id: 11, title: 'Leica M11 Monochrom', price: 9195, rating: 5, reviews: 38, badge: 'Premium', img: 'https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=600&q=80', category: 'Gadgets' },
+      { id: 12, title: 'Hermès Birkin 35 Bag', price: 14999, rating: 5, reviews: 67, badge: 'Luxury', img: 'https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=600&q=80', category: 'Accessories' },
+      { id: 13, title: 'Rimowa Classic Cabin S', price: 1050, rating: 4, reviews: 124, badge: '', img: 'https://images.unsplash.com/photo-1542296332-2e4473faf563?auto=format&fit=crop&w=600&q=80', category: 'Accessories' },
+      { id: 14, title: 'Samsung 65" OLED TV S95D', price: 3299, oldPrice: 3699, rating: 5, reviews: 89, badge: 'Sale', img: 'https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?auto=format&fit=crop&w=600&q=80', category: 'Home & Living' },
+      { id: 15, title: 'Gucci GG Marmont Bag', price: 2890, rating: 5, reviews: 173, badge: '', img: 'https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=600&q=80', category: 'Accessories' },
+      { id: 16, title: 'Rolex Submariner Date', price: 12500, rating: 5, reviews: 56, badge: 'Luxury', img: 'https://images.unsplash.com/photo-1547996160-81dfa63595aa?auto=format&fit=crop&w=600&q=80', category: 'Accessories' },
+      { id: 17, title: 'B&O Beoplay H95 Headphones', price: 899, rating: 5, reviews: 142, badge: '', img: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=600&q=80', category: 'Gadgets' },
+      { id: 18, title: 'Armani Emporio Men\'s Suit', price: 2499, rating: 4, reviews: 78, badge: 'New', img: 'https://images.unsplash.com/photo-1594938298603-c8148c4dae35?auto=format&fit=crop&w=600&q=80', category: 'Clothing' },
+      { id: 19, title: 'La Mer The Treatment Lotion', price: 395, rating: 5, reviews: 211, badge: '', img: 'https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=600&q=80', category: 'Beauty' },
+      { id: 20, title: 'Sonos Arc Soundbar', price: 899, rating: 5, reviews: 167, badge: '', img: 'https://images.unsplash.com/photo-1545454675-3531b543be5d?auto=format&fit=crop&w=600&q=80', category: 'Home & Living' },
+      { id: 21, title: 'Tumi Alpha 3 Carry-On', price: 625, rating: 4, reviews: 93, badge: '', img: 'https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=600&q=80', category: 'Accessories' },
+      { id: 22, title: 'Tom Ford Noir Extreme', price: 195, rating: 5, reviews: 189, badge: '', img: 'https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&w=600&q=80', category: 'Beauty' },
+      { id: 23, title: 'Vitamix A3500 Blender', price: 549, rating: 5, reviews: 134, badge: '', img: 'https://images.unsplash.com/photo-1570222094114-d054a817e56b?auto=format&fit=crop&w=600&q=80', category: 'Home & Living' },
+      { id: 24, title: 'Miele Complete C3 Vacuum', price: 899, rating: 5, reviews: 77, badge: '', img: 'https://images.unsplash.com/photo-1558317374-067fb5f30001?auto=format&fit=crop&w=600&q=80', category: 'Home & Living' }
     ];
 
     const TESTIMONIALS = [
       { name: 'Ava Martin', role: 'Verified Buyer', avatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=80&q=80', text: 'Fast shipping and excellent support. The product exceeded my expectations!', stars: 5 },
       { name: 'Michael Lee', role: 'Frequent Shopper', avatar: 'https://images.unsplash.com/photo-1546456073-6712f79251bb?auto=format&fit=crop&w=80&q=80', text: 'Great selection and smooth checkout. Will definitely shop again.', stars: 4 },
       { name: 'Sophia Chen', role: 'Designer', avatar: 'https://images.unsplash.com/photo-1494790108378-be9c29b29330?auto=format&fit=crop&w=80&q=80', text: 'Love the quality and the packaging. Everything arrived in perfect condition.', stars: 5 },
-      { name: 'James Wilson', role: 'Tech Enthusiast', avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=80&q=80', text: 'Amazing prices on electronics. The M3 MacBook deal was unbeatable.', stars: 5 }
+      { name: 'James Wilson', role: 'Tech Enthusiast', avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=80&q=80', text: 'Amazing prices on electronics. The M3 MacBook deal was unbeatable.', stars: 5 },
+      { name: 'Emma Davis', role: 'Luxury Collector', avatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=80&q=80', text: 'The premium selection is unmatched. My Rolex arrived in perfect condition.', stars: 5 },
+      { name: 'Oliver Brown', role: 'Home Enthusiast', avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=80&q=80', text: 'Dyson vacuum and Sonos soundbar — both game changers for my home.', stars: 5 }
     ];
 
     // ---------- STATE ----------
@@ -1302,7 +1322,7 @@
       }
     });
 
-    console.log('✨ NexusShop — premium e‑commerce loaded with fresh images.');
+    console.log('✨ NexusShop — premium e‑commerce loaded with 24 high-end products.');
   </script>
 </body>
 </html>
