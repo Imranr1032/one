@@ -1051,11 +1051,11 @@
       { id: 'accessories', name: 'Accessories', icon: 'fa-watch', count: 39 }
     ];
 
-    // --- FRESH, PREMIUM IMAGES (all new) ---
+    // --- FRESH, PREMIUM IMAGES (all new - Apple Watch Ultra 3 image updated) ---
     const PRODUCTS = [
       { id: 1, title: 'iPhone 16 Pro Max', price: 1299, oldPrice: 1399, rating: 5, reviews: 187, badge: 'New', img: 'https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=600&q=80', category: 'Smartphones' },
       { id: 2, title: 'MacBook Pro 14" M3', price: 2199, rating: 5, reviews: 112, badge: '', img: 'https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?auto=format&fit=crop&w=600&q=80', category: 'Laptops' },
-      { id: 3, title: 'Apple Watch Ultra 3', price: 899, oldPrice: 999, rating: 5, reviews: 245, badge: 'Sale', img: 'https://images.unsplash.com/photo-1695907059514-6ad8b8c2476c?auto=format&fit=crop&w=600&q=80', category: 'Accessories' },
+      { id: 3, title: 'Apple Watch Ultra 3', price: 899, oldPrice: 999, rating: 5, reviews: 245, badge: 'Sale', img: 'https://images.unsplash.com/photo-1546868871-7041f2a55e12?auto=format&fit=crop&w=600&q=80', category: 'Accessories' },
       { id: 4, title: 'Nike Air Max 2025', price: 190, rating: 4, reviews: 82, badge: '', img: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=600&q=80', category: 'Footwear' },
       { id: 5, title: 'Sony A7R VI', price: 4199, rating: 5, reviews: 44, badge: 'New', img: 'https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=600&q=80', category: 'Gadgets' },
       { id: 6, title: 'Bose QuietComfort Ultra', price: 479, rating: 5, reviews: 198, badge: '', img: 'https://images.unsplash.com/photo-1484704849700-f032a568e944?auto=format&fit=crop&w=600&q=80', category: 'Gadgets' },
