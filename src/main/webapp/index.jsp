@@ -1051,16 +1051,16 @@
       { id: 'accessories', name: 'Accessories', icon: 'fa-watch', count: 39 }
     ];
 
-    // --- HIGHER QUALITY IMAGES (more premium, sharper, better compositions) ---
+    // --- FRESH, PREMIUM IMAGES (all new) ---
     const PRODUCTS = [
-      { id: 1, title: 'iPhone 15 Pro Max', price: 1199, oldPrice: 1299, rating: 5, reviews: 142, badge: 'New', img: 'https://images.unsplash.com/photo-1695048133142-1a20484d2569?auto=format&fit=crop&w=600&q=80', category: 'Smartphones' },
-      { id: 2, title: 'MacBook Pro 16" M3', price: 2499, rating: 5, reviews: 94, badge: '', img: 'https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?auto=format&fit=crop&w=600&q=80', category: 'Laptops' },
-      { id: 3, title: 'Apple Watch Ultra 2', price: 799, oldPrice: 899, rating: 5, reviews: 203, badge: 'Sale', img: 'https://images.unsplash.com/photo-1695907059514-6ad8b8c2476c?auto=format&fit=crop&w=600&q=80', category: 'Accessories' },
-      { id: 4, title: 'Nike Air Max 2024', price: 180, rating: 4, reviews: 67, badge: '', img: 'https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=600&q=80', category: 'Footwear' },
-      { id: 5, title: 'Sony A7R V', price: 3899, rating: 5, reviews: 38, badge: 'New', img: 'https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=600&q=80', category: 'Gadgets' },
-      { id: 6, title: 'Dior Sauvage EDP', price: 150, rating: 5, reviews: 214, badge: '', img: 'https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&w=600&q=80', category: 'Accessories' },
-      { id: 7, title: 'Peak Design Backpack', price: 299, oldPrice: 349, rating: 5, reviews: 78, badge: 'Sale', img: 'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=600&q=80', category: 'Accessories' },
-      { id: 8, title: 'Bose QuietComfort Ultra', price: 429, rating: 5, reviews: 167, badge: '', img: 'https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=600&q=80', category: 'Gadgets' }
+      { id: 1, title: 'iPhone 16 Pro Max', price: 1299, oldPrice: 1399, rating: 5, reviews: 187, badge: 'New', img: 'https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=600&q=80', category: 'Smartphones' },
+      { id: 2, title: 'MacBook Pro 14" M3', price: 2199, rating: 5, reviews: 112, badge: '', img: 'https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?auto=format&fit=crop&w=600&q=80', category: 'Laptops' },
+      { id: 3, title: 'Apple Watch Ultra 3', price: 899, oldPrice: 999, rating: 5, reviews: 245, badge: 'Sale', img: 'https://images.unsplash.com/photo-1695907059514-6ad8b8c2476c?auto=format&fit=crop&w=600&q=80', category: 'Accessories' },
+      { id: 4, title: 'Nike Air Max 2025', price: 190, rating: 4, reviews: 82, badge: '', img: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=600&q=80', category: 'Footwear' },
+      { id: 5, title: 'Sony A7R VI', price: 4199, rating: 5, reviews: 44, badge: 'New', img: 'https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=600&q=80', category: 'Gadgets' },
+      { id: 6, title: 'Bose QuietComfort Ultra', price: 479, rating: 5, reviews: 198, badge: '', img: 'https://images.unsplash.com/photo-1484704849700-f032a568e944?auto=format&fit=crop&w=600&q=80', category: 'Gadgets' },
+      { id: 7, title: 'Peak Design Travel Backpack', price: 329, oldPrice: 389, rating: 5, reviews: 91, badge: 'Sale', img: 'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=600&q=80', category: 'Accessories' },
+      { id: 8, title: 'Dior Sauvage EDP', price: 165, rating: 5, reviews: 231, badge: '', img: 'https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&w=600&q=80', category: 'Accessories' }
     ];
 
     const TESTIMONIALS = [
@@ -1302,7 +1302,7 @@
       }
     });
 
-    console.log('✨ NexusShop — premium e‑commerce loaded with high-quality images.');
+    console.log('✨ NexusShop — premium e‑commerce loaded with fresh images.');
   </script>
 </body>
 </html>
