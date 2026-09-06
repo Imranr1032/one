@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5" />
-  <title>LuxeCart · premium e‑commerce</title>
+  <title>FreshHarvest · organic grocery</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
@@ -16,15 +16,15 @@
     }
     body {
       font-family: 'Inter', system-ui, -apple-system, sans-serif;
-      background: #f6f5f2;
+      background: #f8f7f4;
       color: #1e1e2a;
       line-height: 1.5;
       -webkit-font-smoothing: antialiased;
     }
     :root {
-      --accent: #2c7a7b;
-      --accent-soft: #c6e2e2;
-      --accent-dark: #1f5f60;
+      --accent: #2f7d4a;
+      --accent-soft: #d4ebd0;
+      --accent-dark: #1f5f34;
       --primary: #1e1e2a;
       --card: #ffffff;
       --muted: #6b6b7a;
@@ -55,7 +55,7 @@
       color: inherit;
     }
 
-    /* ----- header ----- */
+    /* header */
     .header {
       background: rgba(255, 255, 255, 0.92);
       backdrop-filter: blur(14px);
@@ -164,7 +164,7 @@
     .search-wrap:focus-within {
       border-color: var(--accent);
       background: white;
-      box-shadow: 0 0 0 5px rgba(44, 122, 123, 0.08);
+      box-shadow: 0 0 0 5px rgba(47, 125, 74, 0.08);
     }
     .search-wrap input {
       border: 0;
@@ -217,9 +217,9 @@
       background: var(--light);
     }
 
-    /* ----- hero ----- */
+    /* hero */
     .hero {
-      background: linear-gradient(145deg, #0d1f2b 0%, #1b3a4a 100%);
+      background: linear-gradient(145deg, #1c3b2a, #2b5a3e);
       border-radius: var(--radius);
       margin: 20px 20px 0;
       padding: 70px 48px;
@@ -231,7 +231,7 @@
       content: '';
       position: absolute;
       inset: 0;
-      background: url('https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+      background: url('https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
       opacity: 0.12;
       z-index: 0;
     }
@@ -241,8 +241,8 @@
     }
     .hero .badge {
       display: inline-block;
-      background: rgba(44, 122, 123, 0.25);
-      color: #b6e2e2;
+      background: rgba(47, 125, 74, 0.25);
+      color: #c6edc6;
       padding: 4px 22px;
       border-radius: 40px;
       font-weight: 600;
@@ -289,7 +289,7 @@
       background: var(--accent-dark);
       border-color: var(--accent-dark);
       transform: translateY(-3px);
-      box-shadow: 0 12px 28px rgba(44, 122, 123, 0.35);
+      box-shadow: 0 12px 28px rgba(47, 125, 74, 0.35);
     }
     .btn-ghost {
       background: rgba(255, 255, 255, 0.06);
@@ -301,7 +301,7 @@
       transform: translateY(-3px);
     }
 
-    /* ----- section ----- */
+    /* section */
     .section {
       padding: 56px 0;
     }
@@ -387,7 +387,7 @@
     /* products */
     .products-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
       gap: 24px;
     }
     .product-card {
@@ -489,6 +489,12 @@
       text-decoration: line-through;
       font-size: 0.9rem;
       margin-left: 10px;
+      font-weight: 400;
+    }
+    .product-card .body .unit {
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin-left: 4px;
       font-weight: 400;
     }
     .product-card .body .rating {
@@ -677,7 +683,7 @@
 
     /* newsletter */
     .newsletter {
-      background: linear-gradient(145deg, #0d1f2b, #1b3a4a);
+      background: linear-gradient(145deg, #1c3b2a, #2b5a3e);
       border-radius: var(--radius);
       padding: 48px 52px;
       color: white;
@@ -774,7 +780,7 @@
       background: var(--accent);
       color: white;
       transform: translateY(-3px);
-      box-shadow: 0 8px 20px rgba(44, 122, 123, 0.2);
+      box-shadow: 0 8px 20px rgba(47, 125, 74, 0.2);
     }
     .footer-grid .col h5 {
       font-weight: 700;
@@ -805,85 +811,32 @@
 
     /* responsive */
     @media (max-width: 992px) {
-      .nav-links {
-        display: none;
-      }
-      .mobile-toggle {
-        display: grid;
-        place-items: center;
-      }
-      .footer-grid {
-        grid-template-columns: 1fr 1fr;
-      }
-      .deal-wrap .deal-content {
-        padding: 30px;
-      }
-      .hero {
-        padding: 48px 30px;
-      }
+      .nav-links { display: none; }
+      .mobile-toggle { display: grid; place-items: center; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+      .deal-wrap .deal-content { padding: 30px; }
+      .hero { padding: 48px 30px; }
     }
     @media (max-width: 700px) {
-      .hero {
-        margin: 12px 12px 0;
-        padding: 36px 20px;
-      }
-      .search-wrap {
-        min-width: 120px;
-      }
-      .products-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 16px;
-      }
-      .categories-grid {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 14px;
-      }
-      .footer-grid {
-        grid-template-columns: 1fr;
-      }
-      .newsletter {
-        padding: 32px 24px;
-        flex-direction: column;
-        text-align: center;
-      }
-      .newsletter form {
-        min-width: 100%;
-      }
-      .header-inner {
-        flex-wrap: nowrap;
-      }
-      .brand {
-        font-size: 1.2rem;
-      }
-      .deal-wrap .deal-content {
-        padding: 22px;
-      }
-      .timer-box {
-        min-width: 54px;
-        padding: 8px 10px;
-      }
-      .timer-box .num {
-        font-size: 1.4rem;
-      }
+      .hero { margin: 12px 12px 0; padding: 36px 20px; }
+      .search-wrap { min-width: 120px; }
+      .products-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; }
+      .categories-grid { grid-template-columns: repeat(3, 1fr); gap: 14px; }
+      .footer-grid { grid-template-columns: 1fr; }
+      .newsletter { padding: 32px 24px; flex-direction: column; text-align: center; }
+      .newsletter form { min-width: 100%; }
+      .header-inner { flex-wrap: nowrap; }
+      .brand { font-size: 1.2rem; }
+      .deal-wrap .deal-content { padding: 22px; }
+      .timer-box { min-width: 54px; padding: 8px 10px; }
+      .timer-box .num { font-size: 1.4rem; }
     }
     @media (max-width: 480px) {
-      .products-grid {
-        grid-template-columns: 1fr 1fr;
-        gap: 12px;
-      }
-      .categories-grid {
-        grid-template-columns: 1fr 1fr;
-      }
-      .hero h1 {
-        font-size: 2rem;
-      }
-      .deal-wrap .price-big {
-        font-size: 1.8rem;
-      }
-      .testimonial-card {
-        flex: 0 0 270px;
-        padding: 20px;
-      }
+      .products-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
+      .categories-grid { grid-template-columns: 1fr 1fr; }
+      .hero h1 { font-size: 2rem; }
+      .deal-wrap .price-big { font-size: 1.8rem; }
+      .testimonial-card { flex: 0 0 270px; padding: 20px; }
     }
   </style>
 </head>
@@ -893,40 +846,39 @@
     <div class="container header-inner">
       <div style="display:flex;align-items:center;gap:6px;">
         <button class="mobile-toggle" id="mobileToggle" aria-label="menu"><i class="fas fa-bars"></i></button>
-        <a class="brand" href="#"><i class="fas fa-gem"></i> Luxe<span class="accent">Cart</span></a>
+        <a class="brand" href="#"><i class="fas fa-seedling"></i> Fresh<span class="accent">Harvest</span></a>
       </div>
 
       <ul class="nav-links">
         <li><a href="#" class="active"><i class="fas fa-home"></i> Home</a></li>
         <li><a href="#categories"><i class="fas fa-th-large"></i> Categories</a></li>
-        <li><a href="#products"><i class="fas fa-fire"></i> Trending</a></li>
+        <li><a href="#products"><i class="fas fa-fire"></i> Seasonal</a></li>
         <li><a href="#deals"><i class="fas fa-tag"></i> Deals</a></li>
         <li><a href="#testimonials"><i class="fas fa-star"></i> Reviews</a></li>
       </ul>
 
       <div style="display:flex;align-items:center;gap:12px;">
         <div class="search-wrap">
-          <input type="search" id="searchInput" placeholder="Search..." aria-label="Search" />
+          <input type="search" id="searchInput" placeholder="Search veggies, fruits..." aria-label="Search" />
           <button id="searchBtn"><i class="fas fa-search"></i></button>
         </div>
         <div class="header-actions">
           <button class="icon-btn" aria-label="account"><i class="far fa-user"></i></button>
           <button class="icon-btn" aria-label="wishlist"><i class="far fa-heart"></i></button>
           <div class="cart-wrap">
-            <button class="icon-btn" id="cartBtn" aria-label="cart"><i class="fas fa-shopping-bag"></i></button>
+            <button class="icon-btn" id="cartBtn" aria-label="cart"><i class="fas fa-shopping-basket"></i></button>
             <span class="cart-count" id="cartCount">0</span>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- mobile -->
     <div id="mobileMenu">
       <div class="container">
         <ul>
           <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
           <li><a href="#categories"><i class="fas fa-th-large"></i> Categories</a></li>
-          <li><a href="#products"><i class="fas fa-fire"></i> Trending</a></li>
+          <li><a href="#products"><i class="fas fa-fire"></i> Seasonal</a></li>
           <li><a href="#deals"><i class="fas fa-tag"></i> Deals</a></li>
           <li><a href="#testimonials"><i class="fas fa-star"></i> Reviews</a></li>
           <li><a href="#"><i class="far fa-user"></i> Account</a></li>
@@ -940,9 +892,9 @@
     <!-- HERO -->
     <section class="hero">
       <div class="container">
-        <div class="badge"><i class="fas fa-sparkles"></i> Spring collection 2026</div>
-        <h1>Timeless style,<br />modern comfort</h1>
-        <p>Curated fashion, tech & lifestyle — free shipping on your first order.</p>
+        <div class="badge"><i class="fas fa-sparkles"></i> Fresh from farm to table</div>
+        <h1>Organic goodness,<br />delivered daily</h1>
+        <p>Handpicked vegetables, fruits & seeds — straight from nature's best.</p>
         <div class="actions">
           <button class="btn btn-primary" id="shopNow"><i class="fas fa-arrow-right"></i> Shop now</button>
           <button class="btn btn-ghost" id="exploreDeals"><i class="fas fa-clock"></i> Explore deals</button>
@@ -954,7 +906,7 @@
     <section class="section" id="categories">
       <div class="container">
         <div class="section-header">
-          <div><h2>Browse categories</h2><div class="sub">Find what you love</div></div>
+          <div><h2>Browse categories</h2><div class="sub">Fresh picks for every meal</div></div>
           <a href="#" class="view-all">All <i class="fas fa-arrow-right"></i></a>
         </div>
         <div class="categories-grid" id="categoriesGrid"></div>
@@ -965,7 +917,7 @@
     <section class="section" id="products">
       <div class="container">
         <div class="section-header">
-          <div><h2>Trending now</h2><div class="sub">Popular picks from the community</div></div>
+          <div><h2>Seasonal harvest</h2><div class="sub">Nature's finest, in season now</div></div>
           <a href="#" class="view-all">View all <i class="fas fa-arrow-right"></i></a>
         </div>
         <div class="products-grid" id="productsGrid"></div>
@@ -977,13 +929,13 @@
       <div class="container">
         <div class="section-header"><div><h2>⚡ Flash deal</h2><div class="sub">Limited stock — grab it now</div></div></div>
         <div class="deal-wrap">
-          <div class="deal-img"><img src="https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?auto=format&fit=crop&w=800&q=80" alt="MacBook Pro M3" loading="lazy" /></div>
+          <div class="deal-img"><img src="https://images.unsplash.com/photo-1595853035070-59a39fe84de3?auto=format&fit=crop&w=800&q=80" alt="Organic Fruit Basket" loading="lazy" /></div>
           <div class="deal-content">
             <span class="tag"><i class="fas fa-bolt"></i> limited offer</span>
-            <h3>MacBook Pro 16" M3</h3>
-            <p class="desc">Thin, light, and incredibly powerful — M3 chip redefines performance.</p>
-            <div><span class="price-big">$2,499 <span class="old">$2,999</span></span></div>
-            <p class="stock">Only <strong>8</strong> items left — hurry!</p>
+            <h3>Organic Fruit Basket</h3>
+            <p class="desc">Premium selection of seasonal fruits — perfect for a healthy week.</p>
+            <div><span class="price-big">$39.90 <span class="old">$49.90</span></span></div>
+            <p class="stock">Only <strong>15</strong> baskets left — hurry!</p>
             <div class="timer-grid" id="dealTimer">
               <div class="timer-box"><div class="num" id="dealDays">0</div><div class="label">Days</div></div>
               <div class="timer-box"><div class="num" id="dealHours">00</div><div class="label">Hrs</div></div>
@@ -999,7 +951,7 @@
     <!-- TESTIMONIALS -->
     <section class="section" id="testimonials">
       <div class="container">
-        <div class="section-header"><div><h2>What customers say</h2><div class="sub">Real reviews, real people</div></div></div>
+        <div class="section-header"><div><h2>What our customers say</h2><div class="sub">Real reviews from happy tables</div></div></div>
         <div class="testimonials-scroll" id="testimonialsList"></div>
       </div>
     </section>
@@ -1008,7 +960,7 @@
     <section class="section">
       <div class="container">
         <div class="newsletter">
-          <div><h3>Stay in the loop</h3><p>Exclusive offers, early access & new arrivals</p></div>
+          <div><h3>Stay fresh</h3><p>Exclusive offers, seasonal recipes & new arrivals</p></div>
           <form id="newsletterForm" onsubmit="return false;">
             <input type="email" id="newsletterEmail" placeholder="Your email" aria-label="Email" required />
             <button class="btn" id="subscribeBtn"><i class="fas fa-paper-plane"></i> Subscribe</button>
@@ -1023,8 +975,8 @@
     <div class="container">
       <div class="footer-grid">
         <div class="brand-col">
-          <div class="brand"><i class="fas fa-gem"></i> Luxe<span class="accent">Cart</span></div>
-          <p>Modern e‑commerce demo built with care. Quality products, seamless experience.</p>
+          <div class="brand"><i class="fas fa-seedling"></i> Fresh<span class="accent">Harvest</span></div>
+          <p>Organic grocery delivered with care. Supporting local farmers since 2025.</p>
           <div class="socials">
             <a href="#" aria-label="fb"><i class="fab fa-facebook-f"></i></a>
             <a href="#" aria-label="tw"><i class="fab fa-twitter"></i></a>
@@ -1036,58 +988,60 @@
         <div class="col"><h5>Support</h5><ul><li><a href="#">Help Center</a></li><li><a href="#">Shipping</a></li><li><a href="#">Returns</a></li><li><a href="#">Contact</a></li></ul></div>
         <div class="col"><h5>Legal</h5><ul><li><a href="#">Privacy</a></li><li><a href="#">Terms</a></li><li><a href="#">Cookies</a></li></ul></div>
       </div>
-      <div class="footer-bottom">&copy; <span id="year"></span> LuxeCart. All rights reserved.</div>
+      <div class="footer-bottom">&copy; <span id="year"></span> FreshHarvest. All rights reserved.</div>
     </div>
   </footer>
 
   <script>
-    // ---------- DATA ----------
+    // ---------- GROCERY DATA ----------
     const CATEGORIES = [
-      { id: 'phones', name: 'Smartphones', icon: 'fa-mobile-alt', count: 32 },
-      { id: 'laptops', name: 'Laptops', icon: 'fa-laptop', count: 24 },
-      { id: 'clothing', name: 'Clothing', icon: 'fa-tshirt', count: 56 },
-      { id: 'gadgets', name: 'Gadgets', icon: 'fa-headphones', count: 41 },
-      { id: 'footwear', name: 'Footwear', icon: 'fa-shoe-prints', count: 35 },
-      { id: 'accessories', name: 'Accessories', icon: 'fa-watch', count: 48 },
-      { id: 'home', name: 'Home & Living', icon: 'fa-couch', count: 29 },
-      { id: 'beauty', name: 'Beauty', icon: 'fa-spa', count: 22 }
+      { id: 'veggies', name: 'Vegetables', icon: 'fa-carrot', count: 28 },
+      { id: 'fruits', name: 'Fruits', icon: 'fa-apple-alt', count: 22 },
+      { id: 'seeds', name: 'Seeds & Grains', icon: 'fa-seedling', count: 16 },
+      { id: 'herbs', name: 'Herbs & Spices', icon: 'fa-leaf', count: 12 },
+      { id: 'organic', name: 'Organic Boxes', icon: 'fa-box', count: 9 },
+      { id: 'juices', name: 'Cold Pressed', icon: 'fa-glass-whiskey', count: 8 }
     ];
 
-    // --- PREMIUM PRODUCTS WITH HIGH-END IMAGES & PRICES ---
     const PRODUCTS = [
-      { id: 1, title: 'iPhone 16 Pro Max 1TB', price: 1599, oldPrice: 1699, rating: 5, reviews: 187, badge: 'New', img: 'https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=600&q=80', category: 'Smartphones' },
-      { id: 2, title: 'MacBook Pro 16" M3 Max', price: 3499, oldPrice: 3799, rating: 5, reviews: 112, badge: 'New', img: 'https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?auto=format&fit=crop&w=600&q=80', category: 'Laptops' },
-      { id: 3, title: 'Apple Watch Ultra 3 Titanium', price: 1099, oldPrice: 1199, rating: 5, reviews: 245, badge: 'Sale', img: 'https://images.unsplash.com/photo-1546868871-7041f2a55e12?auto=format&fit=crop&w=600&q=80', category: 'Accessories' },
-      { id: 4, title: 'Nike Air Max 2026 Premium', price: 250, rating: 4, reviews: 82, badge: '', img: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=600&q=80', category: 'Footwear' },
-      { id: 5, title: 'Sony A7R VI Full-Frame', price: 4599, rating: 5, reviews: 44, badge: 'New', img: 'https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=600&q=80', category: 'Gadgets' },
-      { id: 6, title: 'Bose QuietComfort Ultra Pro', price: 549, rating: 5, reviews: 198, badge: '', img: 'https://images.unsplash.com/photo-1484704849700-f032a568e944?auto=format&fit=crop&w=600&q=80', category: 'Gadgets' },
-      { id: 7, title: 'Peak Design Travel Backpack 45L', price: 399, oldPrice: 459, rating: 5, reviews: 91, badge: 'Sale', img: 'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=600&q=80', category: 'Accessories' },
-      { id: 8, title: 'Dior Sauvage Elixir EDP', price: 185, rating: 5, reviews: 231, badge: '', img: 'https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&w=600&q=80', category: 'Beauty' },
-      { id: 9, title: 'Samsung Galaxy Z Fold 6', price: 1899, oldPrice: 1999, rating: 5, reviews: 156, badge: 'New', img: 'https://images.unsplash.com/photo-1610945415295-d9bbf067e59c?auto=format&fit=crop&w=600&q=80', category: 'Smartphones' },
-      { id: 10, title: 'Dyson V15 Detect Absolute', price: 799, rating: 5, reviews: 203, badge: '', img: 'https://images.unsplash.com/photo-1558317374-067fb5f30001?auto=format&fit=crop&w=600&q=80', category: 'Home & Living' },
-      { id: 11, title: 'Leica M11 Monochrom', price: 9195, rating: 5, reviews: 38, badge: 'Premium', img: 'https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=600&q=80', category: 'Gadgets' },
-      { id: 12, title: 'Hermès Birkin 35 Bag', price: 14999, rating: 5, reviews: 67, badge: 'Luxury', img: 'https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=600&q=80', category: 'Accessories' },
-      { id: 13, title: 'Rimowa Classic Cabin S', price: 1050, rating: 4, reviews: 124, badge: '', img: 'https://images.unsplash.com/photo-1542296332-2e4473faf563?auto=format&fit=crop&w=600&q=80', category: 'Accessories' },
-      { id: 14, title: 'Samsung 65" OLED TV S95D', price: 3299, oldPrice: 3699, rating: 5, reviews: 89, badge: 'Sale', img: 'https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?auto=format&fit=crop&w=600&q=80', category: 'Home & Living' },
-      { id: 15, title: 'Gucci GG Marmont Bag', price: 2890, rating: 5, reviews: 173, badge: '', img: 'https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=600&q=80', category: 'Accessories' },
-      { id: 16, title: 'Rolex Submariner Date', price: 12500, rating: 5, reviews: 56, badge: 'Luxury', img: 'https://images.unsplash.com/photo-1547996160-81dfa63595aa?auto=format&fit=crop&w=600&q=80', category: 'Accessories' },
-      { id: 17, title: 'B&O Beoplay H95 Headphones', price: 899, rating: 5, reviews: 142, badge: '', img: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=600&q=80', category: 'Gadgets' },
-      { id: 18, title: 'Armani Emporio Men\'s Suit', price: 2499, rating: 4, reviews: 78, badge: 'New', img: 'https://images.unsplash.com/photo-1594938298603-c8148c4dae35?auto=format&fit=crop&w=600&q=80', category: 'Clothing' },
-      { id: 19, title: 'La Mer The Treatment Lotion', price: 395, rating: 5, reviews: 211, badge: '', img: 'https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=600&q=80', category: 'Beauty' },
-      { id: 20, title: 'Sonos Arc Soundbar', price: 899, rating: 5, reviews: 167, badge: '', img: 'https://images.unsplash.com/photo-1545454675-3531b543be5d?auto=format&fit=crop&w=600&q=80', category: 'Home & Living' },
-      { id: 21, title: 'Tumi Alpha 3 Carry-On', price: 625, rating: 4, reviews: 93, badge: '', img: 'https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=600&q=80', category: 'Accessories' },
-      { id: 22, title: 'Tom Ford Noir Extreme', price: 195, rating: 5, reviews: 189, badge: '', img: 'https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&w=600&q=80', category: 'Beauty' },
-      { id: 23, title: 'Vitamix A3500 Blender', price: 549, rating: 5, reviews: 134, badge: '', img: 'https://images.unsplash.com/photo-1570222094114-d054a817e56b?auto=format&fit=crop&w=600&q=80', category: 'Home & Living' },
-      { id: 24, title: 'Miele Complete C3 Vacuum', price: 899, rating: 5, reviews: 77, badge: '', img: 'https://images.unsplash.com/photo-1558317374-067fb5f30001?auto=format&fit=crop&w=600&q=80', category: 'Home & Living' }
+      // Vegetables
+      { id: 1, title: 'Organic Broccoli', price: 3.99, unit: 'per lb', rating: 5, reviews: 124, badge: 'Fresh', img: 'https://images.unsplash.com/photo-1585515320310-2598149a0c8c?auto=format&fit=crop&w=600&q=80', category: 'Vegetables' },
+      { id: 2, title: 'Heirloom Tomatoes', price: 5.49, unit: 'per lb', rating: 5, reviews: 98, badge: '', img: 'https://images.unsplash.com/photo-1592924357228-91a4daadcfea?auto=format&fit=crop&w=600&q=80', category: 'Vegetables' },
+      { id: 3, title: 'Organic Kale', price: 2.99, unit: 'bunch', rating: 4, reviews: 76, badge: 'Sale', img: 'https://images.unsplash.com/photo-1524179091875-bf99a9a6af57?auto=format&fit=crop&w=600&q=80', category: 'Vegetables' },
+      { id: 4, title: 'Bell Peppers (3pk)', price: 6.49, unit: 'pack', rating: 5, reviews: 112, badge: '', img: 'https://images.unsplash.com/photo-1563565375-f3fdfdbefa83?auto=format&fit=crop&w=600&q=80', category: 'Vegetables' },
+      { id: 5, title: 'Organic Carrots', price: 2.29, unit: 'per lb', rating: 5, reviews: 89, badge: '', img: 'https://images.unsplash.com/photo-1598170845058-32b9d6a5da37?auto=format&fit=crop&w=600&q=80', category: 'Vegetables' },
+      { id: 6, title: 'Avocado (4pk)', price: 9.99, unit: 'pack', rating: 5, reviews: 203, badge: 'New', img: 'https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=600&q=80', category: 'Vegetables' },
+      { id: 7, title: 'Organic Zucchini', price: 3.49, unit: 'per lb', rating: 4, reviews: 55, badge: '', img: 'https://images.unsplash.com/photo-1580915411954-282cb1b0d780?auto=format&fit=crop&w=600&q=80', category: 'Vegetables' },
+      { id: 8, title: 'Mixed Salad Greens', price: 4.99, unit: 'bag', rating: 5, reviews: 134, badge: '', img: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=600&q=80', category: 'Vegetables' },
+      // Fruits
+      { id: 9, title: 'Organic Strawberries', price: 6.99, unit: 'per lb', rating: 5, reviews: 187, badge: 'Fresh', img: 'https://images.unsplash.com/photo-1464965911861-746a04b4bca6?auto=format&fit=crop&w=600&q=80', category: 'Fruits' },
+      { id: 10, title: 'Blueberries (1pt)', price: 4.49, unit: 'pint', rating: 5, reviews: 156, badge: '', img: 'https://images.unsplash.com/photo-1498557850523-fd3d118b962e?auto=format&fit=crop&w=600&q=80', category: 'Fruits' },
+      { id: 11, title: 'Organic Apples (bag)', price: 7.99, unit: 'bag', rating: 5, reviews: 92, badge: '', img: 'https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?auto=format&fit=crop&w=600&q=80', category: 'Fruits' },
+      { id: 12, title: 'Organic Bananas', price: 1.99, unit: 'bunch', rating: 4, reviews: 210, badge: 'Sale', img: 'https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?auto=format&fit=crop&w=600&q=80', category: 'Fruits' },
+      { id: 13, title: 'Mangoes (2pk)', price: 8.49, unit: 'pack', rating: 5, reviews: 78, badge: '', img: 'https://images.unsplash.com/photo-1553279768-865429fa0078?auto=format&fit=crop&w=600&q=80', category: 'Fruits' },
+      { id: 14, title: 'Organic Lemons (bag)', price: 5.99, unit: 'bag', rating: 5, reviews: 67, badge: '', img: 'https://images.unsplash.com/photo-1587397842762-4b8a41a1bb0a?auto=format&fit=crop&w=600&q=80', category: 'Fruits' },
+      { id: 15, title: 'Watermelon (whole)', price: 12.99, unit: 'each', rating: 5, reviews: 45, badge: 'Seasonal', img: 'https://images.unsplash.com/photo-1563114773-84221bd62daa?auto=format&fit=crop&w=600&q=80', category: 'Fruits' },
+      // Seeds & Grains
+      { id: 16, title: 'Chia Seeds (organic)', price: 8.99, unit: '12oz', rating: 5, reviews: 134, badge: '', img: 'https://images.unsplash.com/photo-1593079831268-3381c0db4a5b?auto=format&fit=crop&w=600&q=80', category: 'Seeds & Grains' },
+      { id: 17, title: 'Quinoa (organic)', price: 9.99, unit: '1lb', rating: 5, reviews: 98, badge: '', img: 'https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=600&q=80', category: 'Seeds & Grains' },
+      { id: 18, title: 'Pumpkin Seeds', price: 6.49, unit: '8oz', rating: 4, reviews: 87, badge: '', img: 'https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?auto=format&fit=crop&w=600&q=80', category: 'Seeds & Grains' },
+      { id: 19, title: 'Sunflower Seeds', price: 5.99, unit: '12oz', rating: 5, reviews: 76, badge: '', img: 'https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?auto=format&fit=crop&w=600&q=80', category: 'Seeds & Grains' },
+      { id: 20, title: 'Oats (rolled)', price: 4.49, unit: '2lb', rating: 5, reviews: 112, badge: '', img: 'https://images.unsplash.com/photo-1590926961453-159104b24431?auto=format&fit=crop&w=600&q=80', category: 'Seeds & Grains' },
+      { id: 21, title: 'Brown Rice (organic)', price: 7.99, unit: '2lb', rating: 5, reviews: 56, badge: '', img: 'https://images.unsplash.com/photo-1536304993881-ff6e9eefa2a6?auto=format&fit=crop&w=600&q=80', category: 'Seeds & Grains' },
+      { id: 22, title: 'Flaxseed (ground)', price: 6.99, unit: '12oz', rating: 5, reviews: 43, badge: '', img: 'https://images.unsplash.com/photo-1593079831268-3381c0db4a5b?auto=format&fit=crop&w=600&q=80', category: 'Seeds & Grains' },
+      // Herbs & spices
+      { id: 23, title: 'Fresh Basil (bunch)', price: 3.99, unit: 'bunch', rating: 5, reviews: 89, badge: '', img: 'https://images.unsplash.com/photo-1564078516393-cf04bd966897?auto=format&fit=crop&w=600&q=80', category: 'Herbs & Spices' },
+      { id: 24, title: 'Organic Cilantro', price: 2.99, unit: 'bunch', rating: 4, reviews: 67, badge: '', img: 'https://images.unsplash.com/photo-1589923188902-1d9a8a4a4d6a?auto=format&fit=crop&w=600&q=80', category: 'Herbs & Spices' },
+      { id: 25, title: 'Rosemary (fresh)', price: 3.49, unit: 'bunch', rating: 5, reviews: 54, badge: '', img: 'https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=600&q=80', category: 'Herbs & Spices' },
+      { id: 26, title: 'Organic Ginger', price: 4.99, unit: 'per lb', rating: 5, reviews: 78, badge: '', img: 'https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=600&q=80', category: 'Herbs & Spices' }
     ];
 
     const TESTIMONIALS = [
-      { name: 'Ava Martin', role: 'Verified Buyer', avatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=80&q=80', text: 'Fast shipping and excellent support. The product exceeded my expectations!', stars: 5 },
-      { name: 'Michael Lee', role: 'Frequent Shopper', avatar: 'https://images.unsplash.com/photo-1546456073-6712f79251bb?auto=format&fit=crop&w=80&q=80', text: 'Great selection and smooth checkout. Will definitely shop again.', stars: 4 },
-      { name: 'Sophia Chen', role: 'Designer', avatar: 'https://images.unsplash.com/photo-1494790108378-be9c29b29330?auto=format&fit=crop&w=80&q=80', text: 'Love the quality and the packaging. Everything arrived in perfect condition.', stars: 5 },
-      { name: 'James Wilson', role: 'Tech Enthusiast', avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=80&q=80', text: 'Amazing prices on electronics. The M3 MacBook deal was unbeatable.', stars: 5 },
-      { name: 'Emma Davis', role: 'Luxury Collector', avatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=80&q=80', text: 'The premium selection is unmatched. My Rolex arrived in perfect condition.', stars: 5 },
-      { name: 'Oliver Brown', role: 'Home Enthusiast', avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=80&q=80', text: 'Dyson vacuum and Sonos soundbar — both game changers for my home.', stars: 5 }
+      { name: 'Elena Rodriguez', role: 'Home Cook', avatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=80&q=80', text: 'The freshest veggies I\'ve ever ordered. My smoothies have never been better!', stars: 5 },
+      { name: 'David Kim', role: 'Nutritionist', avatar: 'https://images.unsplash.com/photo-1546456073-6712f79251bb?auto=format&fit=crop&w=80&q=80', text: 'Excellent quality and variety. The organic seeds are a game changer for my clients.', stars: 5 },
+      { name: 'Sarah Miller', role: 'Foodie', avatar: 'https://images.unsplash.com/photo-1494790108378-be9c29b29330?auto=format&fit=crop&w=80&q=80', text: 'I love the seasonal fruit baskets. Always ripe and delicious!', stars: 5 },
+      { name: 'James Carter', role: 'Chef', avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=80&q=80', text: 'FreshHarvest is my go-to for restaurant supplies. Consistency is key.', stars: 5 },
+      { name: 'Priya Patel', role: 'Yoga Instructor', avatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=80&q=80', text: 'The seed variety is incredible. I make my own granola now!', stars: 5 }
     ];
 
     // ---------- STATE ----------
@@ -1178,7 +1132,6 @@
         el.className = 'product-card';
         const badgeClass = p.badge === 'Sale' ? 'sale' : '';
         const badgeHtml = p.badge ? `<span class="badge ${badgeClass}">${p.badge}</span>` : '';
-        const oldPriceHtml = p.oldPrice ? `<span class="old">$${p.oldPrice.toLocaleString()}</span>` : '';
         const stars = '★'.repeat(Math.round(p.rating)) + '☆'.repeat(5 - Math.round(p.rating));
         el.innerHTML = `
             <div class="img-wrap">
@@ -1189,7 +1142,7 @@
             <div class="body">
               <div class="cat">${p.category}</div>
               <h5>${escapeHtml(p.title)}</h5>
-              <div><span class="price">$${p.price.toLocaleString()}</span> ${oldPriceHtml}</div>
+              <div><span class="price">$${p.price.toFixed(2)}</span> <span class="unit">${p.unit}</span></div>
               <div class="rating">${stars} <span>(${p.reviews})</span></div>
             </div>
             <div class="footer">
@@ -1322,7 +1275,7 @@
       }
     });
 
-    console.log('✨ LuxeCart — premium e‑commerce loaded with 24 high-end products.');
+    console.log('🌱 FreshHarvest — organic grocery loaded with 26 fresh products.');
   </script>
 </body>
 </html>
