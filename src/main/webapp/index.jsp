@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5" />
-  <title>NexusShop · premium e‑commerce</title>
+  <title>LuxeCart · premium e‑commerce</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
@@ -22,9 +22,9 @@
       -webkit-font-smoothing: antialiased;
     }
     :root {
-      --accent: #c9654a;
-      --accent-soft: #f0d6cc;
-      --accent-dark: #b04d33;
+      --accent: #2c7a7b;
+      --accent-soft: #c6e2e2;
+      --accent-dark: #1f5f60;
       --primary: #1e1e2a;
       --card: #ffffff;
       --muted: #6b6b7a;
@@ -164,7 +164,7 @@
     .search-wrap:focus-within {
       border-color: var(--accent);
       background: white;
-      box-shadow: 0 0 0 5px rgba(201, 101, 74, 0.08);
+      box-shadow: 0 0 0 5px rgba(44, 122, 123, 0.08);
     }
     .search-wrap input {
       border: 0;
@@ -219,7 +219,7 @@
 
     /* ----- hero ----- */
     .hero {
-      background: linear-gradient(135deg, #16161f 0%, #2a2a3e 100%);
+      background: linear-gradient(145deg, #0d1f2b 0%, #1b3a4a 100%);
       border-radius: var(--radius);
       margin: 20px 20px 0;
       padding: 70px 48px;
@@ -232,7 +232,7 @@
       position: absolute;
       inset: 0;
       background: url('https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
-      opacity: 0.15;
+      opacity: 0.12;
       z-index: 0;
     }
     .hero .container {
@@ -241,15 +241,15 @@
     }
     .hero .badge {
       display: inline-block;
-      background: rgba(201, 101, 74, 0.2);
-      color: #f0d6cc;
+      background: rgba(44, 122, 123, 0.25);
+      color: #b6e2e2;
       padding: 4px 22px;
       border-radius: 40px;
       font-weight: 600;
       font-size: 0.8rem;
       letter-spacing: 0.5px;
       margin-bottom: 16px;
-      border: 1px solid rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.06);
     }
     .hero h1 {
       font-family: 'Playfair Display', serif;
@@ -289,7 +289,7 @@
       background: var(--accent-dark);
       border-color: var(--accent-dark);
       transform: translateY(-3px);
-      box-shadow: 0 12px 28px rgba(201, 101, 74, 0.35);
+      box-shadow: 0 12px 28px rgba(44, 122, 123, 0.35);
     }
     .btn-ghost {
       background: rgba(255, 255, 255, 0.06);
@@ -677,7 +677,7 @@
 
     /* newsletter */
     .newsletter {
-      background: linear-gradient(135deg, #1e1e2a, #2d2d44);
+      background: linear-gradient(145deg, #0d1f2b, #1b3a4a);
       border-radius: var(--radius);
       padding: 48px 52px;
       color: white;
@@ -774,7 +774,7 @@
       background: var(--accent);
       color: white;
       transform: translateY(-3px);
-      box-shadow: 0 8px 20px rgba(201, 101, 74, 0.2);
+      box-shadow: 0 8px 20px rgba(44, 122, 123, 0.2);
     }
     .footer-grid .col h5 {
       font-weight: 700;
@@ -893,7 +893,7 @@
     <div class="container header-inner">
       <div style="display:flex;align-items:center;gap:6px;">
         <button class="mobile-toggle" id="mobileToggle" aria-label="menu"><i class="fas fa-bars"></i></button>
-        <a class="brand" href="#"><i class="fas fa-store-alt"></i> Nexus<span class="accent">Shop</span></a>
+        <a class="brand" href="#"><i class="fas fa-gem"></i> Luxe<span class="accent">Cart</span></a>
       </div>
 
       <ul class="nav-links">
@@ -940,8 +940,8 @@
     <!-- HERO -->
     <section class="hero">
       <div class="container">
-        <div class="badge"><i class="fas fa-sparkles"></i> New collection 2026</div>
-        <h1>Premium essentials,<br />delivered with care</h1>
+        <div class="badge"><i class="fas fa-sparkles"></i> Spring collection 2026</div>
+        <h1>Timeless style,<br />modern comfort</h1>
         <p>Curated fashion, tech & lifestyle — free shipping on your first order.</p>
         <div class="actions">
           <button class="btn btn-primary" id="shopNow"><i class="fas fa-arrow-right"></i> Shop now</button>
@@ -977,13 +977,13 @@
       <div class="container">
         <div class="section-header"><div><h2>⚡ Flash deal</h2><div class="sub">Limited stock — grab it now</div></div></div>
         <div class="deal-wrap">
-          <div class="deal-img"><img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=800&q=80" alt="MacBook Air M2" loading="lazy" /></div>
+          <div class="deal-img"><img src="https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?auto=format&fit=crop&w=800&q=80" alt="MacBook Pro M3" loading="lazy" /></div>
           <div class="deal-content">
             <span class="tag"><i class="fas fa-bolt"></i> limited offer</span>
-            <h3>MacBook Air M2</h3>
-            <p class="desc">Thin, light, and incredibly powerful — M2 chip redefines performance.</p>
-            <div><span class="price-big">$999 <span class="old">$1,199</span></span></div>
-            <p class="stock">Only <strong>12</strong> items left — hurry!</p>
+            <h3>MacBook Pro 16" M3</h3>
+            <p class="desc">Thin, light, and incredibly powerful — M3 chip redefines performance.</p>
+            <div><span class="price-big">$2,499 <span class="old">$2,999</span></span></div>
+            <p class="stock">Only <strong>8</strong> items left — hurry!</p>
             <div class="timer-grid" id="dealTimer">
               <div class="timer-box"><div class="num" id="dealDays">0</div><div class="label">Days</div></div>
               <div class="timer-box"><div class="num" id="dealHours">00</div><div class="label">Hrs</div></div>
@@ -1023,7 +1023,7 @@
     <div class="container">
       <div class="footer-grid">
         <div class="brand-col">
-          <div class="brand"><i class="fas fa-store-alt"></i> Nexus<span class="accent">Shop</span></div>
+          <div class="brand"><i class="fas fa-gem"></i> Luxe<span class="accent">Cart</span></div>
           <p>Modern e‑commerce demo built with care. Quality products, seamless experience.</p>
           <div class="socials">
             <a href="#" aria-label="fb"><i class="fab fa-facebook-f"></i></a>
@@ -1036,7 +1036,7 @@
         <div class="col"><h5>Support</h5><ul><li><a href="#">Help Center</a></li><li><a href="#">Shipping</a></li><li><a href="#">Returns</a></li><li><a href="#">Contact</a></li></ul></div>
         <div class="col"><h5>Legal</h5><ul><li><a href="#">Privacy</a></li><li><a href="#">Terms</a></li><li><a href="#">Cookies</a></li></ul></div>
       </div>
-      <div class="footer-bottom">&copy; <span id="year"></span> NexusShop. All rights reserved.</div>
+      <div class="footer-bottom">&copy; <span id="year"></span> LuxeCart. All rights reserved.</div>
     </div>
   </footer>
 
@@ -1322,7 +1322,7 @@
       }
     });
 
-    console.log('✨ NexusShop — premium e‑commerce loaded with 24 high-end products.');
+    console.log('✨ LuxeCart — premium e‑commerce loaded with 24 high-end products.');
   </script>
 </body>
 </html>
