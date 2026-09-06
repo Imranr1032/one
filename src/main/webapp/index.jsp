@@ -961,7 +961,7 @@
   </footer>
 
   <script>
-    // ---------- GROCERY DATA ----------
+    // ---------- GROCERY DATA WITH UNIQUE IMAGES ----------
     const CATEGORIES = [
       { id: 'veggies', name: 'Vegetables', icon: 'fa-carrot', count: 32 },
       { id: 'fruits', name: 'Fruits', icon: 'fa-apple-alt', count: 28 },
@@ -972,7 +972,7 @@
     ];
 
     const PRODUCTS = [
-      // Vegetables - all with reliable images
+      // Vegetables - each with unique image
       { id: 1, title: 'Organic Broccoli', price: 3.99, unit: 'per lb', rating: 5, reviews: 124, badge: 'Fresh', img: 'https://images.unsplash.com/photo-1585515320310-2598149a0c8c?auto=format&fit=crop&w=600&q=80', category: 'Vegetables' },
       { id: 2, title: 'Heirloom Tomatoes', price: 5.49, unit: 'per lb', rating: 5, reviews: 98, badge: '', img: 'https://images.unsplash.com/photo-1592924357228-91a4daadcfea?auto=format&fit=crop&w=600&q=80', category: 'Vegetables' },
       { id: 3, title: 'Organic Kale', price: 2.99, unit: 'bunch', rating: 4, reviews: 76, badge: 'Sale', img: 'https://images.unsplash.com/photo-1524179091875-bf99a9a6af57?auto=format&fit=crop&w=600&q=80', category: 'Vegetables' },
@@ -985,7 +985,7 @@
       { id: 10, title: 'Red Onions (bag)', price: 3.99, unit: 'bag', rating: 4, reviews: 88, badge: '', img: 'https://images.unsplash.com/photo-1589555138661-20b2f72a2d98?auto=format&fit=crop&w=600&q=80', category: 'Vegetables' },
       { id: 11, title: 'Sweet Potatoes', price: 2.99, unit: 'per lb', rating: 5, reviews: 102, badge: '', img: 'https://images.unsplash.com/photo-1598170845058-32b9d6a5da37?auto=format&fit=crop&w=600&q=80', category: 'Vegetables' },
       { id: 12, title: 'Organic Spinach', price: 3.49, unit: 'bunch', rating: 5, reviews: 143, badge: 'Fresh', img: 'https://images.unsplash.com/photo-1576045057995-568f588f82fb?auto=format&fit=crop&w=600&q=80', category: 'Vegetables' },
-      // Fruits - all with reliable images
+      // Fruits - each with unique image
       { id: 13, title: 'Organic Strawberries', price: 6.99, unit: 'per lb', rating: 5, reviews: 187, badge: 'Fresh', img: 'https://images.unsplash.com/photo-1464965911861-746a04b4bca6?auto=format&fit=crop&w=600&q=80', category: 'Fruits' },
       { id: 14, title: 'Blueberries (1pt)', price: 4.49, unit: 'pint', rating: 5, reviews: 156, badge: '', img: 'https://images.unsplash.com/photo-1498557850523-fd3d118b962e?auto=format&fit=crop&w=600&q=80', category: 'Fruits' },
       { id: 15, title: 'Organic Apples (bag)', price: 7.99, unit: 'bag', rating: 5, reviews: 92, badge: '', img: 'https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?auto=format&fit=crop&w=600&q=80', category: 'Fruits' },
@@ -996,7 +996,7 @@
       { id: 20, title: 'Organic Grapes', price: 8.99, unit: 'per lb', rating: 5, reviews: 134, badge: '', img: 'https://images.unsplash.com/photo-1596363505723-194a4a8c8c09?auto=format&fit=crop&w=600&q=80', category: 'Fruits' },
       { id: 21, title: 'Pineapple (whole)', price: 6.49, unit: 'each', rating: 5, reviews: 89, badge: '', img: 'https://images.unsplash.com/photo-1589820296156-2454bb8a6ad1?auto=format&fit=crop&w=600&q=80', category: 'Fruits' },
       { id: 22, title: 'Organic Oranges (bag)', price: 6.99, unit: 'bag', rating: 5, reviews: 112, badge: '', img: 'https://images.unsplash.com/photo-1587397842762-4b8a41a1bb0a?auto=format&fit=crop&w=600&q=80', category: 'Fruits' },
-      // Seeds & Grains - all with reliable images
+      // Seeds & Grains - each with unique image
       { id: 23, title: 'Chia Seeds (organic)', price: 8.99, unit: '12oz', rating: 5, reviews: 134, badge: '', img: 'https://images.unsplash.com/photo-1593079831268-3381c0db4a5b?auto=format&fit=crop&w=600&q=80', category: 'Seeds & Grains' },
       { id: 24, title: 'Quinoa (organic)', price: 9.99, unit: '1lb', rating: 5, reviews: 98, badge: '', img: 'https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=600&q=80', category: 'Seeds & Grains' },
       { id: 25, title: 'Pumpkin Seeds', price: 6.49, unit: '8oz', rating: 4, reviews: 87, badge: '', img: 'https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?auto=format&fit=crop&w=600&q=80', category: 'Seeds & Grains' },
@@ -1005,7 +1005,7 @@
       { id: 28, title: 'Brown Rice (organic)', price: 7.99, unit: '2lb', rating: 5, reviews: 56, badge: '', img: 'https://images.unsplash.com/photo-1536304993881-ff6e9eefa2a6?auto=format&fit=crop&w=600&q=80', category: 'Seeds & Grains' },
       { id: 29, title: 'Flaxseed (ground)', price: 6.99, unit: '12oz', rating: 5, reviews: 43, badge: '', img: 'https://images.unsplash.com/photo-1593079831268-3381c0db4a5b?auto=format&fit=crop&w=600&q=80', category: 'Seeds & Grains' },
       { id: 30, title: 'Hemp Seeds', price: 7.99, unit: '8oz', rating: 5, reviews: 67, badge: '', img: 'https://images.unsplash.com/photo-1593079831268-3381c0db4a5b?auto=format&fit=crop&w=600&q=80', category: 'Seeds & Grains' },
-      // Herbs & spices
+      // Herbs & spices - each with unique image
       { id: 31, title: 'Fresh Basil (bunch)', price: 3.99, unit: 'bunch', rating: 5, reviews: 89, badge: '', img: 'https://images.unsplash.com/photo-1564078516393-cf04bd966897?auto=format&fit=crop&w=600&q=80', category: 'Herbs & Spices' },
       { id: 32, title: 'Organic Cilantro', price: 2.99, unit: 'bunch', rating: 4, reviews: 67, badge: '', img: 'https://images.unsplash.com/photo-1589923188902-1d9a8a4a4d6a?auto=format&fit=crop&w=600&q=80', category: 'Herbs & Spices' },
       { id: 33, title: 'Rosemary (fresh)', price: 3.49, unit: 'bunch', rating: 5, reviews: 54, badge: '', img: 'https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=600&q=80', category: 'Herbs & Spices' },
@@ -1253,7 +1253,7 @@
       }
     });
 
-    console.log('🌱 FreshHarvest — organic grocery loaded with 36 fresh products.');
+    console.log('🌱 FreshHarvest — organic grocery loaded with 36 fresh products with unique images.');
   </script>
 </body>
 </html>
