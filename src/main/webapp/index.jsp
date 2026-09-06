@@ -54,8 +54,6 @@
       cursor: pointer;
       color: inherit;
     }
-
-    /* header */
     .header {
       background: rgba(255, 255, 255, 0.92);
       backdrop-filter: blur(14px);
@@ -89,7 +87,6 @@
     .brand span.accent {
       color: var(--accent);
     }
-
     .nav-links {
       display: flex;
       gap: 2px;
@@ -112,7 +109,6 @@
     .nav-links a i {
       margin-right: 6px;
     }
-
     .header-actions {
       display: flex;
       align-items: center;
@@ -184,7 +180,6 @@
     .search-wrap button:hover {
       color: var(--accent);
     }
-
     .mobile-toggle {
       display: none;
       width: 44px;
@@ -216,8 +211,6 @@
     #mobileMenu ul a:hover {
       background: var(--light);
     }
-
-    /* hero */
     .hero {
       background: linear-gradient(145deg, #1c3b2a, #2b5a3e);
       border-radius: var(--radius);
@@ -300,8 +293,6 @@
       background: rgba(255, 255, 255, 0.14);
       transform: translateY(-3px);
     }
-
-    /* section */
     .section {
       padding: 56px 0;
     }
@@ -336,8 +327,6 @@
       gap: 14px;
       color: var(--accent-dark);
     }
-
-    /* categories */
     .categories-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
@@ -383,8 +372,6 @@
       font-size: 0.8rem;
       color: var(--muted);
     }
-
-    /* products */
     .products-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -529,8 +516,6 @@
     .product-card .footer .add.added {
       background: #2b8c7a;
     }
-
-    /* deal */
     .deal-wrap {
       display: flex;
       background: var(--card);
@@ -619,8 +604,6 @@
       text-transform: uppercase;
       letter-spacing: 0.6px;
     }
-
-    /* testimonials */
     .testimonials-scroll {
       display: flex;
       gap: 24px;
@@ -680,8 +663,6 @@
       font-size: 0.8rem;
       color: var(--muted);
     }
-
-    /* newsletter */
     .newsletter {
       background: linear-gradient(145deg, #1c3b2a, #2b5a3e);
       border-radius: var(--radius);
@@ -741,8 +722,6 @@
       margin-top: 10px;
       font-size: 0.9rem;
     }
-
-    /* footer */
     footer {
       margin-top: 20px;
       padding: 48px 0 28px;
@@ -808,8 +787,6 @@
       border-top: 1px solid #eae8e4;
       padding-top: 24px;
     }
-
-    /* responsive */
     @media (max-width: 992px) {
       .nav-links { display: none; }
       .mobile-toggle { display: grid; place-items: center; }
@@ -848,7 +825,6 @@
         <button class="mobile-toggle" id="mobileToggle" aria-label="menu"><i class="fas fa-bars"></i></button>
         <a class="brand" href="#"><i class="fas fa-seedling"></i> Fresh<span class="accent">Harvest</span></a>
       </div>
-
       <ul class="nav-links">
         <li><a href="#" class="active"><i class="fas fa-home"></i> Home</a></li>
         <li><a href="#categories"><i class="fas fa-th-large"></i> Categories</a></li>
@@ -856,7 +832,6 @@
         <li><a href="#deals"><i class="fas fa-tag"></i> Deals</a></li>
         <li><a href="#testimonials"><i class="fas fa-star"></i> Reviews</a></li>
       </ul>
-
       <div style="display:flex;align-items:center;gap:12px;">
         <div class="search-wrap">
           <input type="search" id="searchInput" placeholder="Search veggies, fruits..." aria-label="Search" />
@@ -872,7 +847,6 @@
         </div>
       </div>
     </div>
-
     <div id="mobileMenu">
       <div class="container">
         <ul>
@@ -889,7 +863,6 @@
   </header>
 
   <main>
-    <!-- HERO -->
     <section class="hero">
       <div class="container">
         <div class="badge"><i class="fas fa-sparkles"></i> Fresh from farm to table</div>
@@ -902,7 +875,6 @@
       </div>
     </section>
 
-    <!-- CATEGORIES -->
     <section class="section" id="categories">
       <div class="container">
         <div class="section-header">
@@ -913,7 +885,6 @@
       </div>
     </section>
 
-    <!-- PRODUCTS -->
     <section class="section" id="products">
       <div class="container">
         <div class="section-header">
@@ -924,7 +895,6 @@
       </div>
     </section>
 
-    <!-- DEAL -->
     <section class="section" id="deals">
       <div class="container">
         <div class="section-header"><div><h2>⚡ Flash deal</h2><div class="sub">Limited stock — grab it now</div></div></div>
@@ -948,7 +918,6 @@
       </div>
     </section>
 
-    <!-- TESTIMONIALS -->
     <section class="section" id="testimonials">
       <div class="container">
         <div class="section-header"><div><h2>What our customers say</h2><div class="sub">Real reviews from happy tables</div></div></div>
@@ -956,7 +925,6 @@
       </div>
     </section>
 
-    <!-- NEWSLETTER -->
     <section class="section">
       <div class="container">
         <div class="newsletter">
@@ -995,16 +963,16 @@
   <script>
     // ---------- GROCERY DATA ----------
     const CATEGORIES = [
-      { id: 'veggies', name: 'Vegetables', icon: 'fa-carrot', count: 28 },
-      { id: 'fruits', name: 'Fruits', icon: 'fa-apple-alt', count: 22 },
-      { id: 'seeds', name: 'Seeds & Grains', icon: 'fa-seedling', count: 16 },
-      { id: 'herbs', name: 'Herbs & Spices', icon: 'fa-leaf', count: 12 },
-      { id: 'organic', name: 'Organic Boxes', icon: 'fa-box', count: 9 },
+      { id: 'veggies', name: 'Vegetables', icon: 'fa-carrot', count: 32 },
+      { id: 'fruits', name: 'Fruits', icon: 'fa-apple-alt', count: 28 },
+      { id: 'seeds', name: 'Seeds & Grains', icon: 'fa-seedling', count: 20 },
+      { id: 'herbs', name: 'Herbs & Spices', icon: 'fa-leaf', count: 14 },
+      { id: 'organic', name: 'Organic Boxes', icon: 'fa-box', count: 10 },
       { id: 'juices', name: 'Cold Pressed', icon: 'fa-glass-whiskey', count: 8 }
     ];
 
     const PRODUCTS = [
-      // Vegetables - all with reliable Unsplash images
+      // Vegetables - all with reliable images
       { id: 1, title: 'Organic Broccoli', price: 3.99, unit: 'per lb', rating: 5, reviews: 124, badge: 'Fresh', img: 'https://images.unsplash.com/photo-1585515320310-2598149a0c8c?auto=format&fit=crop&w=600&q=80', category: 'Vegetables' },
       { id: 2, title: 'Heirloom Tomatoes', price: 5.49, unit: 'per lb', rating: 5, reviews: 98, badge: '', img: 'https://images.unsplash.com/photo-1592924357228-91a4daadcfea?auto=format&fit=crop&w=600&q=80', category: 'Vegetables' },
       { id: 3, title: 'Organic Kale', price: 2.99, unit: 'bunch', rating: 4, reviews: 76, badge: 'Sale', img: 'https://images.unsplash.com/photo-1524179091875-bf99a9a6af57?auto=format&fit=crop&w=600&q=80', category: 'Vegetables' },
@@ -1013,27 +981,37 @@
       { id: 6, title: 'Avocado (4pk)', price: 9.99, unit: 'pack', rating: 5, reviews: 203, badge: 'New', img: 'https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=600&q=80', category: 'Vegetables' },
       { id: 7, title: 'Organic Zucchini', price: 3.49, unit: 'per lb', rating: 4, reviews: 55, badge: '', img: 'https://images.unsplash.com/photo-1580915411954-282cb1b0d780?auto=format&fit=crop&w=600&q=80', category: 'Vegetables' },
       { id: 8, title: 'Mixed Salad Greens', price: 4.99, unit: 'bag', rating: 5, reviews: 134, badge: '', img: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=600&q=80', category: 'Vegetables' },
-      // Fruits - all with reliable Unsplash images
-      { id: 9, title: 'Organic Strawberries', price: 6.99, unit: 'per lb', rating: 5, reviews: 187, badge: 'Fresh', img: 'https://images.unsplash.com/photo-1464965911861-746a04b4bca6?auto=format&fit=crop&w=600&q=80', category: 'Fruits' },
-      { id: 10, title: 'Blueberries (1pt)', price: 4.49, unit: 'pint', rating: 5, reviews: 156, badge: '', img: 'https://images.unsplash.com/photo-1498557850523-fd3d118b962e?auto=format&fit=crop&w=600&q=80', category: 'Fruits' },
-      { id: 11, title: 'Organic Apples (bag)', price: 7.99, unit: 'bag', rating: 5, reviews: 92, badge: '', img: 'https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?auto=format&fit=crop&w=600&q=80', category: 'Fruits' },
-      { id: 12, title: 'Organic Bananas', price: 1.99, unit: 'bunch', rating: 4, reviews: 210, badge: 'Sale', img: 'https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?auto=format&fit=crop&w=600&q=80', category: 'Fruits' },
-      { id: 13, title: 'Mangoes (2pk)', price: 8.49, unit: 'pack', rating: 5, reviews: 78, badge: '', img: 'https://images.unsplash.com/photo-1553279768-865429fa0078?auto=format&fit=crop&w=600&q=80', category: 'Fruits' },
-      { id: 14, title: 'Organic Lemons (bag)', price: 5.99, unit: 'bag', rating: 5, reviews: 67, badge: '', img: 'https://images.unsplash.com/photo-1587397842762-4b8a41a1bb0a?auto=format&fit=crop&w=600&q=80', category: 'Fruits' },
-      { id: 15, title: 'Watermelon (whole)', price: 12.99, unit: 'each', rating: 5, reviews: 45, badge: 'Seasonal', img: 'https://images.unsplash.com/photo-1563114773-84221bd62daa?auto=format&fit=crop&w=600&q=80', category: 'Fruits' },
-      // Seeds & Grains - all with reliable Unsplash images
-      { id: 16, title: 'Chia Seeds (organic)', price: 8.99, unit: '12oz', rating: 5, reviews: 134, badge: '', img: 'https://images.unsplash.com/photo-1593079831268-3381c0db4a5b?auto=format&fit=crop&w=600&q=80', category: 'Seeds & Grains' },
-      { id: 17, title: 'Quinoa (organic)', price: 9.99, unit: '1lb', rating: 5, reviews: 98, badge: '', img: 'https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=600&q=80', category: 'Seeds & Grains' },
-      { id: 18, title: 'Pumpkin Seeds', price: 6.49, unit: '8oz', rating: 4, reviews: 87, badge: '', img: 'https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?auto=format&fit=crop&w=600&q=80', category: 'Seeds & Grains' },
-      { id: 19, title: 'Sunflower Seeds', price: 5.99, unit: '12oz', rating: 5, reviews: 76, badge: '', img: 'https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?auto=format&fit=crop&w=600&q=80', category: 'Seeds & Grains' },
-      { id: 20, title: 'Oats (rolled)', price: 4.49, unit: '2lb', rating: 5, reviews: 112, badge: '', img: 'https://images.unsplash.com/photo-1590926961453-159104b24431?auto=format&fit=crop&w=600&q=80', category: 'Seeds & Grains' },
-      { id: 21, title: 'Brown Rice (organic)', price: 7.99, unit: '2lb', rating: 5, reviews: 56, badge: '', img: 'https://images.unsplash.com/photo-1536304993881-ff6e9eefa2a6?auto=format&fit=crop&w=600&q=80', category: 'Seeds & Grains' },
-      { id: 22, title: 'Flaxseed (ground)', price: 6.99, unit: '12oz', rating: 5, reviews: 43, badge: '', img: 'https://images.unsplash.com/photo-1593079831268-3381c0db4a5b?auto=format&fit=crop&w=600&q=80', category: 'Seeds & Grains' },
+      { id: 9, title: 'Organic Cauliflower', price: 4.49, unit: 'per lb', rating: 5, reviews: 67, badge: '', img: 'https://images.unsplash.com/photo-1585515320310-2598149a0c8c?auto=format&fit=crop&w=600&q=80', category: 'Vegetables' },
+      { id: 10, title: 'Red Onions (bag)', price: 3.99, unit: 'bag', rating: 4, reviews: 88, badge: '', img: 'https://images.unsplash.com/photo-1589555138661-20b2f72a2d98?auto=format&fit=crop&w=600&q=80', category: 'Vegetables' },
+      { id: 11, title: 'Sweet Potatoes', price: 2.99, unit: 'per lb', rating: 5, reviews: 102, badge: '', img: 'https://images.unsplash.com/photo-1598170845058-32b9d6a5da37?auto=format&fit=crop&w=600&q=80', category: 'Vegetables' },
+      { id: 12, title: 'Organic Spinach', price: 3.49, unit: 'bunch', rating: 5, reviews: 143, badge: 'Fresh', img: 'https://images.unsplash.com/photo-1576045057995-568f588f82fb?auto=format&fit=crop&w=600&q=80', category: 'Vegetables' },
+      // Fruits - all with reliable images
+      { id: 13, title: 'Organic Strawberries', price: 6.99, unit: 'per lb', rating: 5, reviews: 187, badge: 'Fresh', img: 'https://images.unsplash.com/photo-1464965911861-746a04b4bca6?auto=format&fit=crop&w=600&q=80', category: 'Fruits' },
+      { id: 14, title: 'Blueberries (1pt)', price: 4.49, unit: 'pint', rating: 5, reviews: 156, badge: '', img: 'https://images.unsplash.com/photo-1498557850523-fd3d118b962e?auto=format&fit=crop&w=600&q=80', category: 'Fruits' },
+      { id: 15, title: 'Organic Apples (bag)', price: 7.99, unit: 'bag', rating: 5, reviews: 92, badge: '', img: 'https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?auto=format&fit=crop&w=600&q=80', category: 'Fruits' },
+      { id: 16, title: 'Organic Bananas', price: 1.99, unit: 'bunch', rating: 4, reviews: 210, badge: 'Sale', img: 'https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?auto=format&fit=crop&w=600&q=80', category: 'Fruits' },
+      { id: 17, title: 'Mangoes (2pk)', price: 8.49, unit: 'pack', rating: 5, reviews: 78, badge: '', img: 'https://images.unsplash.com/photo-1553279768-865429fa0078?auto=format&fit=crop&w=600&q=80', category: 'Fruits' },
+      { id: 18, title: 'Organic Lemons (bag)', price: 5.99, unit: 'bag', rating: 5, reviews: 67, badge: '', img: 'https://images.unsplash.com/photo-1587397842762-4b8a41a1bb0a?auto=format&fit=crop&w=600&q=80', category: 'Fruits' },
+      { id: 19, title: 'Watermelon (whole)', price: 12.99, unit: 'each', rating: 5, reviews: 45, badge: 'Seasonal', img: 'https://images.unsplash.com/photo-1563114773-84221bd62daa?auto=format&fit=crop&w=600&q=80', category: 'Fruits' },
+      { id: 20, title: 'Organic Grapes', price: 8.99, unit: 'per lb', rating: 5, reviews: 134, badge: '', img: 'https://images.unsplash.com/photo-1596363505723-194a4a8c8c09?auto=format&fit=crop&w=600&q=80', category: 'Fruits' },
+      { id: 21, title: 'Pineapple (whole)', price: 6.49, unit: 'each', rating: 5, reviews: 89, badge: '', img: 'https://images.unsplash.com/photo-1589820296156-2454bb8a6ad1?auto=format&fit=crop&w=600&q=80', category: 'Fruits' },
+      { id: 22, title: 'Organic Oranges (bag)', price: 6.99, unit: 'bag', rating: 5, reviews: 112, badge: '', img: 'https://images.unsplash.com/photo-1587397842762-4b8a41a1bb0a?auto=format&fit=crop&w=600&q=80', category: 'Fruits' },
+      // Seeds & Grains - all with reliable images
+      { id: 23, title: 'Chia Seeds (organic)', price: 8.99, unit: '12oz', rating: 5, reviews: 134, badge: '', img: 'https://images.unsplash.com/photo-1593079831268-3381c0db4a5b?auto=format&fit=crop&w=600&q=80', category: 'Seeds & Grains' },
+      { id: 24, title: 'Quinoa (organic)', price: 9.99, unit: '1lb', rating: 5, reviews: 98, badge: '', img: 'https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=600&q=80', category: 'Seeds & Grains' },
+      { id: 25, title: 'Pumpkin Seeds', price: 6.49, unit: '8oz', rating: 4, reviews: 87, badge: '', img: 'https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?auto=format&fit=crop&w=600&q=80', category: 'Seeds & Grains' },
+      { id: 26, title: 'Sunflower Seeds', price: 5.99, unit: '12oz', rating: 5, reviews: 76, badge: '', img: 'https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?auto=format&fit=crop&w=600&q=80', category: 'Seeds & Grains' },
+      { id: 27, title: 'Oats (rolled)', price: 4.49, unit: '2lb', rating: 5, reviews: 112, badge: '', img: 'https://images.unsplash.com/photo-1590926961453-159104b24431?auto=format&fit=crop&w=600&q=80', category: 'Seeds & Grains' },
+      { id: 28, title: 'Brown Rice (organic)', price: 7.99, unit: '2lb', rating: 5, reviews: 56, badge: '', img: 'https://images.unsplash.com/photo-1536304993881-ff6e9eefa2a6?auto=format&fit=crop&w=600&q=80', category: 'Seeds & Grains' },
+      { id: 29, title: 'Flaxseed (ground)', price: 6.99, unit: '12oz', rating: 5, reviews: 43, badge: '', img: 'https://images.unsplash.com/photo-1593079831268-3381c0db4a5b?auto=format&fit=crop&w=600&q=80', category: 'Seeds & Grains' },
+      { id: 30, title: 'Hemp Seeds', price: 7.99, unit: '8oz', rating: 5, reviews: 67, badge: '', img: 'https://images.unsplash.com/photo-1593079831268-3381c0db4a5b?auto=format&fit=crop&w=600&q=80', category: 'Seeds & Grains' },
       // Herbs & spices
-      { id: 23, title: 'Fresh Basil (bunch)', price: 3.99, unit: 'bunch', rating: 5, reviews: 89, badge: '', img: 'https://images.unsplash.com/photo-1564078516393-cf04bd966897?auto=format&fit=crop&w=600&q=80', category: 'Herbs & Spices' },
-      { id: 24, title: 'Organic Cilantro', price: 2.99, unit: 'bunch', rating: 4, reviews: 67, badge: '', img: 'https://images.unsplash.com/photo-1589923188902-1d9a8a4a4d6a?auto=format&fit=crop&w=600&q=80', category: 'Herbs & Spices' },
-      { id: 25, title: 'Rosemary (fresh)', price: 3.49, unit: 'bunch', rating: 5, reviews: 54, badge: '', img: 'https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=600&q=80', category: 'Herbs & Spices' },
-      { id: 26, title: 'Organic Ginger', price: 4.99, unit: 'per lb', rating: 5, reviews: 78, badge: '', img: 'https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=600&q=80', category: 'Herbs & Spices' }
+      { id: 31, title: 'Fresh Basil (bunch)', price: 3.99, unit: 'bunch', rating: 5, reviews: 89, badge: '', img: 'https://images.unsplash.com/photo-1564078516393-cf04bd966897?auto=format&fit=crop&w=600&q=80', category: 'Herbs & Spices' },
+      { id: 32, title: 'Organic Cilantro', price: 2.99, unit: 'bunch', rating: 4, reviews: 67, badge: '', img: 'https://images.unsplash.com/photo-1589923188902-1d9a8a4a4d6a?auto=format&fit=crop&w=600&q=80', category: 'Herbs & Spices' },
+      { id: 33, title: 'Rosemary (fresh)', price: 3.49, unit: 'bunch', rating: 5, reviews: 54, badge: '', img: 'https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=600&q=80', category: 'Herbs & Spices' },
+      { id: 34, title: 'Organic Ginger', price: 4.99, unit: 'per lb', rating: 5, reviews: 78, badge: '', img: 'https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=600&q=80', category: 'Herbs & Spices' },
+      { id: 35, title: 'Fresh Thyme', price: 2.99, unit: 'bunch', rating: 5, reviews: 43, badge: '', img: 'https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=600&q=80', category: 'Herbs & Spices' },
+      { id: 36, title: 'Organic Mint', price: 2.49, unit: 'bunch', rating: 5, reviews: 56, badge: '', img: 'https://images.unsplash.com/photo-1564078516393-cf04bd966897?auto=format&fit=crop&w=600&q=80', category: 'Herbs & Spices' }
     ];
 
     const TESTIMONIALS = [
@@ -1275,7 +1253,7 @@
       }
     });
 
-    console.log('🌱 FreshHarvest — organic grocery loaded with 26 fresh products.');
+    console.log('🌱 FreshHarvest — organic grocery loaded with 36 fresh products.');
   </script>
 </body>
 </html>
