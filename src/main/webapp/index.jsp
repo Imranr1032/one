@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5" />
-  <title>Tollywood Heroes · Telugu Film Wiki</title>
+  <title>VoltHaus · premium electronics</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <style>
     * {
@@ -16,25 +16,24 @@
     }
     body {
       font-family: 'Inter', system-ui, -apple-system, sans-serif;
-      background: #fdf6ee;
-      color: #1e1e2a;
+      background: #f5f7fc;
+      color: #0b0e14;
       line-height: 1.5;
       -webkit-font-smoothing: antialiased;
     }
     :root {
-      --accent: #c0392b;
-      --accent-soft: #f8d7d2;
-      --accent-dark: #8e2418;
-      --gold: #d4a017;
-      --gold-soft: #fbeecb;
-      --primary: #1e1e2a;
+      --accent: #2d6eff;
+      --accent-soft: #d9e6ff;
+      --accent-dark: #1a4fcc;
+      --primary: #0b0e14;
       --card: #ffffff;
-      --muted: #6b6b7a;
-      --light: #f4ece1;
-      --shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
-      --shadow-hover: 0 20px 50px rgba(0, 0, 0, 0.08);
-      --radius: 20px;
-      --radius-sm: 12px;
+      --muted: #5e6472;
+      --light: #eef1f8;
+      --shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+      --shadow-hover: 0 20px 50px rgba(0, 20, 80, 0.12);
+      --radius: 24px;
+      --radius-sm: 14px;
+      --glow: 0 0 30px rgba(45, 110, 255, 0.25);
     }
     .container {
       max-width: 1280px;
@@ -56,8 +55,6 @@
       cursor: pointer;
       color: inherit;
     }
-
-    /* ===== HEADER ===== */
     .header {
       background: rgba(255, 255, 255, 0.92);
       backdrop-filter: blur(14px);
@@ -78,11 +75,12 @@
     .brand {
       font-weight: 800;
       font-size: 1.5rem;
-      letter-spacing: -0.3px;
+      letter-spacing: -0.5px;
       display: flex;
       align-items: center;
       gap: 8px;
       color: var(--primary);
+      font-family: 'Space Grotesk', sans-serif;
     }
     .brand i {
       color: var(--accent);
@@ -132,10 +130,10 @@
       background: var(--light);
       color: var(--primary);
     }
-    .fav-wrap {
+    .cart-wrap {
       position: relative;
     }
-    .fav-count {
+    .cart-count {
       position: absolute;
       top: -4px;
       right: -4px;
@@ -164,7 +162,7 @@
     .search-wrap:focus-within {
       border-color: var(--accent);
       background: white;
-      box-shadow: 0 0 0 5px rgba(192, 57, 43, 0.08);
+      box-shadow: 0 0 0 5px rgba(45, 110, 255, 0.08);
     }
     .search-wrap input {
       border: 0;
@@ -175,7 +173,7 @@
       outline: none;
     }
     .search-wrap input::placeholder {
-      color: #b0b0bc;
+      color: #a0a8b8;
     }
     .search-wrap button {
       padding: 8px 0 8px 10px;
@@ -216,9 +214,9 @@
       background: var(--light);
     }
 
-    /* ===== HERO ===== */
+    /* hero */
     .hero {
-      background: linear-gradient(145deg, #3a1c14, #7a2a1f);
+      background: linear-gradient(135deg, #0b0e14 0%, #16213e 100%);
       border-radius: var(--radius);
       margin: 20px 20px 0;
       padding: 70px 48px;
@@ -230,8 +228,8 @@
       content: '';
       position: absolute;
       inset: 0;
-      background: url('https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
-      opacity: 0.18;
+      background: url('https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+      opacity: 0.1;
       z-index: 0;
     }
     .hero .container {
@@ -240,8 +238,8 @@
     }
     .hero .badge {
       display: inline-block;
-      background: rgba(212, 160, 23, 0.25);
-      color: #ffdf8a;
+      background: rgba(45, 110, 255, 0.25);
+      color: #b8d0ff;
       padding: 4px 22px;
       border-radius: 40px;
       font-weight: 600;
@@ -251,7 +249,7 @@
       border: 1px solid rgba(255, 255, 255, 0.06);
     }
     .hero h1 {
-      font-family: 'Playfair Display', serif;
+      font-family: 'Space Grotesk', sans-serif;
       font-size: clamp(2.6rem, 6.5vw, 4.4rem);
       font-weight: 700;
       line-height: 1.08;
@@ -260,7 +258,7 @@
     .hero p {
       color: rgba(255, 255, 255, 0.78);
       font-size: 1.1rem;
-      max-width: 520px;
+      max-width: 480px;
       margin: 14px 0 30px;
     }
     .hero .actions {
@@ -288,7 +286,7 @@
       background: var(--accent-dark);
       border-color: var(--accent-dark);
       transform: translateY(-3px);
-      box-shadow: 0 12px 28px rgba(192, 57, 43, 0.35);
+      box-shadow: 0 12px 28px rgba(45, 110, 255, 0.4);
     }
     .btn-ghost {
       background: rgba(255, 255, 255, 0.06);
@@ -300,7 +298,6 @@
       transform: translateY(-3px);
     }
 
-    /* ===== SECTIONS ===== */
     .section {
       padding: 56px 0;
     }
@@ -313,6 +310,7 @@
       margin-bottom: 32px;
     }
     .section-header h2 {
+      font-family: 'Space Grotesk', sans-serif;
       font-size: 2rem;
       font-weight: 700;
       letter-spacing: -0.3px;
@@ -336,13 +334,58 @@
       color: var(--accent-dark);
     }
 
-    /* ===== HERO GRID (stars) ===== */
-    .heroes-grid {
+    .categories-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 20px;
+    }
+    .cat-card {
+      background: var(--card);
+      border-radius: var(--radius);
+      padding: 24px 12px;
+      text-align: center;
+      box-shadow: var(--shadow);
+      transition: 0.3s;
+      border: 2px solid transparent;
+      cursor: pointer;
+    }
+    .cat-card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-hover);
+      border-color: var(--accent-soft);
+    }
+    .cat-card .icon {
+      width: 58px;
+      height: 58px;
+      background: var(--accent-soft);
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      margin: 0 auto 12px;
+      font-size: 1.6rem;
+      color: var(--accent);
+      transition: 0.3s;
+    }
+    .cat-card:hover .icon {
+      background: var(--accent);
+      color: white;
+      transform: scale(1.05);
+    }
+    .cat-card h4 {
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+    .cat-card .count {
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
       gap: 24px;
     }
-    .hero-card {
+    .product-card {
       background: var(--card);
       border-radius: var(--radius);
       overflow: hidden;
@@ -351,63 +394,49 @@
       border: 2px solid transparent;
       display: flex;
       flex-direction: column;
-      cursor: pointer;
     }
-    .hero-card:hover {
+    .product-card:hover {
       transform: translateY(-10px);
       box-shadow: var(--shadow-hover);
-      border-color: var(--gold-soft);
+      border-color: var(--accent-soft);
     }
-    .hero-card .img-wrap {
-      aspect-ratio: 1/1.15;
-      background: linear-gradient(135deg, #3a1c14, #7a2a1f);
+    .product-card .img-wrap {
+      aspect-ratio: 1/1;
+      background: #f0f2f8;
       overflow: hidden;
       position: relative;
-      display: flex;
-      align-items: center;
-      justify-content: center;
     }
-    .hero-card .img-wrap .initials {
-      font-family: 'Playfair Display', serif;
-      font-size: 4.5rem;
-      font-weight: 700;
-      color: rgba(255, 223, 138, 0.35);
-      position: absolute;
-      user-select: none;
-      z-index: 0;
-    }
-    .hero-card .img-wrap img {
+    .product-card .img-wrap img {
       width: 100%;
       height: 100%;
       object-fit: cover;
-      object-position: top center;
       transition: 0.5s ease;
-      position: relative;
-      z-index: 1;
     }
-    .hero-card:hover .img-wrap img {
+    .product-card:hover .img-wrap img {
       transform: scale(1.06);
     }
-    .hero-card .badge {
+    .product-card .badge {
       position: absolute;
       top: 14px;
       left: 14px;
-      background: var(--gold);
-      color: #3a1c14;
+      background: var(--accent);
+      color: white;
       padding: 4px 16px;
       border-radius: 40px;
       font-size: 0.7rem;
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 0.4px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-      z-index: 2;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     }
-    .hero-card .badge.hot {
-      background: var(--accent);
-      color: white;
+    .product-card .badge.sale {
+      background: #ff9f2d;
+      color: #0b0e14;
     }
-    .hero-card .fav {
+    .product-card .badge.new {
+      background: #00b894;
+    }
+    .product-card .wish {
       position: absolute;
       top: 14px;
       right: 14px;
@@ -422,56 +451,65 @@
       transition: 0.2s;
       font-size: 1rem;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
-      z-index: 2;
     }
-    .hero-card .fav:hover {
+    .product-card .wish:hover {
       color: var(--accent);
       background: white;
       transform: scale(1.12);
     }
-    .hero-card .body {
+    .product-card .body {
       padding: 18px 18px 10px;
       flex: 1;
     }
-    .hero-card .body .role {
+    .product-card .body .cat {
       font-size: 0.7rem;
-      color: var(--gold);
+      color: var(--muted);
       text-transform: uppercase;
       letter-spacing: 0.6px;
-      font-weight: 700;
+      font-weight: 600;
     }
-    .hero-card .body h5 {
-      font-size: 1.15rem;
-      font-weight: 700;
+    .product-card .body h5 {
+      font-size: 1rem;
+      font-weight: 600;
       margin: 6px 0 8px;
-      line-height: 1.2;
-    }
-    .hero-card .body .known-for {
-      font-size: 0.82rem;
-      color: var(--muted);
       display: -webkit-box;
       -webkit-line-clamp: 2;
       -webkit-box-orient: vertical;
       overflow: hidden;
-      line-height: 1.4;
     }
-    .hero-card .body .stats {
-      display: flex;
-      gap: 14px;
-      margin-top: 10px;
-      font-size: 0.78rem;
-      color: var(--muted);
-    }
-    .hero-card .body .stats strong {
-      color: var(--accent);
+    .product-card .body .price {
       font-weight: 700;
+      font-size: 1.25rem;
+      color: var(--primary);
     }
-    .hero-card .footer {
+    .product-card .body .old {
+      color: var(--muted);
+      text-decoration: line-through;
+      font-size: 0.9rem;
+      margin-left: 10px;
+      font-weight: 400;
+    }
+    .product-card .body .unit {
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin-left: 4px;
+      font-weight: 400;
+    }
+    .product-card .body .rating {
+      color: #f5b342;
+      font-size: 0.85rem;
+      margin-top: 6px;
+    }
+    .product-card .body .rating span {
+      color: var(--muted);
+      margin-left: 4px;
+    }
+    .product-card .footer {
       padding: 0 18px 18px;
     }
-    .hero-card .footer .view {
+    .product-card .footer .add {
       width: 100%;
-      padding: 11px;
+      padding: 12px;
       background: var(--primary);
       color: white;
       border-radius: var(--radius-sm);
@@ -480,16 +518,17 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 8px;
-      font-size: 0.88rem;
+      gap: 10px;
     }
-    .hero-card .footer .view:hover {
+    .product-card .footer .add:hover {
       background: var(--accent);
       transform: scale(1.02);
     }
+    .product-card .footer .add.added {
+      background: #2b8c7a;
+    }
 
-    /* ===== SPOTLIGHT (featured hero) ===== */
-    .spotlight-wrap {
+    .deal-wrap {
       display: flex;
       background: var(--card);
       border-radius: var(--radius);
@@ -497,327 +536,26 @@
       box-shadow: var(--shadow);
       flex-wrap: wrap;
     }
-    .spotlight-wrap .spotlight-img {
-      flex: 1 1 42%;
-      min-height: 320px;
-      background: linear-gradient(135deg, #3a1c14, #7a2a1f);
-      position: relative;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .spotlight-wrap .spotlight-img .initials {
-      font-family: 'Playfair Display', serif;
-      font-size: 8rem;
-      font-weight: 700;
-      color: rgba(255, 223, 138, 0.3);
-      user-select: none;
-    }
-    .spotlight-wrap .spotlight-img img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: top center;
-      position: absolute;
-      inset: 0;
-    }
-    .spotlight-wrap .spotlight-content {
-      flex: 1 1 50%;
-      padding: 40px 44px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-    .spotlight-wrap .tag {
-      background: var(--gold);
-      color: #3a1c14;
-      padding: 4px 20px;
-      border-radius: 40px;
-      font-weight: 700;
-      font-size: 0.75rem;
-      text-transform: uppercase;
-      align-self: flex-start;
-      margin-bottom: 10px;
-      letter-spacing: 0.5px;
-    }
-    .spotlight-wrap h3 {
-      font-family: 'Playfair Display', serif;
-      font-size: 2.2rem;
-      font-weight: 700;
-      line-height: 1.1;
-    }
-    .spotlight-wrap .desc {
-      color: var(--muted);
-      margin: 10px 0 16px;
-      line-height: 1.6;
-    }
-    .spotlight-wrap .meta-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 10px 20px;
-      margin-bottom: 20px;
-    }
-    .spotlight-wrap .meta-grid .item {
-      font-size: 0.85rem;
-      color: var(--muted);
-    }
-    .spotlight-wrap .meta-grid .item strong {
-      display: block;
-      color: var(--primary);
-      font-weight: 700;
-      font-size: 0.95rem;
-    }
-    .spotlight-wrap .film-strip {
-      display: flex;
-      gap: 8px;
-      flex-wrap: wrap;
-      margin-bottom: 22px;
-    }
-    .spotlight-wrap .film-strip span {
-      background: var(--light);
-      color: var(--primary);
-      padding: 5px 14px;
-      border-radius: 40px;
-      font-size: 0.78rem;
-      font-weight: 600;
-    }
-    .spotlight-wrap .actions {
-      display: flex;
-      gap: 12px;
-      flex-wrap: wrap;
-    }
-
-    /* ===== MODAL ===== */
-    .modal-overlay {
-      position: fixed;
-      inset: 0;
-      background: rgba(20, 10, 5, 0.85);
-      backdrop-filter: blur(8px);
-      -webkit-backdrop-filter: blur(8px);
-      z-index: 1000;
-      display: none;
-      align-items: flex-start;
-      justify-content: center;
-      padding: 24px;
-      overflow-y: auto;
-    }
-    .modal-overlay.active {
-      display: flex;
-    }
-    .modal {
-      background: var(--card);
-      border-radius: var(--radius);
-      max-width: 780px;
-      width: 100%;
-      margin: 20px auto;
-      position: relative;
-      animation: slideUp 0.3s cubic-bezier(0.2, 0.9, 0.3, 1.1);
-      box-shadow: 0 30px 80px rgba(0, 0, 0, 0.6);
-      overflow: hidden;
-    }
-    @keyframes slideUp {
-      from { opacity: 0; transform: translateY(40px) scale(0.98); }
-      to { opacity: 1; transform: translateY(0) scale(1); }
-    }
-    .modal-close {
-      position: absolute;
-      top: 14px;
-      right: 14px;
-      background: rgba(0, 0, 0, 0.4);
-      backdrop-filter: blur(6px);
-      color: white;
-      width: 38px;
-      height: 38px;
-      border-radius: 50%;
-      font-size: 1.1rem;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      z-index: 10;
-      transition: 0.2s;
-    }
-    .modal-close:hover {
-      background: var(--accent);
-      transform: rotate(90deg);
-    }
-    .modal-header {
-      display: flex;
-      gap: 24px;
-      padding: 28px;
-      background: linear-gradient(135deg, #3a1c14, #7a2a1f);
-      color: white;
-      align-items: center;
-      flex-wrap: wrap;
-    }
-    .modal-avatar {
-      width: 110px;
-      height: 110px;
-      border-radius: 50%;
-      background: linear-gradient(135deg, #7a2a1f, #3a1c14);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-family: 'Playfair Display', serif;
-      font-size: 2.6rem;
-      font-weight: 700;
-      color: var(--gold);
-      flex-shrink: 0;
-      overflow: hidden;
-      border: 3px solid var(--gold);
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
-      position: relative;
-    }
-    .modal-avatar img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: top;
-      position: absolute;
-      inset: 0;
-    }
-    .modal-header-info h2 {
-      font-family: 'Playfair Display', serif;
-      font-size: 2rem;
-      font-weight: 700;
-      margin-bottom: 6px;
-      line-height: 1.1;
-    }
-    .modal-header-info .subtitle {
-      color: var(--gold);
-      font-size: 0.8rem;
-      font-weight: 700;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      margin-bottom: 12px;
-    }
-    .modal-meta-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 16px;
-      font-size: 0.82rem;
-      color: rgba(255, 255, 255, 0.75);
-    }
-    .modal-meta-row strong {
-      color: white;
-      font-weight: 700;
-    }
-    .modal-body {
-      padding: 28px 32px 36px;
-      max-height: 60vh;
-      overflow-y: auto;
-    }
-    .modal-section {
-      margin-bottom: 28px;
-    }
-    .modal-section:last-child {
-      margin-bottom: 0;
-    }
-    .modal-section h3 {
-      font-size: 0.85rem;
-      font-weight: 700;
-      color: var(--accent);
-      text-transform: uppercase;
-      letter-spacing: 1.5px;
-      margin-bottom: 14px;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-    .movie-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
-      gap: 10px;
-    }
-    .movie-item {
-      background: var(--light);
-      border-radius: 10px;
-      padding: 11px 14px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 10px;
-      border-left: 3px solid var(--gold);
-      transition: 0.2s;
-    }
-    .movie-item:hover {
-      background: var(--gold-soft);
-      transform: translateX(3px);
-    }
-    .movie-item .movie-name {
-      font-size: 0.85rem;
-      font-weight: 600;
-      color: var(--primary);
-      line-height: 1.3;
-    }
-    .movie-item .movie-year {
-      font-size: 0.72rem;
-      color: var(--muted);
-      font-weight: 700;
-      background: white;
-      padding: 3px 9px;
-      border-radius: 20px;
-      white-space: nowrap;
-      flex-shrink: 0;
-    }
-    .upcoming-grid .movie-item {
-      border-left-color: var(--accent);
-      background: #fdf1ef;
-    }
-    .upcoming-grid .movie-item .movie-name {
-      color: var(--accent-dark);
-    }
-    .status-pill {
-      font-size: 0.62rem;
-      font-weight: 800;
-      padding: 2px 8px;
-      border-radius: 20px;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-      white-space: nowrap;
-    }
-    .status-pill.filming {
-      background: rgba(47, 125, 74, 0.15);
-      color: #2f7d4a;
-    }
-    .status-pill.post {
-      background: rgba(212, 160, 23, 0.2);
-      color: #a67c00;
-    }
-    .status-pill.announced {
-      background: rgba(88, 130, 193, 0.15);
-      color: #3a6ba5;
-    }
-
-    /* ===== TIMELINE (Era) ===== */
-    .era-wrap {
-      display: flex;
-      background: var(--card);
-      border-radius: var(--radius);
-      overflow: hidden;
-      box-shadow: var(--shadow);
-      flex-wrap: wrap;
-    }
-    .era-wrap .era-img {
+    .deal-wrap .deal-img {
       flex: 1 1 42%;
       min-height: 260px;
       background: var(--light);
     }
-    .era-wrap .era-img img {
+    .deal-wrap .deal-img img {
       width: 100%;
       height: 100%;
       object-fit: cover;
     }
-    .era-wrap .era-content {
+    .deal-wrap .deal-content {
       flex: 1 1 50%;
       padding: 40px 44px;
       display: flex;
       flex-direction: column;
       justify-content: center;
     }
-    .era-wrap .tag {
-      background: var(--accent);
-      color: white;
+    .deal-wrap .tag {
+      background: #ff9f2d;
+      color: #0b0e14;
       padding: 4px 20px;
       border-radius: 40px;
       font-weight: 700;
@@ -827,37 +565,59 @@
       margin-bottom: 10px;
       letter-spacing: 0.5px;
     }
-    .era-wrap h3 {
+    .deal-wrap h3 {
       font-size: 2rem;
       font-weight: 700;
-      font-family: 'Playfair Display', serif;
+      font-family: 'Space Grotesk', sans-serif;
     }
-    .era-wrap .desc {
+    .deal-wrap .desc {
       color: var(--muted);
-      margin: 8px 0 20px;
-      line-height: 1.6;
+      margin: 8px 0 14px;
     }
-    .era-wrap .era-stats {
-      display: flex;
-      gap: 26px;
-      flex-wrap: wrap;
-    }
-    .era-wrap .era-stats .stat .num {
-      font-size: 2.2rem;
+    .deal-wrap .price-big {
+      font-size: 2.4rem;
       font-weight: 800;
-      color: var(--accent);
-      line-height: 1;
     }
-    .era-wrap .era-stats .stat .label {
-      font-size: 0.75rem;
+    .deal-wrap .price-big .old {
+      font-size: 1.3rem;
+      font-weight: 400;
       color: var(--muted);
+      text-decoration: line-through;
+      margin-left: 14px;
+    }
+    .deal-wrap .stock {
+      font-size: 0.9rem;
+      color: var(--muted);
+      margin: 6px 0 16px;
+    }
+    .deal-wrap .stock strong {
+      color: var(--accent);
+    }
+    .timer-grid {
+      display: flex;
+      gap: 14px;
+      margin: 14px 0 22px;
+    }
+    .timer-box {
+      background: var(--primary);
+      color: white;
+      padding: 12px 16px;
+      border-radius: var(--radius-sm);
+      min-width: 68px;
+      text-align: center;
+    }
+    .timer-box .num {
+      font-size: 1.8rem;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+    .timer-box .label {
+      font-size: 0.6rem;
+      opacity: 0.7;
       text-transform: uppercase;
-      letter-spacing: 1px;
-      font-weight: 600;
-      margin-top: 4px;
+      letter-spacing: 0.6px;
     }
 
-    /* ===== TESTIMONIALS (Fan Quotes) ===== */
     .testimonials-scroll {
       display: flex;
       gap: 24px;
@@ -886,7 +646,7 @@
       transform: translateY(-4px);
     }
     .testimonial-card .stars {
-      color: var(--gold);
+      color: #f5b342;
       font-size: 1rem;
       letter-spacing: 3px;
     }
@@ -908,7 +668,7 @@
       border-radius: 50%;
       object-fit: cover;
       background: var(--light);
-      border: 2px solid var(--gold-soft);
+      border: 2px solid var(--accent-soft);
     }
     .testimonial-card .author .name {
       font-weight: 600;
@@ -918,9 +678,8 @@
       color: var(--muted);
     }
 
-    /* ===== NEWSLETTER ===== */
     .newsletter {
-      background: linear-gradient(145deg, #3a1c14, #7a2a1f);
+      background: linear-gradient(135deg, #0b0e14 0%, #16213e 100%);
       border-radius: var(--radius);
       padding: 48px 52px;
       color: white;
@@ -931,9 +690,9 @@
       gap: 30px;
     }
     .newsletter h3 {
-      font-family: 'Playfair Display', serif;
       font-size: 1.8rem;
       font-weight: 700;
+      font-family: 'Space Grotesk', sans-serif;
     }
     .newsletter p {
       opacity: 0.75;
@@ -961,19 +720,18 @@
       color: rgba(255, 255, 255, 0.45);
     }
     .newsletter input:focus {
-      outline-color: var(--gold);
+      outline-color: var(--accent);
       background: rgba(255, 255, 255, 0.14);
     }
     .newsletter .btn {
-      background: var(--gold);
-      color: #3a1c14;
-      border-color: var(--gold);
+      background: var(--accent);
+      color: white;
+      border-color: var(--accent);
       padding: 16px 36px;
     }
     .newsletter .btn:hover {
-      background: #b8890f;
-      border-color: #b8890f;
-      color: white;
+      background: var(--accent-dark);
+      border-color: var(--accent-dark);
     }
     #newsletterMsg {
       width: 100%;
@@ -981,11 +739,10 @@
       font-size: 0.9rem;
     }
 
-    /* ===== FOOTER ===== */
     footer {
       margin-top: 20px;
       padding: 48px 0 28px;
-      border-top: 1px solid #eae8e4;
+      border-top: 1px solid #e2e6f0;
     }
     .footer-grid {
       display: grid;
@@ -1019,7 +776,7 @@
       background: var(--accent);
       color: white;
       transform: translateY(-3px);
-      box-shadow: 0 8px 20px rgba(192, 57, 43, 0.2);
+      box-shadow: 0 8px 20px rgba(45, 110, 255, 0.2);
     }
     .footer-grid .col h5 {
       font-weight: 700;
@@ -1044,69 +801,66 @@
       text-align: center;
       color: var(--muted);
       font-size: 0.85rem;
-      border-top: 1px solid #eae8e4;
+      border-top: 1px solid #e2e6f0;
       padding-top: 24px;
     }
 
-    /* ===== RESPONSIVE ===== */
     @media (max-width: 992px) {
       .nav-links { display: none; }
       .mobile-toggle { display: grid; place-items: center; }
       .footer-grid { grid-template-columns: 1fr 1fr; }
-      .spotlight-wrap .spotlight-content { padding: 30px; }
-      .era-wrap .era-content { padding: 30px; }
+      .deal-wrap .deal-content { padding: 30px; }
       .hero { padding: 48px 30px; }
     }
     @media (max-width: 700px) {
       .hero { margin: 12px 12px 0; padding: 36px 20px; }
       .search-wrap { min-width: 120px; }
-      .heroes-grid { grid-template-columns: repeat(2, 1fr); gap: 14px; }
+      .products-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; }
+      .categories-grid { grid-template-columns: repeat(3, 1fr); gap: 14px; }
       .footer-grid { grid-template-columns: 1fr; }
       .newsletter { padding: 32px 24px; flex-direction: column; text-align: center; }
-      .newsletter form { min-width: 100%; justify-content: center; }
+      .newsletter form { min-width: 100%; }
       .header-inner { flex-wrap: nowrap; }
       .brand { font-size: 1.2rem; }
-      .spotlight-wrap .spotlight-content { padding: 22px; }
-      .era-wrap .era-content { padding: 22px; }
-      .modal-header { flex-direction: column; text-align: center; }
-      .modal-meta-row { justify-content: center; }
+      .deal-wrap .deal-content { padding: 22px; }
+      .timer-box { min-width: 54px; padding: 8px 10px; }
+      .timer-box .num { font-size: 1.4rem; }
     }
     @media (max-width: 480px) {
-      .heroes-grid { grid-template-columns: 1fr; }
+      .products-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
+      .categories-grid { grid-template-columns: 1fr 1fr; }
       .hero h1 { font-size: 2rem; }
-      .spotlight-wrap h3 { font-size: 1.6rem; }
+      .deal-wrap .price-big { font-size: 1.8rem; }
       .testimonial-card { flex: 0 0 270px; padding: 20px; }
-      .modal-body { padding: 20px; }
-      .movie-grid { grid-template-columns: 1fr; }
     }
   </style>
 </head>
 <body>
 
-  <!-- ===== HEADER ===== -->
   <header class="header">
     <div class="container header-inner">
       <div style="display:flex;align-items:center;gap:6px;">
         <button class="mobile-toggle" id="mobileToggle" aria-label="menu"><i class="fas fa-bars"></i></button>
-        <a class="brand" href="#"><i class="fas fa-film"></i> Tolly<span class="accent">Wiki</span></a>
+        <a class="brand" href="#"><i class="fas fa-bolt"></i> Volt<span class="accent">Haus</span></a>
       </div>
       <ul class="nav-links">
         <li><a href="#" class="active"><i class="fas fa-home"></i> Home</a></li>
-        <li><a href="#heroes"><i class="fas fa-star"></i> Heroes</a></li>
-        <li><a href="#spotlight"><i class="fas fa-fire"></i> Spotlight</a></li>
-        <li><a href="#era"><i class="fas fa-history"></i> Era</a></li>
-        <li><a href="#fans"><i class="fas fa-comments"></i> Fans</a></li>
+        <li><a href="#categories"><i class="fas fa-th-large"></i> Categories</a></li>
+        <li><a href="#products"><i class="fas fa-fire"></i> Trending</a></li>
+        <li><a href="#deals"><i class="fas fa-tag"></i> Deals</a></li>
+        <li><a href="#testimonials"><i class="fas fa-star"></i> Reviews</a></li>
       </ul>
       <div style="display:flex;align-items:center;gap:12px;">
         <div class="search-wrap">
-          <input type="search" id="searchInput" placeholder="Search heroes or films..." aria-label="Search" />
+          <input type="search" id="searchInput" placeholder="Search gadgets..." aria-label="Search" />
           <button id="searchBtn"><i class="fas fa-search"></i></button>
         </div>
         <div class="header-actions">
-          <button class="icon-btn" aria-label="profile"><i class="far fa-user"></i></button>
-          <div class="fav-wrap">
-            <button class="icon-btn" id="favBtn" aria-label="favorites"><i class="far fa-heart"></i></button>
-            <span class="fav-count" id="favCount">0</span>
+          <button class="icon-btn" aria-label="account"><i class="far fa-user"></i></button>
+          <button class="icon-btn" aria-label="wishlist"><i class="far fa-heart"></i></button>
+          <div class="cart-wrap">
+            <button class="icon-btn" id="cartBtn" aria-label="cart"><i class="fas fa-shopping-bag"></i></button>
+            <span class="cart-count" id="cartCount">0</span>
           </div>
         </div>
       </div>
@@ -1115,85 +869,84 @@
       <div class="container">
         <ul>
           <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
-          <li><a href="#heroes"><i class="fas fa-star"></i> Heroes</a></li>
-          <li><a href="#spotlight"><i class="fas fa-fire"></i> Spotlight</a></li>
-          <li><a href="#era"><i class="fas fa-history"></i> Era</a></li>
-          <li><a href="#fans"><i class="fas fa-comments"></i> Fans</a></li>
-          <li><a href="#"><i class="far fa-user"></i> Profile</a></li>
-          <li><a href="#"><i class="far fa-heart"></i> Favorites</a></li>
+          <li><a href="#categories"><i class="fas fa-th-large"></i> Categories</a></li>
+          <li><a href="#products"><i class="fas fa-fire"></i> Trending</a></li>
+          <li><a href="#deals"><i class="fas fa-tag"></i> Deals</a></li>
+          <li><a href="#testimonials"><i class="fas fa-star"></i> Reviews</a></li>
+          <li><a href="#"><i class="far fa-user"></i> Account</a></li>
+          <li><a href="#"><i class="far fa-heart"></i> Wishlist</a></li>
         </ul>
       </div>
     </div>
   </header>
 
   <main>
-    <!-- ===== HERO ===== -->
     <section class="hero">
       <div class="container">
-        <div class="badge"><i class="fas fa-star"></i> The Telugu Film Universe</div>
-        <h1>Stars who rule<br />the silver screen</h1>
-        <p>Complete filmography, upcoming projects & career milestones of Tollywood's biggest heroes.</p>
+        <div class="badge"><i class="fas fa-microchip"></i> Next-gen tech, delivered</div>
+        <h1>Premium electronics,<br />unbeatable prices</h1>
+        <p>Discover cutting-edge gadgets, audio gear & smart home essentials.</p>
         <div class="actions">
-          <button class="btn btn-primary" id="exploreHeroes"><i class="fas fa-arrow-right"></i> Explore heroes</button>
-          <button class="btn btn-ghost" id="exploreSpotlight"><i class="fas fa-fire"></i> Today's spotlight</button>
+          <button class="btn btn-primary" id="shopNow"><i class="fas fa-arrow-right"></i> Shop now</button>
+          <button class="btn btn-ghost" id="exploreDeals"><i class="fas fa-clock"></i> Explore deals</button>
         </div>
       </div>
     </section>
 
-    <!-- ===== HEROES GRID ===== -->
-    <section class="section" id="heroes">
+    <section class="section" id="categories">
       <div class="container">
         <div class="section-header">
-          <div><h2>Telugu cinema heroes</h2><div class="sub">Legends, superstars & rising icons</div></div>
-          <a href="#" class="view-all">All heroes <i class="fas fa-arrow-right"></i></a>
+          <div><h2>Browse categories</h2><div class="sub">Top picks for every setup</div></div>
+          <a href="#" class="view-all">All <i class="fas fa-arrow-right"></i></a>
         </div>
-        <div class="heroes-grid" id="heroesGrid"></div>
+        <div class="categories-grid" id="categoriesGrid"></div>
       </div>
     </section>
 
-    <!-- ===== SPOTLIGHT ===== -->
-    <section class="section" id="spotlight">
+    <section class="section" id="products">
       <div class="container">
         <div class="section-header">
-          <div><h2>🔥 Spotlight hero</h2><div class="sub">Trending across the nation right now</div></div>
+          <div><h2>Trending gadgets</h2><div class="sub">What everyone's talking about</div></div>
+          <a href="#" class="view-all">View all <i class="fas fa-arrow-right"></i></a>
         </div>
-        <div class="spotlight-wrap" id="spotlightWrap"></div>
+        <div class="products-grid" id="productsGrid"></div>
       </div>
     </section>
 
-    <!-- ===== ERA / STATS ===== -->
-    <section class="section" id="era">
+    <section class="section" id="deals">
       <div class="container">
-        <div class="section-header"><div><h2>🏆 Tollywood by the numbers</h2><div class="sub">The scale of Telugu cinema today</div></div></div>
-        <div class="era-wrap">
-          <div class="era-img"><img src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=800&q=80" alt="Cinema" loading="lazy" /></div>
-          <div class="era-content">
-            <span class="tag"><i class="fas fa-bolt"></i> box office power</span>
-            <h3>Pan-India Phenomenon</h3>
-            <p class="desc">Telugu cinema has become a global force, with blockbusters like RRR, Baahubali, Pushpa and Kalki rewriting box office history across languages.</p>
-            <div class="era-stats">
-              <div class="stat"><div class="num">₹5000Cr+</div><div class="label">Industry Value</div></div>
-              <div class="stat"><div class="num">200+</div><div class="label">Films / Year</div></div>
-              <div class="stat"><div class="num">8</div><div class="label">Star Heroes</div></div>
+        <div class="section-header"><div><h2>⚡ Flash deal</h2><div class="sub">Limited stock — grab it now</div></div></div>
+        <div class="deal-wrap">
+          <div class="deal-img"><img src="https://images.unsplash.com/photo-1593642632823-8f785ba67e45?auto=format&fit=crop&w=800&q=80" alt="Pro Noise-Cancelling Headphones" loading="lazy" /></div>
+          <div class="deal-content">
+            <span class="tag"><i class="fas fa-bolt"></i> limited offer</span>
+            <h3>Pro ANC Headphones</h3>
+            <p class="desc">Studio-grade sound, 40h battery, adaptive noise cancellation.</p>
+            <div><span class="price-big">$199 <span class="old">$299</span></span></div>
+            <p class="stock">Only <strong>9</strong> units left — hurry!</p>
+            <div class="timer-grid" id="dealTimer">
+              <div class="timer-box"><div class="num" id="dealDays">0</div><div class="label">Days</div></div>
+              <div class="timer-box"><div class="num" id="dealHours">00</div><div class="label">Hrs</div></div>
+              <div class="timer-box"><div class="num" id="dealMinutes">00</div><div class="label">Min</div></div>
+              <div class="timer-box"><div class="num" id="dealSeconds">00</div><div class="label">Sec</div></div>
             </div>
+            <button class="btn btn-primary" id="buyDeal"><i class="fas fa-cart-plus"></i> Add to cart</button>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ===== FAN QUOTES ===== -->
-    <section class="section" id="fans">
+    <section class="section" id="testimonials">
       <div class="container">
-        <div class="section-header"><div><h2>What fans are saying</h2><div class="sub">Real voices from the Telugu film community</div></div></div>
-        <div class="testimonials-scroll" id="fansList"></div>
+        <div class="section-header"><div><h2>What our customers say</h2><div class="sub">Real reviews from tech enthusiasts</div></div></div>
+        <div class="testimonials-scroll" id="testimonialsList"></div>
       </div>
     </section>
 
-    <!-- ===== NEWSLETTER ===== -->
     <section class="section">
       <div class="container">
         <div class="newsletter">
-          <div><h3>Stay in the loop</h3><p>Get updates on new releases, box office & star news</p></div>
+          <div><h3>Stay charged</h3><p>Exclusive drops, tech news & early access</p></div>
           <form id="newsletterForm" onsubmit="return false;">
             <input type="email" id="newsletterEmail" placeholder="Your email" aria-label="Email" required />
             <button class="btn" id="subscribeBtn"><i class="fas fa-paper-plane"></i> Subscribe</button>
@@ -1204,13 +957,12 @@
     </section>
   </main>
 
-  <!-- ===== FOOTER ===== -->
   <footer>
     <div class="container">
       <div class="footer-grid">
         <div class="brand-col">
-          <div class="brand"><i class="fas fa-film"></i> Tolly<span class="accent">Wiki</span></div>
-          <p>The definitive fan-made encyclopedia of Telugu cinema heroes, their films and upcoming projects.</p>
+          <div class="brand"><i class="fas fa-bolt"></i> Volt<span class="accent">Haus</span></div>
+          <p>Premium electronics, curated for performance. Trusted by creators since 2025.</p>
           <div class="socials">
             <a href="#" aria-label="fb"><i class="fab fa-facebook-f"></i></a>
             <a href="#" aria-label="tw"><i class="fab fa-twitter"></i></a>
@@ -1218,287 +970,85 @@
             <a href="#" aria-label="yt"><i class="fab fa-youtube"></i></a>
           </div>
         </div>
-        <div class="col"><h5>Explore</h5><ul><li><a href="#heroes">Heroes</a></li><li><a href="#spotlight">Spotlight</a></li><li><a href="#era">Industry Stats</a></li><li><a href="#fans">Fan Zone</a></li></ul></div>
-        <div class="col"><h5>Cinema</h5><ul><li><a href="#">Upcoming</a></li><li><a href="#">Box Office</a></li><li><a href="#">Reviews</a></li><li><a href="#">Trailers</a></li></ul></div>
-        <div class="col"><h5>About</h5><ul><li><a href="#">Our Team</a></li><li><a href="#">Contribute</a></li><li><a href="#">Privacy</a></li><li><a href="#">Contact</a></li></ul></div>
+        <div class="col"><h5>Company</h5><ul><li><a href="#">About</a></li><li><a href="#">Careers</a></li><li><a href="#">Press</a></li><li><a href="#">Blog</a></li></ul></div>
+        <div class="col"><h5>Support</h5><ul><li><a href="#">Help Center</a></li><li><a href="#">Shipping</a></li><li><a href="#">Returns</a></li><li><a href="#">Contact</a></li></ul></div>
+        <div class="col"><h5>Legal</h5><ul><li><a href="#">Privacy</a></li><li><a href="#">Terms</a></li><li><a href="#">Cookies</a></li></ul></div>
       </div>
-      <div class="footer-bottom">&copy; <span id="year"></span> TollyWiki · Fan-made · All rights reserved.</div>
+      <div class="footer-bottom">&copy; <span id="year"></span> VoltHaus. All rights reserved.</div>
     </div>
   </footer>
 
-  <!-- ===== MODAL ===== -->
-  <div class="modal-overlay" id="modalOverlay">
-    <div class="modal" id="modal">
-      <button class="modal-close" id="modalClose" aria-label="close">✕</button>
-      <div class="modal-header">
-        <div class="modal-avatar" id="modalAvatar"></div>
-        <div class="modal-header-info">
-          <h2 id="modalName"></h2>
-          <div class="subtitle" id="modalTagline"></div>
-          <div class="modal-meta-row" id="modalMeta"></div>
-        </div>
-      </div>
-      <div class="modal-body">
-        <div class="modal-section">
-          <h3><i class="fas fa-trophy"></i> Popular Films</h3>
-          <div class="movie-grid" id="modalHits"></div>
-        </div>
-        <div class="modal-section">
-          <h3><i class="fas fa-rocket"></i> Upcoming Projects</h3>
-          <div class="movie-grid upcoming-grid" id="modalUpcoming"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-
   <script>
-    /* ============================================================
-       DATA — Telugu Film Heroes with photo URLs
-       (Photos use public free-license sources; initials show as fallback)
-    ============================================================ */
-    const HEROES = [
-      {
-        id: 'prabhas',
-        name: 'Prabhas',
-        tagline: 'Rebel Star',
-        initial: 'P',
-        badge: 'Pan-India',
-        badgeClass: 'hot',
-        photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Prabhas_at_Saaho_Pre_release_event_%28cropped%29.jpg/400px-Prabhas_at_Saaho_Pre_release_event_%28cropped%29.jpg',
-        knownFor: 'Baahubali, Saaho, Salaar, Kalki 2898 AD',
-        meta: { born: '23 Oct 1979', debut: 'Eeswar (2002)', netWorth: '₹250 Cr+', films: '25+' },
-        hits: [
-          { name: 'Baahubali: The Beginning', year: '2015' },
-          { name: 'Baahubali: The Conclusion', year: '2017' },
-          { name: 'Saaho', year: '2019' },
-          { name: 'Mirchi', year: '2013' },
-          { name: 'Salaar: Part 1', year: '2023' },
-          { name: 'Kalki 2898 AD', year: '2024' },
-          { name: 'The Raja Saab', year: '2026' },
-          { name: 'Billa', year: '2009' },
-          { name: 'Darling', year: '2010' },
-          { name: 'Mr. Perfect', year: '2011' }
-        ],
-        upcoming: [
-          { name: 'Spirit', year: '2027', status: 'filming' },
-          { name: 'Fauji', year: '2026', status: 'post' },
-          { name: 'Kalki 2898 AD Part 2', year: 'TBA', status: 'filming' },
-          { name: 'Salaar 2', year: 'TBA', status: 'announced' }
-        ]
-      },
-      {
-        id: 'mahesh',
-        name: 'Mahesh Babu',
-        tagline: 'Prince · Superstar',
-        initial: 'M',
-        badge: 'Superstar',
-        badgeClass: '',
-        photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Mahesh_Babu_in_Spyder_%28cropped%29.jpg/400px-Mahesh_Babu_in_Spyder_%28cropped%29.jpg',
-        knownFor: 'Pokiri, Businessman, Srimanthudu, Varanasi',
-        meta: { born: '9 Aug 1975', debut: 'Raja Kumarudu (1999)', netWorth: '₹300 Cr+', films: '30+' },
-        hits: [
-          { name: 'Pokiri', year: '2006' },
-          { name: 'Athadu', year: '2005' },
-          { name: 'Dookudu', year: '2011' },
-          { name: 'Businessman', year: '2012' },
-          { name: 'Srimanthudu', year: '2015' },
-          { name: 'Bharat Ane Nenu', year: '2018' },
-          { name: 'Maharshi', year: '2019' },
-          { name: 'Sarileru Neekevvaru', year: '2020' },
-          { name: '1: Nenokkadine', year: '2014' },
-          { name: 'Okkadu', year: '2003' }
-        ],
-        upcoming: [
-          { name: 'Varanasi (SSMB29)', year: '2027', status: 'filming' }
-        ]
-      },
-      {
-        id: 'allu',
-        name: 'Allu Arjun',
-        tagline: 'Icon Star · Stylish Star',
-        initial: 'A',
-        badge: 'National Award',
-        badgeClass: 'hot',
-        photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Allu_Arjun_at_Pushpa_2_meet.jpg/400px-Allu_Arjun_at_Pushpa_2_meet.jpg',
-        knownFor: 'Pushpa, Arya, Ala Vaikunthapurramuloo, Race Gurram',
-        meta: { born: '8 Apr 1982', debut: 'Gangotri (2003)', netWorth: '₹350 Cr+', films: '25+' },
-        hits: [
-          { name: 'Arya', year: '2004' },
-          { name: 'Race Gurram', year: '2014' },
-          { name: 'S/O Satyamurthy', year: '2015' },
-          { name: 'Sarrainodu', year: '2016' },
-          { name: 'Ala Vaikunthapurramuloo', year: '2020' },
-          { name: 'Pushpa: The Rise', year: '2021' },
-          { name: 'Pushpa 2: The Rule', year: '2024' },
-          { name: 'DJ: Duvvada Jagannadham', year: '2017' },
-          { name: 'Vedam', year: '2010' },
-          { name: 'Julayi', year: '2012' }
-        ],
-        upcoming: [
-          { name: 'Raaka (AA22 x A6)', year: 'TBA', status: 'filming' },
-          { name: 'Pushpa 3: The Rampage', year: 'TBA', status: 'announced' },
-          { name: 'AA23 with Lokesh Kanagaraj', year: 'TBA', status: 'announced' }
-        ]
-      },
-      {
-        id: 'nani',
-        name: 'Nani',
-        tagline: 'Natural Star',
-        initial: 'N',
-        badge: 'Versatile',
-        badgeClass: '',
-        photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Nani_at_an_interview_for_film_companion.png/400px-Nani_at_an_interview_for_film_companion.png',
-        knownFor: 'Eega, Jersey, Dasara, HIT series, The Paradise',
-        meta: { born: '24 Feb 1984', debut: 'Ashta Chamma (2008)', netWorth: '₹120 Cr+', films: '30+' },
-        hits: [
-          { name: 'Eega', year: '2012' },
-          { name: 'Bhale Bhale Magadivoy', year: '2015' },
-          { name: 'Jersey', year: '2019' },
-          { name: 'Dasara', year: '2023' },
-          { name: 'Hi Nanna', year: '2023' },
-          { name: 'HIT: The Third Case', year: '2025' },
-          { name: 'Shyam Singha Roy', year: '2021' },
-          { name: 'Gentleman', year: '2016' },
-          { name: 'Krishna Gaadi Veera Prema Gaadha', year: '2016' },
-          { name: 'Ante Sundaraniki', year: '2022' }
-        ],
-        upcoming: [
-          { name: 'The Paradise', year: '2026', status: 'post' },
-          { name: 'Bloody Romeo', year: 'TBA', status: 'announced' }
-        ]
-      },
-      {
-        id: 'ntr',
-        name: 'Jr NTR',
-        tagline: 'Man of Masses · Young Tiger',
-        initial: 'N',
-        badge: 'Golden Globe',
-        badgeClass: 'hot',
-        photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Jr._NTR_at_Interview_for_Aravinda_Sametha.png/400px-Jr._NTR_at_Interview_for_Aravinda_Sametha.png',
-        knownFor: 'RRR, Devara, Temper, Jai Lava Kusa, War 2',
-        meta: { born: '20 May 1983', debut: 'Ninnu Choodalani (2001)', netWorth: '₹280 Cr+', films: '30+' },
-        hits: [
-          { name: 'RRR', year: '2022' },
-          { name: 'Devara: Part 1', year: '2024' },
-          { name: 'Temper', year: '2015' },
-          { name: 'Jai Lava Kusa', year: '2017' },
-          { name: 'Aravinda Sametha', year: '2018' },
-          { name: 'Nannaku Prematho', year: '2016' },
-          { name: 'Janatha Garage', year: '2016' },
-          { name: 'War 2', year: '2025' },
-          { name: 'Yamadonga', year: '2007' },
-          { name: 'Simhadri', year: '2003' }
-        ],
-        upcoming: [
-          { name: 'Dragon (NTRNeel)', year: '2026', status: 'filming' },
-          { name: 'NTR x Trivikram (Mythology)', year: 'TBA', status: 'announced' }
-        ]
-      },
-      {
-        id: 'ramcharan',
-        name: 'Ram Charan',
-        tagline: 'Global Star · Mega Power Star',
-        initial: 'R',
-        badge: 'Global Star',
-        badgeClass: '',
-        photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Ram_Charan_2024_%28cropped%29.jpg/400px-Ram_Charan_2024_%28cropped%29.jpg',
-        knownFor: 'RRR, Rangasthalam, Magadheera, Peddi, Game Changer',
-        meta: { born: '27 Mar 1985', debut: 'Chirutha (2007)', netWorth: '₹300 Cr+', films: '20+' },
-        hits: [
-          { name: 'Magadheera', year: '2009' },
-          { name: 'Rangasthalam', year: '2018' },
-          { name: 'RRR', year: '2022' },
-          { name: 'Naayak', year: '2013' },
-          { name: 'Yevadu', year: '2014' },
-          { name: 'Dhruva', year: '2016' },
-          { name: 'Vinaya Vidheya Rama', year: '2019' },
-          { name: 'Game Changer', year: '2025' },
-          { name: 'Zanjeer', year: '2013' },
-          { name: 'Chirutha', year: '2007' }
-        ],
-        upcoming: [
-          { name: 'Peddi', year: '2026', status: 'post' },
-          { name: 'RC17 with Sukumar', year: 'TBA', status: 'announced' },
-          { name: 'Naga Vamsi Untitled', year: 'TBA', status: 'announced' }
-        ]
-      },
-      {
-        id: 'pawan',
-        name: 'Pawan Kalyan',
-        tagline: 'Power Star · Deputy CM',
-        initial: 'P',
-        badge: 'Power Star',
-        badgeClass: '',
-        photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Pawan_Kalyan_in_2024.jpg/400px-Pawan_Kalyan_in_2024.jpg',
-        knownFor: 'Gabbar Singh, Attarintiki Daredi, Vakeel Saab, OG',
-        meta: { born: '2 Sep 1971', debut: 'Akkada Ammayi Ikkada Abbayi (1996)', netWorth: '₹200 Cr+', films: '25+' },
-        hits: [
-          { name: 'Gabbar Singh', year: '2012' },
-          { name: 'Attarintiki Daredi', year: '2013' },
-          { name: 'Vakeel Saab', year: '2021' },
-          { name: 'Jalsa', year: '2008' },
-          { name: 'Kushi', year: '2001' },
-          { name: 'Tholi Prema', year: '1998' },
-          { name: 'Badri', year: '2000' },
-          { name: 'They Call Him OG', year: '2025' },
-          { name: 'Ustaad Bhagat Singh', year: '2026' },
-          { name: 'Hari Hara Veera Mallu', year: '2025' }
-        ],
-        upcoming: [
-          { name: 'OG 2', year: 'TBA', status: 'announced' }
-        ]
-      },
-      {
-        id: 'chiranjeevi',
-        name: 'Chiranjeevi',
-        tagline: 'Megastar · Padma Bhushan',
-        initial: 'C',
-        badge: 'Megastar',
-        badgeClass: 'hot',
-        photo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Chiranjeevi_at_Amitabh_Bachchan%27s_70th_birthday_celebration_%28cropped%29.jpg/400px-Chiranjeevi_at_Amitabh_Bachchan%27s_70th_birthday_celebration_%28cropped%29.jpg',
-        knownFor: 'Indra, Tagore, Sye Raa, Khaidi No. 150, Viswambhara',
-        meta: { born: '22 Aug 1955', debut: 'Punadhirallu (1978)', netWorth: '₹400 Cr+', films: '150+' },
-        hits: [
-          { name: 'Indra', year: '2002' },
-          { name: 'Tagore', year: '2003' },
-          { name: 'Sye Raa Narasimha Reddy', year: '2019' },
-          { name: 'Khaidi No. 150', year: '2017' },
-          { name: 'Gang Leader', year: '1991' },
-          { name: 'Gharana Mogudu', year: '1992' },
-          { name: 'Muta Mesthri', year: '1993' },
-          { name: 'Aapadbandhavudu', year: '1992' },
-          { name: 'Mana Shankara Vara Prasad Garu', year: '2026' },
-          { name: 'Bhola Shankar', year: '2023' }
-        ],
-        upcoming: [
-          { name: 'Viswambhara', year: '2026', status: 'post' },
-          { name: 'Mega158 / Kadiri', year: 'TBA', status: 'announced' },
-          { name: 'Chiranjeevi x Srikanth Odela', year: 'TBA', status: 'announced' }
-        ]
-      }
+    // ---------- ELECTRONICS DATA ----------
+    const CATEGORIES = [
+      { id: 'audio', name: 'Audio', icon: 'fa-headphones', count: 24 },
+      { id: 'smartphones', name: 'Smartphones', icon: 'fa-mobile-alt', count: 18 },
+      { id: 'laptops', name: 'Laptops', icon: 'fa-laptop', count: 15 },
+      { id: 'gaming', name: 'Gaming', icon: 'fa-gamepad', count: 22 },
+      { id: 'smart-home', name: 'Smart Home', icon: 'fa-home', count: 19 },
+      { id: 'accessories', name: 'Accessories', icon: 'fa-plug', count: 30 }
     ];
 
-    const FAN_QUOTES = [
-      { name: 'Ravi Teja', role: 'Fan since 2005', avatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=80&q=80', text: 'Prabhas in Baahubali was a once-in-a-generation performance. Pure goosebumps!', stars: 5 },
-      { name: 'Sneha Reddy', role: 'Tollywood Blogger', avatar: 'https://images.unsplash.com/photo-1494790108378-be9c29b29330?auto=format&fit=crop&w=80&q=80', text: 'Allu Arjun in Pushpa redefined what a pan-India star looks like. Iconic!', stars: 5 },
-      { name: 'Kiran Kumar', role: 'Cinema Critic', avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=80&q=80', text: 'Nani is the most natural actor of this generation. His script choices are impeccable.', stars: 5 },
-      { name: 'Divya Sharma', role: 'Film Student', avatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=80&q=80', text: 'Jr NTR and Ram Charan together in RRR — that\'s cinema history right there.', stars: 5 },
-      { name: 'Arjun Rao', role: 'Lifelong Fan', avatar: 'https://images.unsplash.com/photo-1546456073-6712f79251bb?auto=format&fit=crop&w=80&q=80', text: 'Chiranjeevi garu is the reason Telugu cinema has the reach it has today. Legend!', stars: 5 }
+    const PRODUCTS = [
+      // Audio
+      { id: 1, title: 'SonicPods Pro', price: 129.99, unit: '', rating: 5, reviews: 342, badge: 'New', img: 'https://images.unsplash.com/photo-1572569511254-d8f925fe2cbb?auto=format&fit=crop&w=600&q=80', category: 'Audio' },
+      { id: 2, title: 'BassBoom Speaker', price: 89.99, unit: '', rating: 5, reviews: 218, badge: '', img: 'https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?auto=format&fit=crop&w=600&q=80', category: 'Audio' },
+      { id: 3, title: 'StudioMax Headphones', price: 249.99, unit: '', rating: 5, reviews: 156, badge: 'Sale', img: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=600&q=80', category: 'Audio' },
+      { id: 4, title: 'EchoBuds Lite', price: 59.99, unit: '', rating: 4, reviews: 89, badge: '', img: 'https://images.unsplash.com/photo-1590658268037-6bf12165a8df?auto=format&fit=crop&w=600&q=80', category: 'Audio' },
+      // Smartphones
+      { id: 5, title: 'Galaxy Edge 5G', price: 799.99, unit: '', rating: 5, reviews: 478, badge: 'Hot', img: 'https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?auto=format&fit=crop&w=600&q=80', category: 'Smartphones' },
+      { id: 6, title: 'Pixel Nova', price: 699.99, unit: '', rating: 5, reviews: 312, badge: '', img: 'https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&w=600&q=80', category: 'Smartphones' },
+      { id: 7, title: 'iPhone 16 Pro', price: 1099.99, unit: '', rating: 5, reviews: 890, badge: 'New', img: 'https://images.unsplash.com/photo-1695048133142-1a20484d2569?auto=format&fit=crop&w=600&q=80', category: 'Smartphones' },
+      { id: 8, title: 'OnePlus 13', price: 649.99, unit: '', rating: 5, reviews: 234, badge: '', img: 'https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&w=600&q=80', category: 'Smartphones' },
+      // Laptops
+      { id: 9, title: 'MacBook Air M3', price: 1099.99, unit: '', rating: 5, reviews: 567, badge: 'Hot', img: 'https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=600&q=80', category: 'Laptops' },
+      { id: 10, title: 'Dell XPS 15', price: 1399.99, unit: '', rating: 5, reviews: 234, badge: '', img: 'https://images.unsplash.com/photo-1593642702821-c8da6771f9a6?auto=format&fit=crop&w=600&q=80', category: 'Laptops' },
+      { id: 11, title: 'ASUS ROG Zephyrus', price: 1599.99, unit: '', rating: 5, reviews: 189, badge: 'Sale', img: 'https://images.unsplash.com/photo-1603302576837-37561b2e2302?auto=format&fit=crop&w=600&q=80', category: 'Laptops' },
+      { id: 12, title: 'Lenovo Yoga Slim', price: 899.99, unit: '', rating: 4, reviews: 145, badge: '', img: 'https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?auto=format&fit=crop&w=600&q=80', category: 'Laptops' },
+      // Gaming
+      { id: 13, title: 'PS5 Pro Console', price: 699.99, unit: '', rating: 5, reviews: 987, badge: 'Hot', img: 'https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?auto=format&fit=crop&w=600&q=80', category: 'Gaming' },
+      { id: 14, title: 'Xbox Series X', price: 499.99, unit: '', rating: 5, reviews: 654, badge: '', img: 'https://images.unsplash.com/photo-1621259182978-fbf93132d53d?auto=format&fit=crop&w=600&q=80', category: 'Gaming' },
+      { id: 15, title: 'Razer BlackWidow', price: 149.99, unit: '', rating: 5, reviews: 345, badge: '', img: 'https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=600&q=80', category: 'Gaming' },
+      { id: 16, title: 'Logitech G Pro X', price: 129.99, unit: '', rating: 4, reviews: 234, badge: '', img: 'https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?auto=format&fit=crop&w=600&q=80', category: 'Gaming' },
+      // Smart Home
+      { id: 17, title: 'Echo Dot (5th Gen)', price: 49.99, unit: '', rating: 5, reviews: 1234, badge: '', img: 'https://images.unsplash.com/photo-1543512214-318c7553f230?auto=format&fit=crop&w=600&q=80', category: 'Smart Home' },
+      { id: 18, title: 'Nest Thermostat', price: 199.99, unit: '', rating: 5, reviews: 456, badge: '', img: 'https://images.unsplash.com/photo-1567925086983-3c1f6b1a8a8b?auto=format&fit=crop&w=600&q=80', category: 'Smart Home' },
+      { id: 19, title: 'Ring Security Cam', price: 179.99, unit: '', rating: 5, reviews: 345, badge: 'Sale', img: 'https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&w=600&q=80', category: 'Smart Home' },
+      { id: 20, title: 'Philips Hue Starter', price: 149.99, unit: '', rating: 5, reviews: 567, badge: '', img: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=600&q=80', category: 'Smart Home' },
+      // Accessories
+      { id: 21, title: 'Anker PowerBank 20K', price: 59.99, unit: '', rating: 5, reviews: 678, badge: '', img: 'https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5?auto=format&fit=crop&w=600&q=80', category: 'Accessories' },
+      { id: 22, title: 'USB-C Hub 8-in-1', price: 79.99, unit: '', rating: 5, reviews: 234, badge: '', img: 'https://images.unsplash.com/photo-1625842268584-8f3296236761?auto=format&fit=crop&w=600&q=80', category: 'Accessories' },
+      { id: 23, title: 'Samsung T7 SSD 1TB', price: 129.99, unit: '', rating: 5, reviews: 456, badge: 'New', img: 'https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?auto=format&fit=crop&w=600&q=80', category: 'Accessories' },
+      { id: 24, title: 'Apple Watch Ultra', price: 799.99, unit: '', rating: 5, reviews: 789, badge: 'Hot', img: 'https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?auto=format&fit=crop&w=600&q=80', category: 'Accessories' },
+      { id: 25, title: 'DJI Mini 4 Pro', price: 759.99, unit: '', rating: 5, reviews: 345, badge: '', img: 'https://images.unsplash.com/photo-1473968512647-3e447244af8f?auto=format&fit=crop&w=600&q=80', category: 'Accessories' },
+      { id: 26, title: 'Kindle Paperwhite', price: 139.99, unit: '', rating: 5, reviews: 567, badge: '', img: 'https://images.unsplash.com/photo-1592434134753-a70baf7979d5?auto=format&fit=crop&w=600&q=80', category: 'Accessories' },
+      { id: 27, title: 'GoPro Hero 13', price: 399.99, unit: '', rating: 5, reviews: 234, badge: '', img: 'https://images.unsplash.com/photo-1502920917128-1aa500764cbd?auto=format&fit=crop&w=600&q=80', category: 'Accessories' },
+      { id: 28, title: 'Keychron K2 Keyboard', price: 89.99, unit: '', rating: 5, reviews: 345, badge: '', img: 'https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=600&q=80', category: 'Accessories' },
+      { id: 29, title: 'Logitech MX Master 3S', price: 99.99, unit: '', rating: 5, reviews: 678, badge: '', img: 'https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?auto=format&fit=crop&w=600&q=80', category: 'Accessories' },
+      { id: 30, title: 'AirTag 4 Pack', price: 99.99, unit: '', rating: 5, reviews: 456, badge: 'Sale', img: 'https://images.unsplash.com/photo-1580894732444-8ecded7900cd?auto=format&fit=crop&w=600&q=80', category: 'Accessories' },
+      { id: 31, title: 'Sonos One SL', price: 199.99, unit: '', rating: 5, reviews: 234, badge: '', img: 'https://images.unsplash.com/photo-1545454675-3531b543be5d?auto=format&fit=crop&w=600&q=80', category: 'Audio' },
+      { id: 32, title: 'Marshall Emberton', price: 149.99, unit: '', rating: 5, reviews: 189, badge: '', img: 'https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?auto=format&fit=crop&w=600&q=80', category: 'Audio' },
+      { id: 33, title: 'iPad Pro M4', price: 999.99, unit: '', rating: 5, reviews: 567, badge: 'New', img: 'https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?auto=format&fit=crop&w=600&q=80', category: 'Laptops' },
+      { id: 34, title: 'Steam Deck OLED', price: 549.99, unit: '', rating: 5, reviews: 789, badge: 'Hot', img: 'https://images.unsplash.com/photo-1640955014216-75201056c829?auto=format&fit=crop&w=600&q=80', category: 'Gaming' },
+      { id: 35, title: 'Meta Quest 3', price: 499.99, unit: '', rating: 5, reviews: 456, badge: '', img: 'https://images.unsplash.com/photo-1622979135225-d2ba269cf1ac?auto=format&fit=crop&w=600&q=80', category: 'Gaming' },
+      { id: 36, title: 'Hue Play Light Bars', price: 179.99, unit: '', rating: 5, reviews: 123, badge: '', img: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=600&q=80', category: 'Smart Home' }
     ];
 
-    /* ============================================================
-       STATE
-    ============================================================ */
-    let favCount = 0;
-    const favorites = new Set();
+    const TESTIMONIALS = [
+      { name: 'Alex Rivera', role: 'Content Creator', avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=80&q=80', text: 'The SonicPods Pro are a game changer. Sound quality is insane for the price!', stars: 5 },
+      { name: 'Maya Chen', role: 'Software Engineer', avatar: 'https://images.unsplash.com/photo-1494790108378-be9c29b29330?auto=format&fit=crop&w=80&q=80', text: 'VoltHaus is my go-to for tech. Fast shipping and everything is genuine.', stars: 5 },
+      { name: 'Jordan Blake', role: 'Streamer', avatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=80&q=80', text: 'My entire gaming setup is from here. Great prices and the deals are unreal.', stars: 5 },
+      { name: 'Riley Foster', role: 'Photographer', avatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=80&q=80', text: 'The DJI Mini 4 Pro arrived quickly and in perfect condition. Highly recommend.', stars: 5 },
+      { name: 'Samir Khan', role: 'Music Producer', avatar: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=80&q=80', text: 'StudioMax headphones have incredible clarity. Worth every penny.', stars: 5 }
+    ];
 
-    /* ============================================================
-       DOM REFS
-    ============================================================ */
-    const heroesGrid = document.getElementById('heroesGrid');
-    const spotlightWrap = document.getElementById('spotlightWrap');
-    const fansList = document.getElementById('fansList');
-    const favCountEl = document.getElementById('favCount');
+    // ---------- STATE ----------
+    let cartCount = 0;
+
+    // ---------- DOM REFS ----------
+    const categoriesGrid = document.getElementById('categoriesGrid');
+    const productsGrid = document.getElementById('productsGrid');
+    const cartCountEl = document.getElementById('cartCount');
     const searchInput = document.getElementById('searchInput');
     const searchBtn = document.getElementById('searchBtn');
     const mobileToggle = document.getElementById('mobileToggle');
@@ -1506,241 +1056,159 @@
     const newsletterForm = document.getElementById('newsletterForm');
     const newsletterEmail = document.getElementById('newsletterEmail');
     const newsletterMsg = document.getElementById('newsletterMsg');
+    const testimonialsList = document.getElementById('testimonialsList');
 
-    /* ============================================================
-       HELPERS
-    ============================================================ */
+    // ---------- HELPERS ----------
     function escapeHtml(text) {
       return String(text).replace(/[&<>"']/g, s => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' } [s]));
     }
 
-    function updateFavCount() {
-      favCountEl.textContent = favorites.size;
-      favCountEl.style.transform = 'scale(1.4)';
-      setTimeout(() => favCountEl.style.transform = 'scale(1)', 200);
+    function updateCartCount() {
+      cartCountEl.textContent = cartCount;
+      cartCountEl.style.transform = 'scale(1.4)';
+      setTimeout(() => cartCountEl.style.transform = 'scale(1)', 200);
     }
 
-    function toggleFavorite(heroId, btnEl) {
-      if (favorites.has(heroId)) {
-        favorites.delete(heroId);
-        btnEl.innerHTML = '<i class="far fa-heart"></i>';
-        btnEl.style.color = '';
-      } else {
-        favorites.add(heroId);
-        btnEl.innerHTML = '<i class="fas fa-heart"></i>';
-        btnEl.style.color = 'var(--accent)';
+    function addToCart(productId, btnEl) {
+      const p = PRODUCTS.find(x => x.id === productId);
+      if (!p) return;
+      cartCount++;
+      updateCartCount();
+      if (btnEl) {
+        const orig = btnEl.innerHTML;
+        btnEl.innerHTML = '<i class="fas fa-check"></i> Added';
+        btnEl.classList.add('added');
+        setTimeout(() => {
+          btnEl.innerHTML = orig;
+          btnEl.classList.remove('added');
+        }, 1400);
       }
-      updateFavCount();
+      const cartBtn = document.getElementById('cartBtn');
+      cartBtn.style.color = 'var(--accent)';
+      setTimeout(() => cartBtn.style.color = '', 400);
     }
 
-    /* ============================================================
-       RENDER HERO CARDS
-    ============================================================ */
-    function renderHeroes(list) {
-      heroesGrid.innerHTML = '';
+    function filterProducts(query) {
+      const q = String(query || '').trim().toLowerCase();
+      if (!q) { renderProducts(PRODUCTS); return; }
+      const filtered = PRODUCTS.filter(p =>
+        p.title.toLowerCase().includes(q) ||
+        p.category.toLowerCase().includes(q)
+      );
+      renderProducts(filtered);
+    }
+
+    // ---------- RENDER ----------
+    function renderCategories() {
+      categoriesGrid.innerHTML = '';
+      CATEGORIES.forEach(cat => {
+        const el = document.createElement('div');
+        el.className = 'cat-card';
+        el.innerHTML = `
+            <div class="icon"><i class="fas ${cat.icon}"></i></div>
+            <h4>${cat.name}</h4>
+            <div class="count">${cat.count} items</div>
+          `;
+        el.addEventListener('click', () => {
+          searchInput.value = cat.name;
+          filterProducts(cat.name);
+          document.getElementById('products').scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
+        categoriesGrid.appendChild(el);
+      });
+    }
+
+    function renderProducts(list) {
+      productsGrid.innerHTML = '';
       if (!list.length) {
-        heroesGrid.innerHTML = '<p style="grid-column:1/-1;text-align:center;padding:48px;color:var(--muted);font-size:1.1rem;">No heroes found matching your search.</p>';
+        productsGrid.innerHTML =
+          `<p style="grid-column:1/-1;text-align:center;padding:48px;color:var(--muted);font-size:1.1rem;">No products found.</p>`;
         return;
       }
-      list.forEach(h => {
+      list.forEach(p => {
         const el = document.createElement('article');
-        el.className = 'hero-card';
+        el.className = 'product-card';
+        let badgeClass = '';
+        if (p.badge === 'Sale') badgeClass = 'sale';
+        else if (p.badge === 'New') badgeClass = 'new';
+        const badgeHtml = p.badge ? `<span class="badge ${badgeClass}">${p.badge}</span>` : '';
+        const stars = '★'.repeat(Math.round(p.rating)) + '☆'.repeat(5 - Math.round(p.rating));
         el.innerHTML = `
-          <div class="img-wrap">
-            <span class="initials">${h.initial}</span>
-            <img src="${h.photo}" alt="${escapeHtml(h.name)}" loading="lazy" onerror="this.style.display='none'" />
-            ${h.badge ? `<span class="badge ${h.badgeClass || ''}">${h.badge}</span>` : ''}
-            <button class="fav" data-id="${h.id}" aria-label="favorite"><i class="far fa-heart"></i></button>
-          </div>
-          <div class="body">
-            <div class="role">${escapeHtml(h.tagline)}</div>
-            <h5>${escapeHtml(h.name)}</h5>
-            <div class="known-for">${escapeHtml(h.knownFor)}</div>
-            <div class="stats">
-              <span><strong>${h.hits.length}</strong> hits</span>
-              <span><strong>${h.upcoming.length}</strong> upcoming</span>
+            <div class="img-wrap">
+              <img src="${p.img}" alt="${escapeHtml(p.title)}" loading="lazy" />
+              ${badgeHtml}
+              <button class="wish" aria-label="wishlist"><i class="far fa-heart"></i></button>
             </div>
-          </div>
-          <div class="footer">
-            <button class="view" data-id="${h.id}"><i class="fas fa-eye"></i> View Profile</button>
-          </div>
-        `;
-        heroesGrid.appendChild(el);
+            <div class="body">
+              <div class="cat">${p.category}</div>
+              <h5>${escapeHtml(p.title)}</h5>
+              <div><span class="price">$${p.price.toFixed(2)}</span> <span class="unit">${p.unit}</span></div>
+              <div class="rating">${stars} <span>(${p.reviews})</span></div>
+            </div>
+            <div class="footer">
+              <button class="add" data-id="${p.id}"><i class="fas fa-cart-plus"></i> Add</button>
+            </div>
+          `;
+        productsGrid.appendChild(el);
       });
-
-      // Bind favorite buttons
-      heroesGrid.querySelectorAll('.fav').forEach(btn => {
+      productsGrid.querySelectorAll('.add').forEach(btn => {
         btn.addEventListener('click', function(e) {
           e.stopPropagation();
-          const id = this.dataset.id;
-          toggleFavorite(id, this);
-        });
-      });
-
-      // Bind view buttons & card clicks
-      heroesGrid.querySelectorAll('.hero-card').forEach(card => {
-        card.addEventListener('click', function(e) {
-          if (e.target.closest('.fav')) return;
-          const id = this.querySelector('.view').dataset.id;
-          openModal(id);
+          const id = Number(this.dataset.id);
+          addToCart(id, this);
         });
       });
     }
 
-    /* ============================================================
-       RENDER SPOTLIGHT (Prabhas)
-    ============================================================ */
-    function renderSpotlight() {
-      const h = HEROES[0]; // Prabhas as spotlight
-      spotlightWrap.innerHTML = `
-        <div class="spotlight-img">
-          <span class="initials">${h.initial}</span>
-          <img src="${h.photo}" alt="${escapeHtml(h.name)}" onerror="this.style.display='none'" />
-        </div>
-        <div class="spotlight-content">
-          <span class="tag"><i class="fas fa-fire"></i> trending now</span>
-          <h3>${escapeHtml(h.name)}</h3>
-          <p class="desc">${escapeHtml(h.knownFor)} — one of the biggest pan-India stars today, whose films redefine scale and spectacle.</p>
-          <div class="meta-grid">
-            <div class="item">Born<strong>${h.meta.born}</strong></div>
-            <div class="item">Debut<strong>${h.meta.debut}</strong></div>
-            <div class="item">Net Worth<strong>${h.meta.netWorth}</strong></div>
-            <div class="item">Films<strong>${h.meta.films}</strong></div>
-          </div>
-          <div class="film-strip">
-            ${h.hits.slice(0, 5).map(m => `<span>${escapeHtml(m.name)}</span>`).join('')}
-          </div>
-          <div class="actions">
-            <button class="btn btn-primary" onclick="document.querySelector('.hero-card .view[data-id=\\'prabhas\\']')?.click()"><i class="fas fa-user"></i> Full Profile</button>
-            <button class="btn btn-ghost" id="spotlightFav" style="background:var(--light);color:var(--primary);border-color:var(--light)"><i class="far fa-heart"></i> Add to Favorites</button>
-          </div>
-        </div>
-      `;
-
-      const favBtn = document.getElementById('spotlightFav');
-      favBtn.addEventListener('click', function() {
-        if (favorites.has(h.id)) {
-          favorites.delete(h.id);
-          this.innerHTML = '<i class="far fa-heart"></i> Add to Favorites';
-        } else {
-          favorites.add(h.id);
-          this.innerHTML = '<i class="fas fa-heart"></i> Favorited!';
-        }
-        updateFavCount();
-      });
-    }
-
-    /* ============================================================
-       RENDER FAN QUOTES
-    ============================================================ */
-    function renderFans() {
-      fansList.innerHTML = '';
-      FAN_QUOTES.forEach(t => {
+    function renderTestimonials() {
+      testimonialsList.innerHTML = '';
+      TESTIMONIALS.forEach(t => {
         const stars = '★'.repeat(t.stars) + '☆'.repeat(5 - t.stars);
         const el = document.createElement('div');
         el.className = 'testimonial-card';
         el.innerHTML = `
-          <div class="stars">${stars}</div>
-          <blockquote>“${escapeHtml(t.text)}”</blockquote>
-          <div class="author">
-            <img src="${t.avatar}" alt="${escapeHtml(t.name)}" loading="lazy" />
-            <div><div class="name">${escapeHtml(t.name)}</div><div class="role">${escapeHtml(t.role)}</div></div>
-          </div>
-        `;
-        fansList.appendChild(el);
+            <div class="stars">${stars}</div>
+            <blockquote>“${escapeHtml(t.text)}”</blockquote>
+            <div class="author">
+              <img src="${t.avatar}" alt="${escapeHtml(t.name)}" loading="lazy" />
+              <div><div class="name">${escapeHtml(t.name)}</div><div class="role">${escapeHtml(t.role)}</div></div>
+            </div>
+          `;
+        testimonialsList.appendChild(el);
       });
     }
 
-    /* ============================================================
-       MODAL
-    ============================================================ */
-    const modalOverlay = document.getElementById('modalOverlay');
-    const modalClose = document.getElementById('modalClose');
-    const modalAvatar = document.getElementById('modalAvatar');
-    const modalName = document.getElementById('modalName');
-    const modalTagline = document.getElementById('modalTagline');
-    const modalMeta = document.getElementById('modalMeta');
-    const modalHits = document.getElementById('modalHits');
-    const modalUpcoming = document.getElementById('modalUpcoming');
+    // ---------- DEAL TIMER ----------
+    (function setupDealTimer() {
+      const now = new Date();
+      const target = new Date(now.getTime() + (12 * 60 + 45) * 60 * 1000); // 12h 45m from now
 
-    function openModal(heroId) {
-      const h = HEROES.find(x => x.id === heroId);
-      if (!h) return;
+      function tick() {
+        const diff = target - new Date();
+        if (diff <= 0) {
+          document.getElementById('dealDays').textContent = '0';
+          document.getElementById('dealHours').textContent = '00';
+          document.getElementById('dealMinutes').textContent = '00';
+          document.getElementById('dealSeconds').textContent = '00';
+          return;
+        }
+        const days = Math.floor(diff / (24 * 3600 * 1000));
+        const hours = Math.floor((diff % (24 * 3600 * 1000)) / (3600 * 1000));
+        const mins = Math.floor((diff % (3600 * 1000)) / (60 * 1000));
+        const secs = Math.floor((diff % (60 * 1000)) / 1000);
+        document.getElementById('dealDays').textContent = days;
+        document.getElementById('dealHours').textContent = String(hours).padStart(2, '0');
+        document.getElementById('dealMinutes').textContent = String(mins).padStart(2, '0');
+        document.getElementById('dealSeconds').textContent = String(secs).padStart(2, '0');
+      }
+      tick();
+      setInterval(tick, 1000);
+    })();
 
-      modalAvatar.innerHTML = `<span>${h.initial}</span>`;
-      const img = document.createElement('img');
-      img.src = h.photo;
-      img.alt = h.name;
-      img.onerror = function() { this.remove(); };
-      img.onload = function() { modalAvatar.innerHTML = ''; modalAvatar.appendChild(this); };
-      modalAvatar.appendChild(img);
+    // ---------- EVENT BINDINGS ----------
+    searchBtn.addEventListener('click', () => filterProducts(searchInput.value));
+    searchInput.addEventListener('keydown', e => { if (e.key === 'Enter') filterProducts(e.target.value); });
 
-      modalName.textContent = h.name;
-      modalTagline.textContent = h.tagline;
-      modalMeta.innerHTML = `
-        <span>🎂 <strong>${h.meta.born}</strong></span>
-        <span>🎬 <strong>${h.meta.debut}</strong></span>
-        <span>💰 <strong>${h.meta.netWorth}</strong></span>
-        <span>🎥 <strong>${h.meta.films} films</strong></span>
-      `;
-
-      modalHits.innerHTML = h.hits.map(m => `
-        <div class="movie-item">
-          <span class="movie-name">${escapeHtml(m.name)}</span>
-          <span class="movie-year">${m.year}</span>
-        </div>
-      `).join('');
-
-      modalUpcoming.innerHTML = h.upcoming.map(m => {
-        const cls = m.status === 'filming' ? 'filming' : m.status === 'post' ? 'post' : 'announced';
-        const label = m.status === 'filming' ? 'Filming' : m.status === 'post' ? 'Post-Prod' : 'Announced';
-        return `
-          <div class="movie-item">
-            <span class="movie-name">${escapeHtml(m.name)}</span>
-            <span style="display:flex;gap:6px;align-items:center">
-              <span class="status-pill ${cls}">${label}</span>
-              <span class="movie-year">${m.year}</span>
-            </span>
-          </div>
-        `;
-      }).join('');
-
-      modalOverlay.classList.add('active');
-      document.body.style.overflow = 'hidden';
-    }
-
-    function closeModal() {
-      modalOverlay.classList.remove('active');
-      document.body.style.overflow = '';
-    }
-
-    modalClose.addEventListener('click', closeModal);
-    modalOverlay.addEventListener('click', e => { if (e.target === modalOverlay) closeModal(); });
-    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
-
-    /* ============================================================
-       SEARCH
-    ============================================================ */
-    function filterHeroes(query) {
-      const q = String(query || '').trim().toLowerCase();
-      if (!q) { renderHeroes(HEROES); return; }
-      const filtered = HEROES.filter(h =>
-        h.name.toLowerCase().includes(q) ||
-        h.tagline.toLowerCase().includes(q) ||
-        h.knownFor.toLowerCase().includes(q) ||
-        h.hits.some(m => m.name.toLowerCase().includes(q)) ||
-        h.upcoming.some(m => m.name.toLowerCase().includes(q))
-      );
-      renderHeroes(filtered);
-    }
-
-    searchBtn.addEventListener('click', () => filterHeroes(searchInput.value));
-    searchInput.addEventListener('keydown', e => { if (e.key === 'Enter') filterHeroes(e.target.value); });
-    searchInput.addEventListener('input', e => filterHeroes(e.target.value));
-
-    /* ============================================================
-       MOBILE MENU
-    ============================================================ */
     mobileToggle.addEventListener('click', () => {
       const isOpen = mobileMenu.style.display === 'block';
       mobileMenu.style.display = isOpen ? 'none' : 'block';
@@ -1753,48 +1221,53 @@
       });
     });
 
-    /* ============================================================
-       SMOOTH SCROLL BUTTONS
-    ============================================================ */
-    document.getElementById('exploreHeroes').addEventListener('click', () => {
-      document.getElementById('heroes').scrollIntoView({ behavior: 'smooth' });
+    document.getElementById('shopNow').addEventListener('click', () => {
+      document.getElementById('products').scrollIntoView({ behavior: 'smooth', block: 'start' });
     });
-    document.getElementById('exploreSpotlight').addEventListener('click', () => {
-      document.getElementById('spotlight').scrollIntoView({ behavior: 'smooth' });
+    document.getElementById('exploreDeals').addEventListener('click', () => {
+      document.getElementById('deals').scrollIntoView({ behavior: 'smooth', block: 'start' });
     });
 
-    /* ============================================================
-       NEWSLETTER
-    ============================================================ */
-    newsletterForm.addEventListener('submit', e => {
+    document.getElementById('buyDeal').addEventListener('click', function() {
+      cartCount++;
+      updateCartCount();
+      const orig = this.innerHTML;
+      this.innerHTML = '<i class="fas fa-check"></i> Added!';
+      this.style.background = '#2b8c7a';
+      setTimeout(() => {
+        this.innerHTML = orig;
+        this.style.background = '';
+      }, 1500);
+    });
+
+    newsletterForm.addEventListener('submit', (e) => {
       e.preventDefault();
       const email = newsletterEmail.value.trim();
       if (!email || !email.includes('@')) {
         newsletterMsg.textContent = 'Please enter a valid email address.';
         newsletterMsg.style.color = '#ffb3b3';
+        newsletterMsg.style.display = 'block';
         return;
       }
-      newsletterMsg.textContent = '🎬 Subscribed! Get ready for Tollywood updates.';
-      newsletterMsg.style.color = '#ffdf8a';
+      newsletterMsg.textContent = '🎉 Thanks for subscribing!';
+      newsletterMsg.style.color = '#a8e6cf';
+      newsletterMsg.style.display = 'block';
       newsletterEmail.value = '';
-      setTimeout(() => { newsletterMsg.textContent = ''; }, 3500);
+      setTimeout(() => { newsletterMsg.style.display = 'none'; }, 3500);
     });
 
-    /* ============================================================
-       FAVORITES BUTTON
-    ============================================================ */
-    document.getElementById('favBtn').addEventListener('click', () => {
-      alert(`❤️ You have ${favorites.size} hero${favorites.size !== 1 ? 'es' : ''} in favorites.`);
+    document.getElementById('cartBtn').addEventListener('click', () => {
+      alert(`🛒 Your cart has ${cartCount} item${cartCount !== 1 ? 's' : ''}.`);
     });
 
-    /* ============================================================
-       YEAR
-    ============================================================ */
     document.getElementById('year').textContent = new Date().getFullYear();
 
-    /* ============================================================
-       RESIZE HANDLER
-    ============================================================ */
+    // ---------- INIT ----------
+    renderCategories();
+    renderProducts(PRODUCTS);
+    renderTestimonials();
+    updateCartCount();
+
     window.addEventListener('resize', () => {
       if (window.innerWidth > 768) {
         mobileMenu.style.display = 'none';
@@ -1802,15 +1275,7 @@
       }
     });
 
-    /* ============================================================
-       INIT
-    ============================================================ */
-    renderHeroes(HEROES);
-    renderSpotlight();
-    renderFans();
-    updateFavCount();
-
-    console.log('🎬 TollyWiki loaded — 8 heroes, full filmography & upcoming projects.');
+    console.log('⚡ VoltHaus — premium electronics loaded with 36 cutting-edge products.');
   </script>
 </body>
 </html>
