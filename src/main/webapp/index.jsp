@@ -10,13 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <style>
-    *,
-    *::before,
-    *::after {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
     :root {
       --accent: #2d6eff;
@@ -26,16 +20,14 @@
       --card: #ffffff;
       --muted: #5e6472;
       --light: #eef1f8;
-      --shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
-      --shadow-hover: 0 20px 50px rgba(0, 20, 80, 0.12);
+      --shadow: 0 8px 30px rgba(0,0,0,0.06);
+      --shadow-hover: 0 20px 50px rgba(0,20,80,0.12);
       --radius: 24px;
       --radius-sm: 14px;
-      --border-subtle: rgba(0, 0, 0, 0.04);
+      --border-subtle: rgba(0,0,0,0.04);
     }
 
-    html {
-      scroll-behavior: smooth;
-    }
+    html { scroll-behavior: smooth; }
 
     body {
       font-family: 'Inter', system-ui, -apple-system, sans-serif;
@@ -45,33 +37,15 @@
       -webkit-font-smoothing: antialiased;
     }
 
-    img {
-      max-width: 100%;
-      display: block;
-    }
+    img { max-width: 100%; display: block; }
+    a { text-decoration: none; color: inherit; }
+    button { background: none; border: none; font: inherit; cursor: pointer; color: inherit; }
 
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
-
-    button {
-      background: none;
-      border: none;
-      font: inherit;
-      cursor: pointer;
-      color: inherit;
-    }
-
-    .container {
-      max-width: 1280px;
-      margin: 0 auto;
-      padding: 0 24px;
-    }
+    .container { max-width: 1280px; margin: 0 auto; padding: 0 24px; }
 
     /* ---------- HEADER ---------- */
     .header {
-      background: rgba(255, 255, 255, 0.92);
+      background: rgba(255,255,255,0.92);
       backdrop-filter: blur(14px);
       -webkit-backdrop-filter: blur(14px);
       border-bottom: 1px solid var(--border-subtle);
@@ -99,14 +73,8 @@
       color: var(--primary);
     }
 
-    .brand i {
-      color: var(--accent);
-      font-size: 1.7rem;
-    }
-
-    .brand .accent {
-      color: var(--accent);
-    }
+    .brand i { color: var(--accent); font-size: 1.7rem; }
+    .brand .accent { color: var(--accent); }
 
     .nav-links {
       display: flex;
@@ -130,15 +98,9 @@
       color: var(--primary);
     }
 
-    .nav-links a i {
-      margin-right: 6px;
-    }
+    .nav-links a i { margin-right: 6px; }
 
-    .header-actions {
-      display: flex;
-      align-items: center;
-      gap: 4px;
-    }
+    .header-actions { display: flex; align-items: center; gap: 4px; }
 
     .icon-btn {
       width: 44px;
@@ -151,14 +113,9 @@
       font-size: 1.2rem;
     }
 
-    .icon-btn:hover {
-      background: var(--light);
-      color: var(--primary);
-    }
+    .icon-btn:hover { background: var(--light); color: var(--primary); }
 
-    .cart-wrap {
-      position: relative;
-    }
+    .cart-wrap { position: relative; }
 
     .cart-count {
       position: absolute;
@@ -191,7 +148,7 @@
     .search-wrap:focus-within {
       border-color: var(--accent);
       background: #ffffff;
-      box-shadow: 0 0 0 5px rgba(45, 110, 255, 0.08);
+      box-shadow: 0 0 0 5px rgba(45,110,255,0.08);
     }
 
     .search-wrap input {
@@ -204,18 +161,9 @@
       color: var(--primary);
     }
 
-    .search-wrap input::placeholder {
-      color: #8b93a7;
-    }
-
-    .search-wrap button {
-      padding: 8px 0 8px 10px;
-      color: var(--muted);
-    }
-
-    .search-wrap button:hover {
-      color: var(--accent);
-    }
+    .search-wrap input::placeholder { color: #8b93a7; }
+    .search-wrap button { padding: 8px 0 8px 10px; color: var(--muted); }
+    .search-wrap button:hover { color: var(--accent); }
 
     .mobile-toggle {
       display: none;
@@ -251,9 +199,7 @@
       color: var(--primary);
     }
 
-    #mobileMenu ul a:hover {
-      background: var(--light);
-    }
+    #mobileMenu ul a:hover { background: var(--light); }
 
     /* ---------- HERO ---------- */
     .hero {
@@ -275,14 +221,11 @@
       z-index: 0;
     }
 
-    .hero .container {
-      position: relative;
-      z-index: 2;
-    }
+    .hero .container { position: relative; z-index: 2; }
 
     .hero .badge {
       display: inline-block;
-      background: rgba(45, 110, 255, 0.25);
+      background: rgba(45,110,255,0.25);
       color: #c8d9ff;
       padding: 4px 22px;
       border-radius: 40px;
@@ -290,7 +233,7 @@
       font-size: 0.8rem;
       letter-spacing: 0.5px;
       margin-bottom: 16px;
-      border: 1px solid rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255,255,255,0.08);
     }
 
     .hero h1 {
@@ -302,17 +245,13 @@
     }
 
     .hero p {
-      color: rgba(255, 255, 255, 0.82);
+      color: rgba(255,255,255,0.82);
       font-size: 1.1rem;
       max-width: 480px;
       margin: 14px 0 30px;
     }
 
-    .hero .actions {
-      display: flex;
-      gap: 16px;
-      flex-wrap: wrap;
-    }
+    .hero .actions { display: flex; gap: 16px; flex-wrap: wrap; }
 
     /* ---------- BUTTONS ---------- */
     .btn {
@@ -337,24 +276,22 @@
       background: var(--accent-dark);
       border-color: var(--accent-dark);
       transform: translateY(-3px);
-      box-shadow: 0 12px 28px rgba(45, 110, 255, 0.4);
+      box-shadow: 0 12px 28px rgba(45,110,255,0.4);
     }
 
     .btn-ghost {
-      background: rgba(255, 255, 255, 0.08);
+      background: rgba(255,255,255,0.08);
       color: #ffffff;
-      border-color: rgba(255, 255, 255, 0.2);
+      border-color: rgba(255,255,255,0.2);
     }
 
     .btn-ghost:hover {
-      background: rgba(255, 255, 255, 0.16);
+      background: rgba(255,255,255,0.16);
       transform: translateY(-3px);
     }
 
     /* ---------- SECTIONS ---------- */
-    .section {
-      padding: 56px 0;
-    }
+    .section { padding: 56px 0; }
 
     .section-header {
       display: flex;
@@ -372,10 +309,7 @@
       letter-spacing: -0.3px;
     }
 
-    .section-header .sub {
-      color: var(--muted);
-      margin-top: 2px;
-    }
+    .section-header .sub { color: var(--muted); margin-top: 2px; }
 
     .view-all {
       font-weight: 600;
@@ -388,10 +322,7 @@
       transition: gap 0.2s, color 0.2s;
     }
 
-    .view-all:hover {
-      gap: 14px;
-      color: var(--accent-dark);
-    }
+    .view-all:hover { gap: 14px; color: var(--accent-dark); }
 
     /* ---------- CATEGORIES ---------- */
     .categories-grid {
@@ -436,16 +367,8 @@
       transform: scale(1.05);
     }
 
-    .cat-card h4 {
-      font-weight: 600;
-      font-size: 0.95rem;
-      color: var(--primary);
-    }
-
-    .cat-card .count {
-      font-size: 0.8rem;
-      color: var(--muted);
-    }
+    .cat-card h4 { font-weight: 600; font-size: 0.95rem; color: var(--primary); }
+    .cat-card .count { font-size: 0.8rem; color: var(--muted); }
 
     /* ---------- PRODUCTS ---------- */
     .products-grid {
@@ -485,9 +408,7 @@
       transition: transform 0.5s ease;
     }
 
-    .product-card:hover .img-wrap img {
-      transform: scale(1.06);
-    }
+    .product-card:hover .img-wrap img { transform: scale(1.06); }
 
     .product-card .badge {
       position: absolute;
@@ -501,17 +422,11 @@
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 0.4px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
     }
 
-    .product-card .badge.sale {
-      background: #d97a00;
-      color: #ffffff;
-    }
-
-    .product-card .badge.new {
-      background: #00875a;
-    }
+    .product-card .badge.sale { background: #d97a00; color: #ffffff; }
+    .product-card .badge.new { background: #00875a; }
 
     .product-card .wish {
       position: absolute;
@@ -519,7 +434,7 @@
       right: 14px;
       width: 38px;
       height: 38px;
-      background: rgba(255, 255, 255, 0.95);
+      background: rgba(255,255,255,0.95);
       border-radius: 50%;
       display: grid;
       place-items: center;
@@ -527,7 +442,7 @@
       backdrop-filter: blur(4px);
       transition: color 0.2s, background 0.2s, transform 0.2s;
       font-size: 1rem;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.04);
     }
 
     .product-card .wish:hover {
@@ -585,9 +500,7 @@
       margin-left: 4px;
     }
 
-    .product-card .footer {
-      padding: 0 18px 18px;
-    }
+    .product-card .footer { padding: 0 18px 18px; }
 
     .product-card .footer .add {
       width: 100%;
@@ -608,9 +521,7 @@
       transform: scale(1.02);
     }
 
-    .product-card .footer .add.added {
-      background: #00875a;
-    }
+    .product-card .footer .add.added { background: #00875a; }
 
     /* ---------- DEAL ---------- */
     .deal-wrap {
@@ -687,9 +598,7 @@
       margin: 6px 0 16px;
     }
 
-    .deal-wrap .stock strong {
-      color: var(--accent);
-    }
+    .deal-wrap .stock strong { color: var(--accent); }
 
     .timer-grid {
       display: flex;
@@ -728,14 +637,8 @@
       scroll-snap-type: x mandatory;
     }
 
-    .testimonials-scroll::-webkit-scrollbar {
-      height: 4px;
-    }
-
-    .testimonials-scroll::-webkit-scrollbar-thumb {
-      background: var(--accent-soft);
-      border-radius: 10px;
-    }
+    .testimonials-scroll::-webkit-scrollbar { height: 4px; }
+    .testimonials-scroll::-webkit-scrollbar-thumb { background: var(--accent-soft); border-radius: 10px; }
 
     .testimonial-card {
       flex: 0 0 320px;
@@ -752,12 +655,7 @@
       transform: translateY(-4px);
     }
 
-    .testimonial-card .stars {
-      color: #c47f00;
-      font-size: 1rem;
-      letter-spacing: 3px;
-    }
-
+    .testimonial-card .stars { color: #c47f00; font-size: 1rem; letter-spacing: 3px; }
     .testimonial-card blockquote {
       font-style: italic;
       margin: 12px 0 16px;
@@ -766,12 +664,7 @@
       line-height: 1.6;
     }
 
-    .testimonial-card .author {
-      display: flex;
-      align-items: center;
-      gap: 14px;
-    }
-
+    .testimonial-card .author { display: flex; align-items: center; gap: 14px; }
     .testimonial-card .author img {
       width: 48px;
       height: 48px;
@@ -781,15 +674,8 @@
       border: 2px solid var(--accent-soft);
     }
 
-    .testimonial-card .author .name {
-      font-weight: 600;
-      color: var(--primary);
-    }
-
-    .testimonial-card .author .role {
-      font-size: 0.8rem;
-      color: var(--muted);
-    }
+    .testimonial-card .author .name { font-weight: 600; color: var(--primary); }
+    .testimonial-card .author .role { font-size: 0.8rem; color: var(--muted); }
 
     /* ---------- NEWSLETTER ---------- */
     .newsletter {
@@ -810,9 +696,7 @@
       font-family: 'Space Grotesk', sans-serif;
     }
 
-    .newsletter p {
-      opacity: 0.8;
-    }
+    .newsletter p { opacity: 0.8; }
 
     .newsletter form {
       display: flex;
@@ -827,7 +711,7 @@
       padding: 16px 24px;
       border-radius: 60px;
       border: 0;
-      background: rgba(255, 255, 255, 0.1);
+      background: rgba(255,255,255,0.1);
       color: #ffffff;
       font-size: 0.95rem;
       outline: 2px solid transparent;
@@ -835,14 +719,8 @@
       transition: outline-color 0.2s, background 0.2s;
     }
 
-    .newsletter input::placeholder {
-      color: rgba(255, 255, 255, 0.55);
-    }
-
-    .newsletter input:focus {
-      outline-color: var(--accent);
-      background: rgba(255, 255, 255, 0.16);
-    }
+    .newsletter input::placeholder { color: rgba(255,255,255,0.55); }
+    .newsletter input:focus { outline-color: var(--accent); background: rgba(255,255,255,0.16); }
 
     .newsletter .btn {
       background: var(--accent);
@@ -856,11 +734,7 @@
       border-color: var(--accent-dark);
     }
 
-    #newsletterMsg {
-      width: 100%;
-      margin-top: 10px;
-      font-size: 0.9rem;
-    }
+    #newsletterMsg { width: 100%; margin-top: 10px; font-size: 0.9rem; }
 
     /* ---------- FOOTER ---------- */
     footer {
@@ -883,11 +757,7 @@
       line-height: 1.7;
     }
 
-    .footer-grid .socials {
-      display: flex;
-      gap: 12px;
-      margin-top: 18px;
-    }
+    .footer-grid .socials { display: flex; gap: 12px; margin-top: 18px; }
 
     .footer-grid .socials a {
       width: 44px;
@@ -905,7 +775,7 @@
       background: var(--accent);
       color: #ffffff;
       transform: translateY(-3px);
-      box-shadow: 0 8px 20px rgba(45, 110, 255, 0.2);
+      box-shadow: 0 8px 20px rgba(45,110,255,0.2);
     }
 
     .footer-grid .col h5 {
@@ -928,9 +798,7 @@
       transition: color 0.2s;
     }
 
-    .footer-grid .col ul a:hover {
-      color: var(--accent);
-    }
+    .footer-grid .col ul a:hover { color: var(--accent); }
 
     .footer-bottom {
       text-align: center;
@@ -948,7 +816,7 @@
       padding: 0;
       margin: -1px;
       overflow: hidden;
-      clip: rect(0, 0, 0, 0);
+      clip: rect(0,0,0,0);
       white-space: nowrap;
       border: 0;
     }
@@ -963,112 +831,38 @@
 
     /* ---------- RESPONSIVE ---------- */
     @media (max-width: 992px) {
-      .nav-links {
-        display: none;
-      }
-
-      .mobile-toggle {
-        display: grid;
-        place-items: center;
-      }
-
-      .footer-grid {
-        grid-template-columns: 1fr 1fr;
-      }
-
-      .deal-wrap .deal-content {
-        padding: 30px;
-      }
-
-      .hero {
-        padding: 48px 30px;
-      }
+      .nav-links { display: none; }
+      .mobile-toggle { display: grid; place-items: center; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+      .deal-wrap .deal-content { padding: 30px; }
+      .hero { padding: 48px 30px; }
     }
 
     @media (max-width: 700px) {
-      .hero {
-        margin: 12px 12px 0;
-        padding: 36px 20px;
-      }
-
-      .search-wrap {
-        min-width: 120px;
-      }
-
-      .products-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 16px;
-      }
-
-      .categories-grid {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 14px;
-      }
-
-      .footer-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .newsletter {
-        padding: 32px 24px;
-        flex-direction: column;
-        text-align: center;
-      }
-
-      .newsletter form {
-        min-width: 100%;
-      }
-
-      .header-inner {
-        flex-wrap: nowrap;
-      }
-
-      .brand {
-        font-size: 1.2rem;
-      }
-
-      .deal-wrap .deal-content {
-        padding: 22px;
-      }
-
-      .timer-box {
-        min-width: 54px;
-        padding: 8px 10px;
-      }
-
-      .timer-box .num {
-        font-size: 1.4rem;
-      }
+      .hero { margin: 12px 12px 0; padding: 36px 20px; }
+      .search-wrap { min-width: 120px; }
+      .products-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; }
+      .categories-grid { grid-template-columns: repeat(3, 1fr); gap: 14px; }
+      .footer-grid { grid-template-columns: 1fr; }
+      .newsletter { padding: 32px 24px; flex-direction: column; text-align: center; }
+      .newsletter form { min-width: 100%; }
+      .header-inner { flex-wrap: nowrap; }
+      .brand { font-size: 1.2rem; }
+      .deal-wrap .deal-content { padding: 22px; }
+      .timer-box { min-width: 54px; padding: 8px 10px; }
+      .timer-box .num { font-size: 1.4rem; }
     }
 
     @media (max-width: 480px) {
-      .products-grid {
-        grid-template-columns: 1fr 1fr;
-        gap: 12px;
-      }
-
-      .categories-grid {
-        grid-template-columns: 1fr 1fr;
-      }
-
-      .hero h1 {
-        font-size: 2rem;
-      }
-
-      .deal-wrap .price-big {
-        font-size: 1.8rem;
-      }
-
-      .testimonial-card {
-        flex: 0 0 270px;
-        padding: 20px;
-      }
+      .products-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
+      .categories-grid { grid-template-columns: 1fr 1fr; }
+      .hero h1 { font-size: 2rem; }
+      .deal-wrap .price-big { font-size: 1.8rem; }
+      .testimonial-card { flex: 0 0 270px; padding: 20px; }
     }
 
     @media (prefers-reduced-motion: reduce) {
-      *,
-      *::before,
-      *::after {
+      *, *::before, *::after {
         animation-duration: 0.01ms !important;
         animation-iteration-count: 1 !important;
         transition-duration: 0.01ms !important;
@@ -1317,53 +1111,113 @@
     'use strict';
 
     (function () {
-      // ---------- DATA ----------
+      // ---------- EXPANDED DATA ----------
       const CATEGORIES = [
-        { id: 'audio', name: 'Audio', icon: 'fa-headphones', count: 24 },
-        { id: 'smartphones', name: 'Smartphones', icon: 'fa-mobile-alt', count: 18 },
-        { id: 'laptops', name: 'Laptops', icon: 'fa-laptop', count: 15 },
-        { id: 'gaming', name: 'Gaming', icon: 'fa-gamepad', count: 22 },
-        { id: 'smart-home', name: 'Smart Home', icon: 'fa-home', count: 19 },
-        { id: 'accessories', name: 'Accessories', icon: 'fa-plug', count: 30 }
+        { id: 'audio', name: 'Audio', icon: 'fa-headphones', count: 36 },
+        { id: 'smartphones', name: 'Smartphones', icon: 'fa-mobile-alt', count: 24 },
+        { id: 'laptops', name: 'Laptops', icon: 'fa-laptop', count: 20 },
+        { id: 'gaming', name: 'Gaming', icon: 'fa-gamepad', count: 28 },
+        { id: 'smart-home', name: 'Smart Home', icon: 'fa-home', count: 26 },
+        { id: 'accessories', name: 'Accessories', icon: 'fa-plug', count: 42 },
+        { id: 'wearables', name: 'Wearables', icon: 'fa-clock', count: 18 },
+        { id: 'cameras', name: 'Cameras', icon: 'fa-camera', count: 16 },
+        { id: 'networking', name: 'Networking', icon: 'fa-wifi', count: 12 }
       ];
 
       const PRODUCTS = [
+        // Audio (1-12)
         { id: 1, title: 'SonicPods Pro', price: 129.99, rating: 5, reviews: 342, badge: 'New', img: 'https://images.unsplash.com/photo-1572569511254-d8f925fe2cbb?auto=format&fit=crop&w=600&q=80', category: 'Audio' },
         { id: 2, title: 'BassBoom Speaker', price: 89.99, rating: 5, reviews: 218, badge: '', img: 'https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?auto=format&fit=crop&w=600&q=80', category: 'Audio' },
         { id: 3, title: 'StudioMax Headphones', price: 249.99, rating: 5, reviews: 156, badge: 'Sale', img: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=600&q=80', category: 'Audio' },
         { id: 4, title: 'EchoBuds Lite', price: 59.99, rating: 4, reviews: 89, badge: '', img: 'https://images.unsplash.com/photo-1590658268037-6bf12165a8df?auto=format&fit=crop&w=600&q=80', category: 'Audio' },
-        { id: 5, title: 'Galaxy Edge 5G', price: 799.99, rating: 5, reviews: 478, badge: 'Hot', img: 'https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?auto=format&fit=crop&w=600&q=80', category: 'Smartphones' },
-        { id: 6, title: 'Pixel Nova', price: 699.99, rating: 5, reviews: 312, badge: '', img: 'https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&w=600&q=80', category: 'Smartphones' },
-        { id: 7, title: 'iPhone 16 Pro', price: 1099.99, rating: 5, reviews: 890, badge: 'New', img: 'https://images.unsplash.com/photo-1695048133142-1a20484d2569?auto=format&fit=crop&w=600&q=80', category: 'Smartphones' },
-        { id: 8, title: 'OnePlus 13', price: 649.99, rating: 5, reviews: 234, badge: '', img: 'https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&w=600&q=80', category: 'Smartphones' },
-        { id: 9, title: 'MacBook Air M3', price: 1099.99, rating: 5, reviews: 567, badge: 'Hot', img: 'https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=600&q=80', category: 'Laptops' },
-        { id: 10, title: 'Dell XPS 15', price: 1399.99, rating: 5, reviews: 234, badge: '', img: 'https://images.unsplash.com/photo-1593642702821-c8da6771f9a6?auto=format&fit=crop&w=600&q=80', category: 'Laptops' },
-        { id: 11, title: 'ASUS ROG Zephyrus', price: 1599.99, rating: 5, reviews: 189, badge: 'Sale', img: 'https://images.unsplash.com/photo-1603302576837-37561b2e2302?auto=format&fit=crop&w=600&q=80', category: 'Laptops' },
-        { id: 12, title: 'Lenovo Yoga Slim', price: 899.99, rating: 4, reviews: 145, badge: '', img: 'https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?auto=format&fit=crop&w=600&q=80', category: 'Laptops' },
-        { id: 13, title: 'PS5 Pro Console', price: 699.99, rating: 5, reviews: 987, badge: 'Hot', img: 'https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?auto=format&fit=crop&w=600&q=80', category: 'Gaming' },
-        { id: 14, title: 'Xbox Series X', price: 499.99, rating: 5, reviews: 654, badge: '', img: 'https://images.unsplash.com/photo-1621259182978-fbf93132d53d?auto=format&fit=crop&w=600&q=80', category: 'Gaming' },
-        { id: 15, title: 'Razer BlackWidow', price: 149.99, rating: 5, reviews: 345, badge: '', img: 'https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=600&q=80', category: 'Gaming' },
-        { id: 16, title: 'Logitech G Pro X', price: 129.99, rating: 4, reviews: 234, badge: '', img: 'https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?auto=format&fit=crop&w=600&q=80', category: 'Gaming' },
-        { id: 17, title: 'Echo Dot (5th Gen)', price: 49.99, rating: 5, reviews: 1234, badge: '', img: 'https://images.unsplash.com/photo-1543512214-318c7553f230?auto=format&fit=crop&w=600&q=80', category: 'Smart Home' },
-        { id: 18, title: 'Nest Thermostat', price: 199.99, rating: 5, reviews: 456, badge: '', img: 'https://images.unsplash.com/photo-1567925086983-3c1f6b1a8a8b?auto=format&fit=crop&w=600&q=80', category: 'Smart Home' },
-        { id: 19, title: 'Ring Security Cam', price: 179.99, rating: 5, reviews: 345, badge: 'Sale', img: 'https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&w=600&q=80', category: 'Smart Home' },
-        { id: 20, title: 'Philips Hue Starter', price: 149.99, rating: 5, reviews: 567, badge: '', img: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=600&q=80', category: 'Smart Home' },
-        { id: 21, title: 'Anker PowerBank 20K', price: 59.99, rating: 5, reviews: 678, badge: '', img: 'https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5?auto=format&fit=crop&w=600&q=80', category: 'Accessories' },
-        { id: 22, title: 'USB-C Hub 8-in-1', price: 79.99, rating: 5, reviews: 234, badge: '', img: 'https://images.unsplash.com/photo-1625842268584-8f3296236761?auto=format&fit=crop&w=600&q=80', category: 'Accessories' },
-        { id: 23, title: 'Samsung T7 SSD 1TB', price: 129.99, rating: 5, reviews: 456, badge: 'New', img: 'https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?auto=format&fit=crop&w=600&q=80', category: 'Accessories' },
-        { id: 24, title: 'Apple Watch Ultra', price: 799.99, rating: 5, reviews: 789, badge: 'Hot', img: 'https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?auto=format&fit=crop&w=600&q=80', category: 'Accessories' },
-        { id: 25, title: 'DJI Mini 4 Pro', price: 759.99, rating: 5, reviews: 345, badge: '', img: 'https://images.unsplash.com/photo-1473968512647-3e447244af8f?auto=format&fit=crop&w=600&q=80', category: 'Accessories' },
-        { id: 26, title: 'Kindle Paperwhite', price: 139.99, rating: 5, reviews: 567, badge: '', img: 'https://images.unsplash.com/photo-1592434134753-a70baf7979d5?auto=format&fit=crop&w=600&q=80', category: 'Accessories' },
-        { id: 27, title: 'GoPro Hero 13', price: 399.99, rating: 5, reviews: 234, badge: '', img: 'https://images.unsplash.com/photo-1502920917128-1aa500764cbd?auto=format&fit=crop&w=600&q=80', category: 'Accessories' },
-        { id: 28, title: 'Keychron K2 Keyboard', price: 89.99, rating: 5, reviews: 345, badge: '', img: 'https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=600&q=80', category: 'Accessories' },
-        { id: 29, title: 'Logitech MX Master 3S', price: 99.99, rating: 5, reviews: 678, badge: '', img: 'https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?auto=format&fit=crop&w=600&q=80', category: 'Accessories' },
-        { id: 30, title: 'AirTag 4 Pack', price: 99.99, rating: 5, reviews: 456, badge: 'Sale', img: 'https://images.unsplash.com/photo-1580894732444-8ecded7900cd?auto=format&fit=crop&w=600&q=80', category: 'Accessories' },
-        { id: 31, title: 'Sonos One SL', price: 199.99, rating: 5, reviews: 234, badge: '', img: 'https://images.unsplash.com/photo-1545454675-3531b543be5d?auto=format&fit=crop&w=600&q=80', category: 'Audio' },
-        { id: 32, title: 'Marshall Emberton', price: 149.99, rating: 5, reviews: 189, badge: '', img: 'https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?auto=format&fit=crop&w=600&q=80', category: 'Audio' },
-        { id: 33, title: 'iPad Pro M4', price: 999.99, rating: 5, reviews: 567, badge: 'New', img: 'https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?auto=format&fit=crop&w=600&q=80', category: 'Laptops' },
-        { id: 34, title: 'Steam Deck OLED', price: 549.99, rating: 5, reviews: 789, badge: 'Hot', img: 'https://images.unsplash.com/photo-1640955014216-75201056c829?auto=format&fit=crop&w=600&q=80', category: 'Gaming' },
-        { id: 35, title: 'Meta Quest 3', price: 499.99, rating: 5, reviews: 456, badge: '', img: 'https://images.unsplash.com/photo-1622979135225-d2ba269cf1ac?auto=format&fit=crop&w=600&q=80', category: 'Gaming' },
-        { id: 36, title: 'Hue Play Light Bars', price: 179.99, rating: 5, reviews: 123, badge: '', img: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=600&q=80', category: 'Smart Home' }
+        { id: 5, title: 'Sonos One SL', price: 199.99, rating: 5, reviews: 234, badge: '', img: 'https://images.unsplash.com/photo-1545454675-3531b543be5d?auto=format&fit=crop&w=600&q=80', category: 'Audio' },
+        { id: 6, title: 'Marshall Emberton', price: 149.99, rating: 5, reviews: 189, badge: '', img: 'https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?auto=format&fit=crop&w=600&q=80', category: 'Audio' },
+        { id: 7, title: 'JBL Flip 6', price: 129.99, rating: 5, reviews: 567, badge: 'Hot', img: 'https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?auto=format&fit=crop&w=600&q=80', category: 'Audio' },
+        { id: 8, title: 'Bose QuietComfort', price: 279.99, rating: 5, reviews: 890, badge: 'Sale', img: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=600&q=80', category: 'Audio' },
+        { id: 9, title: 'Sennheiser Momentum 4', price: 349.99, rating: 5, reviews: 234, badge: 'New', img: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=600&q=80', category: 'Audio' },
+        { id: 10, title: 'AirPods Max', price: 549.99, rating: 5, reviews: 1234, badge: '', img: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=600&q=80', category: 'Audio' },
+        { id: 11, title: 'Beats Studio Pro', price: 349.99, rating: 4, reviews: 345, badge: '', img: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=600&q=80', category: 'Audio' },
+        { id: 12, title: 'Jabra Elite 10', price: 249.99, rating: 5, reviews: 178, badge: '', img: 'https://images.unsplash.com/photo-1590658268037-6bf12165a8df?auto=format&fit=crop&w=600&q=80', category: 'Audio' },
+
+        // Smartphones (13-20)
+        { id: 13, title: 'Galaxy Edge 5G', price: 799.99, rating: 5, reviews: 478, badge: 'Hot', img: 'https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?auto=format&fit=crop&w=600&q=80', category: 'Smartphones' },
+        { id: 14, title: 'Pixel Nova', price: 699.99, rating: 5, reviews: 312, badge: '', img: 'https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&w=600&q=80', category: 'Smartphones' },
+        { id: 15, title: 'iPhone 16 Pro', price: 1099.99, rating: 5, reviews: 890, badge: 'New', img: 'https://images.unsplash.com/photo-1695048133142-1a20484d2569?auto=format&fit=crop&w=600&q=80', category: 'Smartphones' },
+        { id: 16, title: 'OnePlus 13', price: 649.99, rating: 5, reviews: 234, badge: '', img: 'https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&w=600&q=80', category: 'Smartphones' },
+        { id: 17, title: 'Xiaomi 14 Ultra', price: 899.99, rating: 5, reviews: 456, badge: 'Sale', img: 'https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?auto=format&fit=crop&w=600&q=80', category: 'Smartphones' },
+        { id: 18, title: 'Samsung S24+', price: 999.99, rating: 5, reviews: 678, badge: '', img: 'https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?auto=format&fit=crop&w=600&q=80', category: 'Smartphones' },
+        { id: 19, title: 'Nothing Phone (2)', price: 599.99, rating: 5, reviews: 345, badge: '', img: 'https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&w=600&q=80', category: 'Smartphones' },
+        { id: 20, title: 'Asus ROG Phone 8', price: 1099.99, rating: 5, reviews: 189, badge: 'Hot', img: 'https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?auto=format&fit=crop&w=600&q=80', category: 'Smartphones' },
+
+        // Laptops (21-28)
+        { id: 21, title: 'MacBook Air M3', price: 1099.99, rating: 5, reviews: 567, badge: 'Hot', img: 'https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=600&q=80', category: 'Laptops' },
+        { id: 22, title: 'Dell XPS 15', price: 1399.99, rating: 5, reviews: 234, badge: '', img: 'https://images.unsplash.com/photo-1593642702821-c8da6771f9a6?auto=format&fit=crop&w=600&q=80', category: 'Laptops' },
+        { id: 23, title: 'ASUS ROG Zephyrus', price: 1599.99, rating: 5, reviews: 189, badge: 'Sale', img: 'https://images.unsplash.com/photo-1603302576837-37561b2e2302?auto=format&fit=crop&w=600&q=80', category: 'Laptops' },
+        { id: 24, title: 'Lenovo Yoga Slim', price: 899.99, rating: 4, reviews: 145, badge: '', img: 'https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?auto=format&fit=crop&w=600&q=80', category: 'Laptops' },
+        { id: 25, title: 'iPad Pro M4', price: 999.99, rating: 5, reviews: 567, badge: 'New', img: 'https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?auto=format&fit=crop&w=600&q=80', category: 'Laptops' },
+        { id: 26, title: 'MacBook Pro 16 M3', price: 2499.99, rating: 5, reviews: 345, badge: '', img: 'https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=600&q=80', category: 'Laptops' },
+        { id: 27, title: 'HP Spectre x360', price: 1249.99, rating: 5, reviews: 189, badge: '', img: 'https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?auto=format&fit=crop&w=600&q=80', category: 'Laptops' },
+        { id: 28, title: 'Razer Blade 15', price: 1899.99, rating: 5, reviews: 234, badge: 'Hot', img: 'https://images.unsplash.com/photo-1603302576837-37561b2e2302?auto=format&fit=crop&w=600&q=80', category: 'Laptops' },
+
+        // Gaming (29-36)
+        { id: 29, title: 'PS5 Pro Console', price: 699.99, rating: 5, reviews: 987, badge: 'Hot', img: 'https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?auto=format&fit=crop&w=600&q=80', category: 'Gaming' },
+        { id: 30, title: 'Xbox Series X', price: 499.99, rating: 5, reviews: 654, badge: '', img: 'https://images.unsplash.com/photo-1621259182978-fbf93132d53d?auto=format&fit=crop&w=600&q=80', category: 'Gaming' },
+        { id: 31, title: 'Razer BlackWidow', price: 149.99, rating: 5, reviews: 345, badge: '', img: 'https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=600&q=80', category: 'Gaming' },
+        { id: 32, title: 'Logitech G Pro X', price: 129.99, rating: 4, reviews: 234, badge: '', img: 'https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?auto=format&fit=crop&w=600&q=80', category: 'Gaming' },
+        { id: 33, title: 'Steam Deck OLED', price: 549.99, rating: 5, reviews: 789, badge: 'Hot', img: 'https://images.unsplash.com/photo-1640955014216-75201056c829?auto=format&fit=crop&w=600&q=80', category: 'Gaming' },
+        { id: 34, title: 'Meta Quest 3', price: 499.99, rating: 5, reviews: 456, badge: '', img: 'https://images.unsplash.com/photo-1622979135225-d2ba269cf1ac?auto=format&fit=crop&w=600&q=80', category: 'Gaming' },
+        { id: 35, title: 'Nintendo Switch OLED', price: 349.99, rating: 5, reviews: 1234, badge: 'Sale', img: 'https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?auto=format&fit=crop&w=600&q=80', category: 'Gaming' },
+        { id: 36, title: 'Elgato Stream Deck', price: 149.99, rating: 5, reviews: 345, badge: '', img: 'https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?auto=format&fit=crop&w=600&q=80', category: 'Gaming' },
+
+        // Smart Home (37-44)
+        { id: 37, title: 'Echo Dot (5th Gen)', price: 49.99, rating: 5, reviews: 1234, badge: '', img: 'https://images.unsplash.com/photo-1543512214-318c7553f230?auto=format&fit=crop&w=600&q=80', category: 'Smart Home' },
+        { id: 38, title: 'Nest Thermostat', price: 199.99, rating: 5, reviews: 456, badge: '', img: 'https://images.unsplash.com/photo-1567925086983-3c1f6b1a8a8b?auto=format&fit=crop&w=600&q=80', category: 'Smart Home' },
+        { id: 39, title: 'Ring Security Cam', price: 179.99, rating: 5, reviews: 345, badge: 'Sale', img: 'https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&w=600&q=80', category: 'Smart Home' },
+        { id: 40, title: 'Philips Hue Starter', price: 149.99, rating: 5, reviews: 567, badge: '', img: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=600&q=80', category: 'Smart Home' },
+        { id: 41, title: 'Hue Play Light Bars', price: 179.99, rating: 5, reviews: 123, badge: '', img: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=600&q=80', category: 'Smart Home' },
+        { id: 42, title: 'Google Nest Hub', price: 99.99, rating: 5, reviews: 345, badge: '', img: 'https://images.unsplash.com/photo-1543512214-318c7553f230?auto=format&fit=crop&w=600&q=80', category: 'Smart Home' },
+        { id: 43, title: 'Smart Lock Pro', price: 249.99, rating: 5, reviews: 178, badge: 'New', img: 'https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&w=600&q=80', category: 'Smart Home' },
+        { id: 44, title: 'Arlo Pro 5', price: 199.99, rating: 5, reviews: 234, badge: '', img: 'https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&w=600&q=80', category: 'Smart Home' },
+
+        // Accessories (45-58)
+        { id: 45, title: 'Anker PowerBank 20K', price: 59.99, rating: 5, reviews: 678, badge: '', img: 'https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5?auto=format&fit=crop&w=600&q=80', category: 'Accessories' },
+        { id: 46, title: 'USB-C Hub 8-in-1', price: 79.99, rating: 5, reviews: 234, badge: '', img: 'https://images.unsplash.com/photo-1625842268584-8f3296236761?auto=format&fit=crop&w=600&q=80', category: 'Accessories' },
+        { id: 47, title: 'Samsung T7 SSD 1TB', price: 129.99, rating: 5, reviews: 456, badge: 'New', img: 'https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?auto=format&fit=crop&w=600&q=80', category: 'Accessories' },
+        { id: 48, title: 'Apple Watch Ultra', price: 799.99, rating: 5, reviews: 789, badge: 'Hot', img: 'https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?auto=format&fit=crop&w=600&q=80', category: 'Accessories' },
+        { id: 49, title: 'DJI Mini 4 Pro', price: 759.99, rating: 5, reviews: 345, badge: '', img: 'https://images.unsplash.com/photo-1473968512647-3e447244af8f?auto=format&fit=crop&w=600&q=80', category: 'Accessories' },
+        { id: 50, title: 'Kindle Paperwhite', price: 139.99, rating: 5, reviews: 567, badge: '', img: 'https://images.unsplash.com/photo-1592434134753-a70baf7979d5?auto=format&fit=crop&w=600&q=80', category: 'Accessories' },
+        { id: 51, title: 'GoPro Hero 13', price: 399.99, rating: 5, reviews: 234, badge: '', img: 'https://images.unsplash.com/photo-1502920917128-1aa500764cbd?auto=format&fit=crop&w=600&q=80', category: 'Accessories' },
+        { id: 52, title: 'Keychron K2 Keyboard', price: 89.99, rating: 5, reviews: 345, badge: '', img: 'https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=600&q=80', category: 'Accessories' },
+        { id: 53, title: 'Logitech MX Master 3S', price: 99.99, rating: 5, reviews: 678, badge: '', img: 'https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?auto=format&fit=crop&w=600&q=80', category: 'Accessories' },
+        { id: 54, title: 'AirTag 4 Pack', price: 99.99, rating: 5, reviews: 456, badge: 'Sale', img: 'https://images.unsplash.com/photo-1580894732444-8ecded7900cd?auto=format&fit=crop&w=600&q=80', category: 'Accessories' },
+        { id: 55, title: 'MagSafe Charger', price: 39.99, rating: 5, reviews: 567, badge: '', img: 'https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5?auto=format&fit=crop&w=600&q=80', category: 'Accessories' },
+        { id: 56, title: 'Apple Pencil 2', price: 129.99, rating: 5, reviews: 345, badge: '', img: 'https://images.unsplash.com/photo-1625842268584-8f3296236761?auto=format&fit=crop&w=600&q=80', category: 'Accessories' },
+        { id: 57, title: 'Belkin Boost Charge', price: 59.99, rating: 5, reviews: 234, badge: '', img: 'https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5?auto=format&fit=crop&w=600&q=80', category: 'Accessories' },
+        { id: 58, title: 'Tile Mate 4 Pack', price: 79.99, rating: 5, reviews: 189, badge: '', img: 'https://images.unsplash.com/photo-1580894732444-8ecded7900cd?auto=format&fit=crop&w=600&q=80', category: 'Accessories' },
+
+        // Wearables (59-64)
+        { id: 59, title: 'Apple Watch Series 9', price: 399.99, rating: 5, reviews: 890, badge: 'Hot', img: 'https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?auto=format&fit=crop&w=600&q=80', category: 'Wearables' },
+        { id: 60, title: 'Samsung Galaxy Watch 6', price: 299.99, rating: 5, reviews: 456, badge: '', img: 'https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?auto=format&fit=crop&w=600&q=80', category: 'Wearables' },
+        { id: 61, title: 'Garmin Forerunner 965', price: 599.99, rating: 5, reviews: 234, badge: 'New', img: 'https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?auto=format&fit=crop&w=600&q=80', category: 'Wearables' },
+        { id: 62, title: 'Fitbit Charge 6', price: 159.99, rating: 4, reviews: 345, badge: '', img: 'https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?auto=format&fit=crop&w=600&q=80', category: 'Wearables' },
+        { id: 63, title: 'Whoop 4.0', price: 239.99, rating: 5, reviews: 178, badge: '', img: 'https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?auto=format&fit=crop&w=600&q=80', category: 'Wearables' },
+        { id: 64, title: 'Oura Ring Gen 3', price: 299.99, rating: 5, reviews: 123, badge: '', img: 'https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?auto=format&fit=crop&w=600&q=80', category: 'Wearables' },
+
+        // Cameras (65-70)
+        { id: 65, title: 'Sony A7 IV', price: 2499.99, rating: 5, reviews: 234, badge: 'Hot', img: 'https://images.unsplash.com/photo-1502920917128-1aa500764cbd?auto=format&fit=crop&w=600&q=80', category: 'Cameras' },
+        { id: 66, title: 'Canon EOS R6 II', price: 2499.99, rating: 5, reviews: 189, badge: '', img: 'https://images.unsplash.com/photo-1502920917128-1aa500764cbd?auto=format&fit=crop&w=600&q=80', category: 'Cameras' },
+        { id: 67, title: 'Nikon Z6 II', price: 1999.99, rating: 5, reviews: 145, badge: '', img: 'https://images.unsplash.com/photo-1502920917128-1aa500764cbd?auto=format&fit=crop&w=600&q=80', category: 'Cameras' },
+        { id: 68, title: 'Fujifilm X-T5', price: 1699.99, rating: 5, reviews: 234, badge: 'New', img: 'https://images.unsplash.com/photo-1502920917128-1aa500764cbd?auto=format&fit=crop&w=600&q=80', category: 'Cameras' },
+        { id: 69, title: 'GoPro Hero 13 Black', price: 399.99, rating: 5, reviews: 345, badge: 'Sale', img: 'https://images.unsplash.com/photo-1502920917128-1aa500764cbd?auto=format&fit=crop&w=600&q=80', category: 'Cameras' },
+        { id: 70, title: 'DJI Osmo Pocket 3', price: 519.99, rating: 5, reviews: 178, badge: '', img: 'https://images.unsplash.com/photo-1502920917128-1aa500764cbd?auto=format&fit=crop&w=600&q=80', category: 'Cameras' },
+
+        // Networking (71-76)
+        { id: 71, title: 'TP-Link Deco X90', price: 299.99, rating: 5, reviews: 234, badge: 'Hot', img: 'https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=600&q=80', category: 'Networking' },
+        { id: 72, title: 'Netgear Nighthawk', price: 349.99, rating: 5, reviews: 189, badge: '', img: 'https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=600&q=80', category: 'Networking' },
+        { id: 73, title: 'ASUS ROG Rapture', price: 399.99, rating: 5, reviews: 145, badge: 'New', img: 'https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=600&q=80', category: 'Networking' },
+        { id: 74, title: 'Google Nest WiFi Pro', price: 199.99, rating: 5, reviews: 345, badge: '', img: 'https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=600&q=80', category: 'Networking' },
+        { id: 75, title: 'Ubiquiti UniFi 6', price: 179.99, rating: 5, reviews: 234, badge: '', img: 'https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=600&q=80', category: 'Networking' },
+        { id: 76, title: 'Eero Pro 6E', price: 299.99, rating: 5, reviews: 178, badge: 'Sale', img: 'https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=600&q=80', category: 'Networking' }
       ];
 
       const TESTIMONIALS = [
@@ -1371,7 +1225,9 @@
         { name: 'Maya Chen', role: 'Software Engineer', avatar: 'https://images.unsplash.com/photo-1494790108378-be9c29b29330?auto=format&fit=crop&w=80&q=80', text: 'VoltHaus is my go-to for tech. Fast shipping and everything is genuine.', stars: 5 },
         { name: 'Jordan Blake', role: 'Streamer', avatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=80&q=80', text: 'My entire gaming setup is from here. Great prices and the deals are unreal.', stars: 5 },
         { name: 'Riley Foster', role: 'Photographer', avatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=80&q=80', text: 'The DJI Mini 4 Pro arrived quickly and in perfect condition. Highly recommend.', stars: 5 },
-        { name: 'Samir Khan', role: 'Music Producer', avatar: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=80&q=80', text: 'StudioMax headphones have incredible clarity. Worth every penny.', stars: 5 }
+        { name: 'Samir Khan', role: 'Music Producer', avatar: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=80&q=80', text: 'StudioMax headphones have incredible clarity. Worth every penny.', stars: 5 },
+        { name: 'Lena Torres', role: 'UX Designer', avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=80&q=80', text: 'The Apple Watch Ultra is a beast. Battery life is outstanding!', stars: 5 },
+        { name: 'David Kim', role: 'IT Consultant', avatar: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=80&q=80', text: 'TP-Link Deco X90 transformed my home network. Zero dead zones now.', stars: 5 }
       ];
 
       // ---------- STATE ----------
@@ -1502,7 +1358,6 @@
           const card = document.createElement('article');
           card.className = 'product-card';
 
-          // Image wrapper
           const imgWrap = document.createElement('div');
           imgWrap.className = 'img-wrap';
 
@@ -1512,7 +1367,6 @@
           img.loading = 'lazy';
           imgWrap.appendChild(img);
 
-          // Badge
           if (product.badge) {
             const badge = document.createElement('span');
             badge.className = 'badge';
@@ -1522,7 +1376,6 @@
             imgWrap.appendChild(badge);
           }
 
-          // Wishlist button
           const wish = document.createElement('button');
           wish.className = 'wish';
           wish.type = 'button';
@@ -1533,7 +1386,6 @@
           wish.appendChild(wishIcon);
           imgWrap.appendChild(wish);
 
-          // Body
           const body = document.createElement('div');
           body.className = 'body';
 
@@ -1566,7 +1418,6 @@
           body.appendChild(priceRow);
           body.appendChild(rating);
 
-          // Footer
           const footer = document.createElement('div');
           footer.className = 'footer';
 
