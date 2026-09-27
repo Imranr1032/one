@@ -1126,7 +1126,7 @@
 
       const PRODUCTS = [
         // Audio (1-12)
-        { id: 1, title: 'SonicPods Pro', price: 129.99, rating: 5, reviews: 342, badge: 'New', img: 'https://images.unsplash.com/photo-1572569511254-d8f925fe2cbb?auto=format&fit=crop&w=600&q=80', category: 'Audio' },
+        { id: 1, title: 'SonicPods', price: 129.99, rating: 5, reviews: 342, badge: 'New', img: 'https://images.unsplash.com/photo-1572569511254-d8f925fe2cbb?auto=format&fit=crop&w=600&q=80', category: 'Audio' },
         { id: 2, title: 'BassBoom Speaker', price: 89.99, rating: 5, reviews: 218, badge: '', img: 'https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?auto=format&fit=crop&w=600&q=80', category: 'Audio' },
         { id: 3, title: 'StudioMax Headphones', price: 249.99, rating: 5, reviews: 156, badge: 'Sale', img: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=600&q=80', category: 'Audio' },
         { id: 4, title: 'EchoBuds Lite', price: 59.99, rating: 4, reviews: 89, badge: '', img: 'https://images.unsplash.com/photo-1590658268037-6bf12165a8df?auto=format&fit=crop&w=600&q=80', category: 'Audio' },
